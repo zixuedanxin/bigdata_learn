@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+	 <property>
+        <name>fs.defaultFS</name>
+        <value>hdfs://standalone.com:9000/</value>
+    </property>
+    <property>
+        <name>dfs.namenode.name.dir</name>
+        <value>/opt/module/bigdata/hadoop-2.9.2/data/namenode</value>
+    </property>
+
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>/opt/module/bigdata/hadoop-2.9.2/data/datanode</value>
+    </property>
+
+
+</configuration>
