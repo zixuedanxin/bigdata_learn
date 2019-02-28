@@ -7,7 +7,7 @@ object Run extends BaseSparkSession{
 
   def main(args: Array[String]): Unit = {
 
-    val spark = sparkSession(false,true)
+    val spark = sparkSession(true,true)
 
     import spark.sql
 

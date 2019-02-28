@@ -5,7 +5,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_13.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/md/module/pdf/编程指南快速入门 - Spark 2.4.0文档.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/core-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/core-site.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/data/text/people.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/data/text/people.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/hive-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/hive-site.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/LocalRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/LocalRun.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/LocalRunTextFile.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/LocalRunTextFile.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/LocalRunTextFileCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/LocalRunTextFileCount.scala" afterDir="false" />
@@ -29,13 +33,52 @@
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/fold/n_03_rdd_fold/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/fold/n_03_rdd_fold/Run.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/fold/n_03_rdd_fold/Run2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/fold/n_03_rdd_fold/Run2.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/base/BaseScalaSparkContext.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/base/BaseScalaSparkContext.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/dependency/narrow/n_01_OneToOneDependency/Run1.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/dependency/narrow/n_01_OneToOneDependency/Run1.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/dependency/narrow/n_02_RangeDependency/Run1.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/dependency/narrow/n_02_RangeDependency/Run1.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/dependency/shuffle/n_01_ShuffleDependency/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/dependency/shuffle/n_01_ShuffleDependency/Run.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/CogroupRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/CogroupRun.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/DistinctRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/DistinctRun.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/JoinRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/JoinRun.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/LeftOuterJoinRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/LeftOuterJoinRun.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/MapPartitionsRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/MapPartitionsRun.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/MapRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/MapRun.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/SampleRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/SampleRun.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/SampleRun2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/SampleRun2.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/sample/LineCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/sample/LineCount.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/sql/dataset/n_01_textFile/head/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/sql/dataset/n_01_textFile/head/Run.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/sql/dataset/n_03_textFile_worldCount/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/sql/dataset/n_03_textFile_worldCount/Run.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/wordcount/spark/session/LocalWorldCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/wordcount/spark/session/LocalWorldCount.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/worldcount/WorldCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/worldcount/WorldCount.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/worldcount/WorldCountDetail.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/worldcount/WorldCountDetail.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/worldcount/WorldCountDetailPartition.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/worldcount/WorldCountDetailPartition.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/worldcount/WorldCountDetailPartitionOrder.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/worldcount/WorldCountDetailPartitionOrder.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_01_getting_started/n_03_spark_sql_untyped_dataset_operations/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_01_getting_started/n_03_spark_sql_untyped_dataset_operations/Run.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_01_getting_started/n_04_spark_sql_TempView/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_01_getting_started/n_04_spark_sql_TempView/Run.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_01_dataset_base/run.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_01_dataset_base/run.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_02_dataset_first/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_02_dataset_first/Run.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_03_dataset_head/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_03_dataset_head/Run.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_04_dataset_head_n/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_04_dataset_head_n/Run.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_05_dataset_count/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_05_dataset_count/Run.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_06_dataset_collect/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_06_dataset_collect/Run.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_06_dataset_collectAsList/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_06_dataset_collectAsList/Run.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_07_dataset_foreach/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_07_dataset_foreach/Run.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_08_dataset_map/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_08_dataset_map/Run.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_09_dataset_reduce/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_09_dataset_reduce/Run.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_09_dataset_reduce_计算行中最多单词的个数/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_09_dataset_reduce_计算行中最多单词的个数/Run.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_10_dataset_reduce_单词数量最多的行数据/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_10_dataset_reduce_单词数量最多的行数据/Run.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_13_dataset_show_truncate/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_13_dataset_show_truncate/Run.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_14_dataset_show_truncate_false/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_14_dataset_show_truncate_false/Run.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_15_dataset_show_truncate_vertical/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_15_dataset_show_truncate_vertical/Run.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_18_dataset_toLocalIterator/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_18_dataset_toLocalIterator/Run.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_20_dataset_summary/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_20_dataset_summary/Run.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/function/n_01_dataset_cache/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/function/n_01_dataset_cache/Run.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/user_defined_type_aggregation/n_01_udta_MyAverage/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/user_defined_type_aggregation/n_01_udta_MyAverage/Run.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/user_defined_untype_aggregation/n_01_uduta_MyAverage/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/user_defined_untype_aggregation/n_01_uduta_MyAverage/Run.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_04_dataframe_select_column_expr/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_04_dataframe_select_column_expr/Run.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_06_dataframe_filter_string/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_06_dataframe_filter_string/Run.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_10_dataframe_groupBy_string/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_10_dataframe_groupBy_string/Run.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_10_spark_hive/n_01_create_database/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_10_spark_hive/n_01_create_database/Run.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_10_spark_hive/n_05_create_table/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_10_spark_hive/n_05_create_table/Run.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/base/BaseScalaSparkContext.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/base/BaseScalaSparkContext.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/base/BaseSparkSession.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/base/BaseSparkSession.scala" afterDir="false" />
     </list>
@@ -99,8 +142,47 @@
     <session id="1115653753">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.44" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="3" />
+          <entry key="crc" value="1" />
+          <entry key="md" value="2" />
+          <entry key="mdj" value="1" />
+          <entry key="sc" value="1" />
+          <entry key="scala" value="136" />
+          <entry key="txt" value="1" />
+          <entry key="xml" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="3" />
+          <entry key="Markdown" value="2" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Scala" value="137" />
+          <entry key="XML" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="sc" value="7" />
+          <entry key="scala" value="458" />
+          <entry key="txt" value="36" />
+          <entry key="xml" value="20" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="36" />
+          <entry key="Scala" value="465" />
+          <entry key="XML" value="20" />
         </counts>
       </usages-collector>
     </session>
@@ -108,37 +190,80 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/GroupByKeyRun.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/resource/data/text/people.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+            <state relative-caret-position="15">
+              <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/dependency/narrow/n_02_RangeDependency/Run1.scala">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_05_sql_run_on_file_directly/ReadRun.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="60">
+              <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_10_spark_hive/n_01_create_database/Run.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="97" column="20" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/graphx/SecondDegreeNeighbors.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+              <folding>
+                <element signature="e#16#48#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resource/log4j.properties">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/streaming/structured/Basic.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="646">
+              <caret line="63" column="31" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/dependency/narrow/n_01_OneToOneDependency/Run.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/streaming/Accumulation.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            <state relative-caret-position="240">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+              <folding>
+                <element signature="e#19#80#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -158,41 +283,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_20_dataset_summary/Run.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/base/BaseScalaSparkContext.scala" />
-        <option value="$PROJECT_DIR$/target/classes/core-site.xml" />
-        <option value="$PROJECT_DIR$/target/classes/hive-site.xml" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/base/BaseSparkSession.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_15_dataset_show_truncate_vertical/Run.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/LocalRun.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/LocalRunTextFile.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/LocalRunTextFileCount.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/LocalRunTextFileMkString.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/fold/n_01_map_遍历/Run.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/base/BaseScalaSparkContext.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/fold/n_03_rdd_fold/Run2.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/fold/n_03_rdd_fold/Run.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/CollectRun.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/CountByKeyRun.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/CountByValueRun.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/CountByValueRun2.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/CountRun.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/FirstRun.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/GroupByKeyAndSortWithRun.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/worldcount/WorldCount.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/worldcount/WorldCountDetail.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/worldcount/WorldCountDetailPartition.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/worldcount/WorldCountDetailPartitionOrder.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/GroupByKeyRun.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/GroupByRun.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/ReduceByKeyRun.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/ReduceRun.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/SortByKeyRun.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/TakeOrderedRun.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/TopRun.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/SortByRun.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/dependency/narrow/n_02_RangeDependency/Run1.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/sample/LineCount.scala" />
+        <option value="$PROJECT_DIR$/src/main/resource/core-site.xml" />
+        <option value="$PROJECT_DIR$/src/main/resource/hive-site.xml" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/dependency/narrow/n_01_OneToOneDependency/Run1.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/dependency/shuffle/n_01_ShuffleDependency/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/base/BaseScalaSparkContext.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/MapRun.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/LeftOuterJoinRun.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/JoinRun.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/MapPartitionsRun.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/DistinctRun.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/CogroupRun.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/SampleRun.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/SampleRun2.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/sql/dataset/n_01_textFile/head/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/sql/dataset/n_03_textFile_worldCount/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/wordcount/spark/session/LocalWorldCount.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/base/BaseSparkSession.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_01_getting_started/n_03_spark_sql_untyped_dataset_operations/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_01_getting_started/n_04_spark_sql_TempView/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_07_dataset_foreach/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_01_dataset_base/run.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_02_dataset_first/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_03_dataset_head/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_04_dataset_head_n/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_05_dataset_count/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_06_dataset_collect/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_06_dataset_collectAsList/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_08_dataset_map/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_09_dataset_reduce/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_09_dataset_reduce_计算行中最多单词的个数/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_10_dataset_reduce_单词数量最多的行数据/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/resource/data/text/people.txt" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_13_dataset_show_truncate/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_14_dataset_show_truncate_false/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_18_dataset_toLocalIterator/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_20_dataset_summary/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/function/n_01_dataset_cache/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/user_defined_type_aggregation/n_01_udta_MyAverage/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/user_defined_untype_aggregation/n_01_uduta_MyAverage/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_04_dataframe_select_column_expr/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_06_dataframe_filter_string/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_10_dataframe_groupBy_string/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_10_spark_hive/n_01_create_database/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_10_spark_hive/n_05_create_table/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicAvgFromFile.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicAvgFromFiles.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicParseCsv.scala" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -221,18 +362,6 @@
           <item name="spark-scala-maven-2.4.0" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="spark-scala-maven-2.4.0" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-          <item name="org.scala-lang:scala-reflect:2.11.8" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="spark-scala-maven-2.4.0" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-          <item name="org.scala-lang:scala-compiler:2.11.8" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
-        </path>
       </expand>
       <select />
     </treeState>
@@ -249,7 +378,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -260,28 +388,42 @@
             <path>
               <item name="spark-scala-maven-2.4.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="spark-scala-maven-2.4.0" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spark-scala-maven-2.4.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark-scala-maven-2.4.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spark-scala-maven-2.4.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark-scala-maven-2.4.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spark-scala-maven-2.4.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="spark-scala-maven-2.4.0" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551157948258" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551346375723" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_08_spark_udaf/n_05_spark_udaf_groupby_max/Run.scala" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_08_spark_udaf/n_05_spark_udaf_groupby_max/Run.scala" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -295,7 +437,53 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Run1">
+  <component name="RunManager" selected="Application.Basic">
+    <configuration name="Basic" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="streaming.structured.Basic" />
+      <module name="spark-scala-maven-2.4.0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="streaming.structured.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasicAvg" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.oreilly.learningsparkexamples.scala.BasicAvg" />
+      <module name="spark-scala-maven-2.4.0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oreilly.learningsparkexamples.scala.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasicAvgFromFile" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.oreilly.learningsparkexamples.scala.BasicAvgFromFile" />
+      <module name="spark-scala-maven-2.4.0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oreilly.learningsparkexamples.scala.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ex1_SimpleRDD" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Ex1_SimpleRDD" />
+      <module name="spark-scala-maven-2.4.0" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Run" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.opensource.bigdata.spark.sql.n_02_spark_dataset.action.n_15_dataset_show_truncate_vertical.Run" />
       <module name="spark-scala-maven-2.4.0" />
@@ -309,64 +497,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run1" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.opensource.bigdata.spark.local.rdd.operation.dependency.narrow.n_02_RangeDependency.Run1" />
+    <configuration name="SecondDegreeNeighbors" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="graphx.SecondDegreeNeighbors" />
       <module name="spark-scala-maven-2.4.0" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.opensource.bigdata.spark.local.rdd.operation.dependency.narrow.n_02_RangeDependency.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SortByRun" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.opensource.bigdata.spark.local.rdd.operation.action.SortByRun" />
-      <module name="spark-scala-maven-2.4.0" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.opensource.bigdata.spark.local.rdd.operation.action.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TakeOrderedRun" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.opensource.bigdata.spark.local.rdd.operation.action.TakeOrderedRun" />
-      <module name="spark-scala-maven-2.4.0" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.opensource.bigdata.spark.local.rdd.operation.action.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TakeRun" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.opensource.bigdata.spark.local.rdd.operation.action.sortby.n_01_升序排序.TakeRun" />
-      <module name="spark-scala-maven-2.4.0" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.opensource.bigdata.spark.local.rdd.operation.action.sortby.n_01_升序排序.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TopRun" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.opensource.bigdata.spark.local.rdd.operation.action.TopRun" />
-      <module name="spark-scala-maven-2.4.0" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.opensource.bigdata.spark.local.rdd.operation.action.*" />
+          <option name="PATTERN" value="graphx.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -376,19 +512,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Run" />
-      <item itemvalue="Application.SortByRun" />
-      <item itemvalue="Application.TakeOrderedRun" />
-      <item itemvalue="Application.TopRun" />
-      <item itemvalue="Application.TakeRun" />
-      <item itemvalue="Application.Run1" />
+      <item itemvalue="Application.BasicAvg" />
+      <item itemvalue="Application.BasicAvgFromFile" />
+      <item itemvalue="Application.Ex1_SimpleRDD" />
+      <item itemvalue="Application.SecondDegreeNeighbors" />
+      <item itemvalue="Application.Basic" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Run1" />
-        <item itemvalue="Application.SortByRun" />
-        <item itemvalue="Application.TakeRun" />
-        <item itemvalue="Application.TopRun" />
-        <item itemvalue="Application.TakeOrderedRun" />
+        <item itemvalue="Application.Basic" />
+        <item itemvalue="Application.SecondDegreeNeighbors" />
+        <item itemvalue="Application.Ex1_SimpleRDD" />
+        <item itemvalue="Application.BasicAvgFromFile" />
+        <item itemvalue="Application.BasicAvg" />
       </list>
     </recent_temporary>
   </component>
@@ -403,17 +539,19 @@
       <option name="presentableId" value="Default" />
       <updated>1551059400732</updated>
       <workItem from="1551059403320" duration="24985000" />
-      <workItem from="1551161443112" duration="616000" />
+      <workItem from="1551161443112" duration="3260000" />
+      <workItem from="1551173978960" duration="15511000" />
+      <workItem from="1551331822854" duration="8751000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25601000" />
+    <option name="totallyTimeSpent" value="52507000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1600" height="840" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30580646" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28387097" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -422,14 +560,14 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38848922" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2676259" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3582734" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3294964" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.37266186" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.30935252" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
@@ -437,7 +575,7 @@
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Database" order="2" />
       <window_info anchor="right" id="Bean Validation" order="3" weight="0.32967743" />
-      <window_info anchor="right" id="Maven Projects" order="4" weight="0.32451612" />
+      <window_info anchor="right" id="Maven Projects" order="4" weight="0.3232258" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.22774194" />
@@ -457,343 +595,372 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_13_dataframe_groupBy_max/Run.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2617">
-          <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+        <state relative-caret-position="60">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_20_dataset_summary/Run.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_12_dataframe_groupBy_count/Run.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        <state relative-caret-position="60">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-common/2.7.7/hadoop-common-2.7.7.jar!/org/apache/hadoop/ipc/Client.class">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_15_dataframe_groupBy_avg/Run.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="670" selection-start-line="670" selection-end-line="670" />
+        <state relative-caret-position="60">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///opt/jdk1.8.0_161/jre/lib/rt.jar!/sun/nio/ch/SocketChannelImpl.class">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_17_dataframe_groupBy_agg_map/Run.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="847" selection-start-line="847" selection-end-line="847" />
+        <state relative-caret-position="60">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/sql/dataset/n_01_textFile.show/Run.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/base/BaseScalaSparkContext.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_16_dataframe_groupBy_agg_string/Run.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="68" lean-forward="true" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/core-site.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_18_dataframe_groupBy_agg_column/Run.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="16" selection-end-column="19" />
+        <state relative-caret-position="-167">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/hive-site.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_20_dataframe_sql_string/Run.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="8" />
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_19_dataframe_sql/Run.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_21_dataframe_sql_GlobalTempView/Run.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_22_dataframe_rdd_toDF/Run.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_22_dataframe_rdd_toDF_StructType/Run.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_23_dataframe_sql_map/Run.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_24_dataframe_sql_map_fieldName/Run.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_26_dataframe_to_class_foreach/Run.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_25_dataframe_to_class/Run.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_27_dataframe_to_sql_foreach/Run.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_06_spark_sql/n_03_sql_GlobalTempView/Run.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-467">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_04_spark_text/n_01_text_textFile/Run.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_07_spark_udf/n_02_udf_str_length/Run.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-47">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_07_spark_udf/n_03_udf_str_toUpperCase/Run.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="32" column="30" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_07_spark_udf/n_01_udf_str_length/Run.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_08_spark_udaf/n_01_spark_udaf_count/Run.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="27" column="28" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_08_spark_udaf/n_02_spark_udaf_max/Run2.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="37" column="20" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_08_spark_udaf/n_02_spark_udaf_max/Run.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="49" column="38" lean-forward="true" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_08_spark_udaf/n_04_spark_udaf_average/Run.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="29" column="51" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_08_spark_udaf/n_03_spark_udaf_sum/Run.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-225">
+          <caret line="36" column="51" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_08_spark_udaf/n_01_spark_udaf_count/Run2.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_01_parquet/ExampleRun.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-218">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_08_spark_udaf/n_02_spark_udaf_max/RunGroupByMax.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="49" column="38" lean-forward="true" selection-start-line="48" selection-start-column="4" selection-end-line="49" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_02_json/WriteRun.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_08_spark_udaf/n_05_spark_udaf_groupby_max/Run.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="83" column="26" lean-forward="true" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_06_bucketBy/ReadRun.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_05_sql_run_on_file_directly/ReadRun.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_10_spark_hive/n_05_create_table/Run.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark-warehouse/test_tmp.db/student/.part-00000-22803923-563f-4916-9cdf-72b2e10acf75-c000.crc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_10_spark_hive/n_04_select_table/Run.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_10_spark_hive/n_02_use_database/Run.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicAvg.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding>
+            <element signature="e#133#158#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicAvgFromFiles.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+          <folding>
+            <element signature="e#101#126#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicSaveProtoBuf.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/PerKeyAvg.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding>
+            <element signature="e#95#120#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicAvgFromFile.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicParseCsv.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resource/data/text/people.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/base/BaseSparkSession.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="47" column="16" lean-forward="true" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_15_dataset_show_truncate_vertical/Run.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/sql/dataset/n_01_head/Run.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/LocalRunTextFileMkString.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/fold/n_01_map_遍历/Run.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/fold/n_02_scala_fold_处理/Run.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/LocalRun.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/fold/n_03_rdd_fold/Run2.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="42" column="26" lean-forward="true" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/fold/n_03_rdd_fold/Run.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/CountByValueRun.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/CountByKeyRun.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/CountRun.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/CountByValueRun2.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/CollectRun.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/FirstRun.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/data/text/worldCount.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/base/BaseScalaSparkContext.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/GroupByKeyAndSortWithRun.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="27" column="101" lean-forward="true" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/worldcount/WorldCount.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.2.2/spark-core_2.11-2.2.2.jar!/org/apache/spark/rdd/PairRDDFunctions.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.2.2/spark-core_2.11-2.2.2-sources.jar!/org/apache/spark/rdd/PairRDDFunctions.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/worldcount/WorldCountDetail.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/worldcount/WorldCountDetailPartitionOrder.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="39" column="3" lean-forward="true" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/worldcount/WorldCountDetailPartition.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="26" column="107" lean-forward="true" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/LocalRunTextFileCount.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="103" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/LocalRunTextFile.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="17" column="103" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/ReduceRun.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/SortByKeyRun.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/ReduceByKeyRun.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_10_spark_hive/n_01_create_database/Run.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+        <state relative-caret-position="332">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/TakeOrderedRun.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Ex1_SimpleRDD.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="92">
+          <caret line="10" column="53" lean-forward="true" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/SortByRun.scala">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="332">
+          <caret line="97" column="20" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/sortby/n_02_降序排序/Run.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/streaming/Accumulation.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+        <state relative-caret-position="240">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding>
+            <element signature="e#19#80#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/sortby/n_01_升序排序/Run.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/graphx/SecondDegreeNeighbors.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="33" />
+        <state relative-caret-position="105">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding>
+            <element signature="e#16#48#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/TopRun.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/streaming/structured/Basic.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/GroupByRun.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/take/n_01_take_取top_n/TakeRun.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/dependency/narrow/n_02_RangeDependency/Run2.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/GroupByKeyRun.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/dependency/narrow/n_02_RangeDependency/Run1.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/dependency/narrow/n_01_OneToOneDependency/Run.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="646">
+          <caret line="63" column="31" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="31" />
         </state>
       </provider>
     </entry>

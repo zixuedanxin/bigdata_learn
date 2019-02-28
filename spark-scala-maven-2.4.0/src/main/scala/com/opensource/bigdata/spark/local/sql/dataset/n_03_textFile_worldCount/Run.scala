@@ -7,7 +7,7 @@ object Run extends BaseSparkSession{
   def main(args: Array[String]): Unit = {
 
     val spark = sparkSession(true,false,false,7)
-    val dataSet = spark.read.textFile("file:///"+ getProjectPath +"/src/main/resource/data/text/line.txt")
+    val dataSet = spark.read.textFile("file:///"+ getProjectPath +"/src/main/resource/data/text/worldCount.txt")
     import spark.implicits._
     val result = dataSet.flatMap( line => line.split(" ")).groupByKey(x => x ).count()
 

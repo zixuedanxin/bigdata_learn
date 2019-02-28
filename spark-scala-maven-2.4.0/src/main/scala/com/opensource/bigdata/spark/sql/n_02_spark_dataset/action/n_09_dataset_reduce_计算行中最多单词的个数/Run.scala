@@ -11,7 +11,7 @@ object Run extends BaseSparkSession{
 
     val spark = sparkSession()
 
-    val dataSet = spark.read.textFile("/home/liuwen/data/word.text")
+    val dataSet = spark.read.textFile("src/main/resource/data/text/people.txt")
 
     /**
       * 计算行中最多单词的个数

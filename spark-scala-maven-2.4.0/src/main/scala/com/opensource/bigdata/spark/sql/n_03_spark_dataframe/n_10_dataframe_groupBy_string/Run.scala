@@ -12,7 +12,7 @@ object Run extends BaseSparkSession{
 
 
     //注意，所以列都需要加上$符
-    df.groupBy("age").count()
+    df.groupBy("age").count().show()
 //    +---+-----+
 //    |age| name|
 //    +---+-----+

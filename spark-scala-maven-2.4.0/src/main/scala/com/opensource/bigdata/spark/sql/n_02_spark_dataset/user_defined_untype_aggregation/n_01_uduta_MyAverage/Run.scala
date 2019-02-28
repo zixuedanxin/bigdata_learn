@@ -68,7 +68,7 @@ object Run extends BaseSparkSession{
 
     spark.udf.register("MyAverage",MyAverage)
 
-    val df = spark.read.json("hdfs://standalone.com:9000/home/liuwen/data/employees.json")
+    val df = spark.read.json("src/main/resource/data/json/employees.json")
     df.createOrReplaceTempView("employees")
     val sqlDF = spark.sql("select MyAverage(salary)  as average_salary from employees  ")
 

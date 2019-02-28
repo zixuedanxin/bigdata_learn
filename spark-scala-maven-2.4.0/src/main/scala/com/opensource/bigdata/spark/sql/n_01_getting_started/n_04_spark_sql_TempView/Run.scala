@@ -17,7 +17,7 @@ object Run extends BaseSparkSession{
 
     val sqlDF = spark.sql("select * from people")
     val sqlDF2 = spark.sql("select name,age from people")
-    val sqlDF3 = spark.sql("select name,(age + 1) as age from people")
+    val sqlDF3 = spark.sql("select name,(age + 1) as age from people where age=30")
 
     sqlDF.show()
     sqlDF2.show()

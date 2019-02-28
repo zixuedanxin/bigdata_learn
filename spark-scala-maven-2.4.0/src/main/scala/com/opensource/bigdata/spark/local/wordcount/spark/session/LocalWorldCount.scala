@@ -29,11 +29,6 @@ object LocalWorldCount extends BaseSparkSession{
 
     dataset.show()
 
-
-
-
-
-
     spark.stop()
 
 

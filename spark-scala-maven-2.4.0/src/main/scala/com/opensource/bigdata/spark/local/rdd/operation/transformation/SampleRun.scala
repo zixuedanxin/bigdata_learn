@@ -12,13 +12,11 @@ object SampleRun {
 
   def main(args: Array[String]): Unit = {
     val sc = pre()
-    val r1 = sc.parallelize(Array(("a",1),("b",2)),2)
-    val r3 = r1.sample(false,0.1)
+    val r1 = sc.parallelize(Array(("a",1),("b",2),("b4",2),("b3",2),("b2",2),("b1",2)),2)
+    val r3 = r1.sample(false,0.4)
     //val r2 = r1.distinct().collect().mkString
 
     println("结果:"+ r3.collect().mkString)
-
-
 
     sc.stop()
   }
@@ -26,10 +24,10 @@ object SampleRun {
   def pre(): SparkContext ={
     var startTime = System.currentTimeMillis()
     val conf = new SparkConf().setAppName(appName).setMaster(master)
-    conf.set("spark.eventLog.enabled","true")
-    conf.set("spark.history.fs.logDirectory","/opt/bigdata/spark-1.6.0-cdh5.15.0/rundata/historyEventLog")
-    conf.set("spark.eventLog.dir","/home/spark/log/eventLog")
-    conf.setJars(Array("D:\\workspaces\\bigdata\\spark-scala-maven\\target\\spark-scala-maven-1.0-SNAPSHOT.jar"))
+//    conf.set("spark.eventLog.enabled","true")
+//    conf.set("spark.history.fs.logDirectory","/opt/bigdata/spark-1.6.0-cdh5.15.0/rundata/historyEventLog")
+//    conf.set("spark.eventLog.dir","/home/spark/log/eventLog")
+//    conf.setJars(Array("D:\\workspaces\\bigdata\\spark-scala-maven\\target\\spark-scala-maven-1.0-SNAPSHOT.jar"))
 
     val sc = new SparkContext(conf)
     sc

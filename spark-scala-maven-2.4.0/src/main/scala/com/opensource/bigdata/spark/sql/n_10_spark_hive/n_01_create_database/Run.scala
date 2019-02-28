@@ -12,8 +12,8 @@ object Run extends BaseSparkSession{
 
     val spark = SparkSession
       .builder()
-      //.master("local")
-      .master("spark://standalone.com:7077")
+      .master("local")
+      //.master("spark://standalone.com:7077")
       .appName("Spark Hive Example")
       .config("spark.sql.warehouse.dir", warehouseLocation)
       .enableHiveSupport()

@@ -11,7 +11,7 @@ object Run extends BaseSparkSession{
 
     val spark = sparkSession()
 
-    val dataSet = spark.read.json("hdfs://standalone.com:9000/home/liuwen/data/json/people.json")
+    val dataSet = spark.read.json("src/main/resource/data/json/people.json")
 
     //dataSet.summary().show()
     //dataSet.summary("count","max").show()

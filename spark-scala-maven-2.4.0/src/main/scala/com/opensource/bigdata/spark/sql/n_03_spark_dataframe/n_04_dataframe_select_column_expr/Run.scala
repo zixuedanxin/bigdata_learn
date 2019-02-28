@@ -24,7 +24,7 @@ object Run extends BaseSparkSession{
 //    +-------+---------+
 
 
-    df.select($"name", $"age" + 1 ).show()
+    df.select($"name" , $"age" + 1 ).show()
 
 
 

@@ -11,7 +11,6 @@ object Run  extends BaseScalaSparkContext{
     val rdd2 =rdd1.reduceByKey((a,b) => a + b)
 
 
-
     println("rdd2\n" + rdd2.collect().mkString("\n"))
 
     sc.stop()

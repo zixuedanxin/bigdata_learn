@@ -17,20 +17,16 @@ object MapPartitionsRun {
 
     val count = r2.collect().mkString
     println(s"===============count:${count}")
-
-
-
-
     sc.stop()
   }
 
   def pre(): SparkContext ={
     var startTime = System.currentTimeMillis()
     val conf = new SparkConf().setAppName(appName).setMaster(master)
-    conf.set("spark.eventLog.enabled","true")
-    conf.set("spark.history.fs.logDirectory","/opt/bigdata/spark-1.6.0-cdh5.15.0/rundata/historyEventLog")
-    conf.set("spark.eventLog.dir","/home/spark/log/eventLog")
-    conf.setJars(Array("D:\\workspaces\\bigdata\\spark-scala-maven\\target\\spark-scala-maven-1.0-SNAPSHOT.jar"))
+//    conf.set("spark.eventLog.enabled","true")
+//    conf.set("spark.history.fs.logDirectory","/opt/bigdata/spark-1.6.0-cdh5.15.0/rundata/historyEventLog")
+//    conf.set("spark.eventLog.dir","/home/spark/log/eventLog")
+//    conf.setJars(Array("D:\\workspaces\\bigdata\\spark-scala-maven\\target\\spark-scala-maven-1.0-SNAPSHOT.jar"))
 
     val sc = new SparkContext(conf)
     sc

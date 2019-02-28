@@ -29,6 +29,7 @@ class BaseSparkSession {
       .getOrCreate()
     //spark.sparkContext.addJar("/opt/n_001_workspaces/bigdata/spark-scala-maven-2.4.0/target/spark-scala-maven-2.4.0-1.0-SNAPSHOT.jar")
     //import spark.implicits._
+    spark.sparkContext.setLogLevel("WARN")
     spark
   }
 
@@ -74,6 +75,7 @@ class BaseSparkSession {
 
       //spark.sparkContext.addJar("/opt/n_001_workspaces/bigdata/spark-scala-maven-2.4.0/target/spark-scala-maven-2.4.0-1.0-SNAPSHOT.jar")
       //import spark.implicits._
+      spark.sparkContext.setLogLevel("WARN")
       spark
     }else{
 
@@ -121,7 +123,7 @@ class BaseSparkSession {
 
 
 
-
+      spark.sparkContext.setLogLevel("WARN")
       spark
     }
 

@@ -15,17 +15,17 @@ object LineCount {
   def main(args: Array[String]): Unit = {
     var startTime = System.currentTimeMillis()
     val conf = new SparkConf().setAppName(appName).setMaster(master)
-    conf.set("spark.eventLog.enabled","true")
-    conf.set("spark.history.fs.logDirectory","/opt/bigdata/spark-1.6.0-cdh5.15.0/rundata/historyEventLog")
-    conf.set("spark.eventLog.dir","/home/spark/log/eventLog")
-    conf.setJars(Array("D:\\workspaces\\bigdata\\spark-scala-maven\\target\\spark-scala-maven-1.0-SNAPSHOT.jar"))
+//    conf.set("spark.eventLog.enabled","true")
+//    conf.set("spark.history.fs.logDirectory","/opt/bigdata/spark-1.6.0-cdh5.15.0/rundata/historyEventLog")
+//    conf.set("spark.eventLog.dir","/home/spark/log/eventLog")
+//    conf.setJars(Array("D:\\workspaces\\bigdata\\spark-scala-maven\\target\\spark-scala-maven-1.0-SNAPSHOT.jar"))
 
     val sc = new SparkContext(conf)
     //val distFile:org.apache.spark.rdd.RDD[String] = sc.textFile("e://temp//a//a.text")
     /**
       *  idea中远程提交时，/home/temp/a.txt文件需要在window中存在，并且是在项目文件所有磁盘上
       */
-    val r1:org.apache.spark.rdd.RDD[String] = sc.textFile("/home/data/input/lineData.text")
+    val r1:org.apache.spark.rdd.RDD[String] = sc.textFile("src/main/resource/data/text/people.txt")
     println("===================")
     println(r1)
     val r3 =  r1.map((_,1))

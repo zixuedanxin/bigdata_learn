@@ -47,7 +47,7 @@ object Run extends BaseSparkSession{
     val spark = sparkSession(true)
 
     import spark.implicits._
-    val ds = spark.read.json("hdfs://standalone.com:9000/home/liuwen/data/employees.json").as[Employee]
+    val ds = spark.read.json("src/main/resource/data/json/employees.json").as[Employee]
     ds.show()
 //    +----+-------+
 //    | age|   name|

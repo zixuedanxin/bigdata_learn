@@ -2,10 +2,10 @@
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
 
 <configuration>
-  <property>
-    <name>hive.metastore.warehouse.dir</name>
-    <value>/user/hive/warehouse</value>
-  </property>
+  <!--<property>-->
+    <!--<name>hive.metastore.warehouse.dir</name>-->
+    <!--<value>/user/hive/warehouse</value>-->
+  <!--</property>-->
 
   <property>
     <name>hive.exec.scratchdir</name>
@@ -38,11 +38,11 @@
     <value>false</value>
   </property>
 
-  <property>
-    <name>hive.metastore.uris</name>
-    <value>thrift://standalone.com:9083</value>
-    <description>Thrift URI for remote metastore.Used by metastore client to connect to                 remote metastore</description>
-  </property>
+  <!--<property>-->
+    <!--<name>hive.metastore.uris</name>-->
+    <!--<value>thrift://standalone.com:9083</value>-->
+    <!--<description>Thrift URI for remote metastore.Used by metastore client to connect to                 remote metastore</description>-->
+  <!--</property>-->
 
 
 </configuration>

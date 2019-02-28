@@ -8,20 +8,10 @@ object Run extends BaseSparkSession{
 
     val spark = sparkSession(true)
     //返回dataFrame
-    val df = spark.read.textFile("file:///"+ getProjectPath +"/src/main/resource/data/text/line.txt")
+    val df = spark.read.textFile("file:///"+ getProjectPath +"/src/main/resource/data/text/people.txt")
     val result = df.head(1)
-
+    df.show()
     println(s"运行结果: ${result.mkString("\n")}")
-
-
-
-
-
-
-
-
-
-
 
 
     spark.stop()

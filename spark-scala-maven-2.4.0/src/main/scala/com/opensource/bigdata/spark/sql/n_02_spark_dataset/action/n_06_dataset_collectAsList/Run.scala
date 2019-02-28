@@ -11,7 +11,7 @@ object Run extends BaseSparkSession{
 
     val spark = sparkSession(true)
 
-    val dataSet = spark.read.textFile("/home/liuwen/data/line.txt")
+    val dataSet = spark.read.textFile("src/main/resource/data/text/people.txt")
     println( dataSet.collectAsList())
     import scala.collection.JavaConversions._
     for( v <- dataSet.collectAsList()) println(v)

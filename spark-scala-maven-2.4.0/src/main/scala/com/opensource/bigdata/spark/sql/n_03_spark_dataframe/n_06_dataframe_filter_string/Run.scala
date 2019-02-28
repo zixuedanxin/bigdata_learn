@@ -11,7 +11,7 @@ object Run extends BaseSparkSession{
     val df = spark.read.json("file:///"+ getProjectPath +"/src/main/resource/data/json/people.json")
 
 
-    df.filter("age > 20").show()
+    df.filter("age between 19 and 20").show()
 //    +---+-----+
 //    |age| name|
 //    +---+-----+

@@ -18,7 +18,7 @@ class BaseScalaSparkContext {
 
     val sc = new SparkContext(conf)
 
-    sc.setLogLevel("ERROR")
+    //sc.setLogLevel("ERROR")
     sc
   }
 }
