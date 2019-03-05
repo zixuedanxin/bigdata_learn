@@ -4,3 +4,7 @@
 target/
 artifacts/
 .idea/
+.idea/*
+metastore_db/
+spark-warehouse/
+
