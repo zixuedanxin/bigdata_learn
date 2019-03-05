@@ -2,6 +2,91 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b71f93c1-c3e4-4e07-bc65-2c329b8a0c48" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Ex1_SimpleRDD.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Ex2_Computations.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Ex3_CombiningRDDs.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Ex4_MoreOperationsOnRDDs.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Ex5_Partitions.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Ex6_Accumulators.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Ex9_Scraps.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dataframe/Basic.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dataframe/ComplexSchema.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dataframe/DatasetConversion.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dataframe/DateTime.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dataframe/DropColumns.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dataframe/DropDuplicates.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dataframe/FromRowsAndSchema.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dataframe/GroupingAndAggregation.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dataframe/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dataframe/Range.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dataframe/Select.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dataframe/SimpleCreation.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dataframe/Transform.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dataframe/UDAF.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dataframe/UDF.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dataframe/UDT.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dataset/Basic.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dataset/CaseClass.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dataset/ComplexType.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dataset/PartitionBy.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dataset/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/experiments/ChooseWithinGroups.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/experiments/CoPartitioning.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/experiments/PartitionedTableColumnOrder.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/experiments/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/experiments/SemiStructuredUtilUDF.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/experiments/UDFExtraParameter.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/experiments/WindowFunctions.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/graphx/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/graphx/SecondDegreeNeighbors.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/hiveql/LateralViewExplode.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/hiveql/PartitionedTable.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/hiveql/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/hiveql/SimpleUDAF.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/hiveql/SimpleUDF.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/pairs/ChooseWithinGroups.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/pairs/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/special/CustomPartitioner.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/special/HashJoin.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/special/PairRDD.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/special/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/special/Range.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/sql/Basic.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/sql/CaseClassSchemaProblem.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/sql/CaseWhenThen.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/sql/ComplexTypes.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/sql/CustomRelationProvider.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/sql/DateTime.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/sql/ExternalNonRectangular.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/sql/JSON.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/sql/JSONSchemaInference.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/sql/JSONTypes.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/sql/MixedJSONQuery.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/sql/OutputJSON.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/sql/PartitionedTable.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/sql/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/sql/RelationProviderFilterPushdown.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/sql/SchemaConversion.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/sql/Types.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/sql/UDAF.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/sql/UDAF2.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/sql/UDAF_Multi.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/sql/UDF.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/sql/UDT.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/streaming/Accumulation.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/streaming/CustomReceiver.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/streaming/ExceptionPropagation.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/streaming/FileBased.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/streaming/FullMonitoring.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/streaming/Monitoring.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/streaming/QueueBased.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/streaming/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/streaming/Windowing.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/streaming/structured/Basic.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/streaming/structured/BasicAggregation.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/streaming/structured/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/streaming/util/CSVFileStreamGenerator.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/utils/PartitionedTableHierarchy.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_13.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
@@ -81,6 +166,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_10_spark_hive/n_05_create_table/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_10_spark_hive/n_05_create_table/Run.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/base/BaseScalaSparkContext.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/base/BaseScalaSparkContext.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/base/BaseSparkSession.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/base/BaseSparkSession.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/opensource/Main.scala" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -142,11 +228,13 @@
     <session id="1115653753">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.44" value="1" />
+          <entry key="project.open.time.47" value="1" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -156,7 +244,7 @@
           <entry key="md" value="2" />
           <entry key="mdj" value="1" />
           <entry key="sc" value="1" />
-          <entry key="scala" value="136" />
+          <entry key="scala" value="139" />
           <entry key="txt" value="1" />
           <entry key="xml" value="4" />
         </counts>
@@ -166,14 +254,14 @@
           <entry key="CLASS" value="3" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Scala" value="137" />
+          <entry key="Scala" value="140" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="sc" value="7" />
-          <entry key="scala" value="458" />
+          <entry key="scala" value="510" />
           <entry key="txt" value="36" />
           <entry key="xml" value="20" />
         </counts>
@@ -181,7 +269,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="36" />
-          <entry key="Scala" value="465" />
+          <entry key="Scala" value="517" />
           <entry key="XML" value="20" />
         </counts>
       </usages-collector>
@@ -189,81 +277,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resource/data/text/people.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_05_sql_run_on_file_directly/ReadRun.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_10_spark_hive/n_01_create_database/Run.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="97" column="20" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/graphx/SecondDegreeNeighbors.scala">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/Ex1_SimpleRDD.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-              <folding>
-                <element signature="e#16#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/streaming/structured/Basic.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="63" column="31" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/streaming/Accumulation.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-              <folding>
-                <element signature="e#19#80#0" expanded="true" />
-              </folding>
+              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -283,8 +301,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/SortByRun.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/dependency/narrow/n_02_RangeDependency/Run1.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/sample/LineCount.scala" />
         <option value="$PROJECT_DIR$/src/main/resource/core-site.xml" />
         <option value="$PROJECT_DIR$/src/main/resource/hive-site.xml" />
@@ -334,6 +350,8 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicAvgFromFiles.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicParseCsv.scala" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/scala/streaming/structured/Basic.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Ex1_SimpleRDD.scala" />
       </list>
     </option>
   </component>
@@ -378,6 +396,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -403,26 +422,21 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="spark-scala-maven-2.4.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spark-scala-maven-2.4.0" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551346375723" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551754119362" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_08_spark_udaf/n_05_spark_udaf_groupby_max/Run.scala" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_08_spark_udaf/n_05_spark_udaf_groupby_max/Run.scala" />
   </component>
   <component name="RunDashboard">
@@ -437,7 +451,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Basic">
+  <component name="RunManager" selected="Application.Ex1_SimpleRDD">
     <configuration name="Basic" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="streaming.structured.Basic" />
       <module name="spark-scala-maven-2.4.0" />
@@ -520,9 +534,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Ex1_SimpleRDD" />
         <item itemvalue="Application.Basic" />
         <item itemvalue="Application.SecondDegreeNeighbors" />
-        <item itemvalue="Application.Ex1_SimpleRDD" />
         <item itemvalue="Application.BasicAvgFromFile" />
         <item itemvalue="Application.BasicAvg" />
       </list>
@@ -541,17 +555,19 @@
       <workItem from="1551059403320" duration="24985000" />
       <workItem from="1551161443112" duration="3260000" />
       <workItem from="1551173978960" duration="15511000" />
-      <workItem from="1551331822854" duration="8751000" />
+      <workItem from="1551331822854" duration="10118000" />
+      <workItem from="1551429499652" duration="5067000" />
+      <workItem from="1551753472923" duration="523000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52507000" />
+    <option name="totallyTimeSpent" value="59464000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1600" height="840" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28387097" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2929032" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -560,12 +576,12 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2676259" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.7021583" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3582734" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.30791366" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3294964" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.30935252" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
@@ -595,20 +611,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_13_dataframe_groupBy_max/Run.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_12_dataframe_groupBy_count/Run.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_15_dataframe_groupBy_avg/Run.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -819,13 +821,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_05_sql_run_on_file_directly/ReadRun.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_10_spark_hive/n_05_create_table/Run.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -850,61 +845,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicAvg.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicAvg.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicAvgFromFiles.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicSaveProtoBuf.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/PerKeyAvg.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicAvgFromFile.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicParseCsv.scala" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-          <folding>
-            <element signature="e#133#158#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="332">
+          <caret line="97" column="20" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicAvgFromFiles.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_10_spark_hive/n_01_create_database/Run.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-          <folding>
-            <element signature="e#101#126#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="332">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicSaveProtoBuf.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_05_sql_run_on_file_directly/ReadRun.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/PerKeyAvg.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-          <folding>
-            <element signature="e#95#120#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicAvgFromFile.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicParseCsv.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/data/text/people.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        <state relative-caret-position="60">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -916,51 +880,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_10_spark_hive/n_01_create_database/Run.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/resource/data/text/people.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Ex1_SimpleRDD.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="10" column="53" lean-forward="true" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="97" column="20" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
+        <state relative-caret-position="15">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/streaming/Accumulation.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="225">
           <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding>
-            <element signature="e#19#80#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/streaming/util/CSVFileStreamGenerator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="20" column="81" lean-forward="true" selection-start-line="20" selection-start-column="81" selection-end-line="20" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/streaming/structured/Basic.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="62" column="22" lean-forward="true" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/graphx/SecondDegreeNeighbors.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        <state>
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="e#16#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/streaming/structured/Basic.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/opensource/Main.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Ex1_SimpleRDD.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="63" column="31" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="31" />
+        <state relative-caret-position="105">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
         </state>
       </provider>
     </entry>

@@ -4,7 +4,7 @@ object Ex1_SimpleRDD {
   def main (args: Array[String]) {
     val conf = new SparkConf().setAppName("Ex1_SimpleRDD").setMaster("local[4]")
     val sc = new SparkContext(conf)
-
+     sc.setLogLevel("INFO")
     // put some data in an RDD
     val numbers = 1 to 10
     val numbersRDD = sc.parallelize(numbers, 4)
@@ -26,7 +26,8 @@ object Ex1_SimpleRDD {
     println(partitions.count())
     partitions.foreach(a => {
       println("Partition contents:" +
-        a.foldLeft("")((s, e) => s + " " + e))
+       a.foldLeft("")((s, e) => s + " " + e)
+      )
     })
   }
 }
