@@ -41,6 +41,7 @@ object FileBasedStreaming {
     new Thread("Streaming Termination Monitor") {
       override def run() {
         try {
+          println("xxxxxxxxxx")
           ssc.awaitTermination()
         } catch {
           case e: Exception => {

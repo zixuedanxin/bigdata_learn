@@ -61,11 +61,11 @@ object OutputJSON {
         .getOrCreate()
 
     // easy enough to query flat JSON
-    val people = spark.read.json("src/main/resources/data/flat.json")
+    val people = spark.read.json("src/main/resource/data/flat.json")
     val strings =  formatDataFrame(people.schema, people)
     strings.foreach(println)
 
-    val peopleAddr = spark.read.json("src/main/resources/data/notFlat.json")
+    val peopleAddr = spark.read.json("src/main/resource/data/notFlat.json")
     val nestedStrings = formatDataFrame(peopleAddr.schema, peopleAddr)
     nestedStrings.foreach(println)
   }

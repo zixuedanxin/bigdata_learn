@@ -17,9 +17,9 @@ object WindowFunctions {
     println("*** stepped range with specified partitioning")
     val df = spark.range(10, 20, 2, 2)
     df.show()
-    println("# Partitions = " + df.rdd.partitions.length)
+    println("# Partitions num = " + df.rdd.partitions.length)
 
-    val ldf = df.select($"id", lag($"id", 2, 0))
+    val ldf = df.select($"id", lag("id", 1))
 
     ldf.show()
 

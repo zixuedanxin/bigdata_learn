@@ -43,10 +43,10 @@ object HashJoin {
       4)
 
     val largeRDD = sc.parallelize(
-      for (x <- 1 to 10000) yield (x % 4, x),
+      for (x <- 1 to 10) yield (x % 4, x),
       4
     )
-
+    //largeRDD.foreach(println)
     // simply joining the two RDDs will be slow as it requires
     // lots of communication
     val joined = largeRDD.join(smallRDD)

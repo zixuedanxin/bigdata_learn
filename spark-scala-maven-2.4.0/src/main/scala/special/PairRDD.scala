@@ -47,7 +47,7 @@ object PairRDD {
     // let's say we just want the pair with minimum value for each key
     // we can use one of the handy methods in PairRDDFunctions
     val reducedRDD = pairsRDD.reduceByKey(Math.min(_,_))
-
+    reducedRDD.foreach(println)
     // look at the partitioning of the two RDDs: it involved communication
     analyze(pairsRDD)
     analyze(reducedRDD)

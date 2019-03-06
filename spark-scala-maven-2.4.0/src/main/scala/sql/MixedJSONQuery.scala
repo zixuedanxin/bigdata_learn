@@ -11,7 +11,7 @@ object MixedJSONQuery {
         .master("local[4]")
         .getOrCreate()
 
-    val transactions = spark.read.json("src/main/resources/data/mixed.json")
+    val transactions = spark.read.json("src/main/resource/data/mixed.json")
     transactions.printSchema()
     transactions.createOrReplaceTempView("transactions")
 
@@ -31,7 +31,7 @@ object MixedJSONQuery {
 
     println("*** selecting a specific array element")
     val array2 = spark.sql("SELECT id, orders[0] FROM transactions")
-    array2.foreach(r => println(r))
+    array2.show()//foreach(r => println(r))
 
 
   }

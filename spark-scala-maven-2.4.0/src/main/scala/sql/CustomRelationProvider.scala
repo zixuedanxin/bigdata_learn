@@ -72,6 +72,9 @@ object CustomRelationProvider {
     val data =
       spark.sql("SELECT * FROM dataTable ORDER BY val")
     data.foreach(r => println(r))
+//    val data2 =
+//      spark.sql("SELECT * FROM sql.CustomRP")
+//    data2.show(2)
   }
 
 }

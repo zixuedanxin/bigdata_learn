@@ -15,14 +15,14 @@ object JSON {
     import spark.implicits._
 
     // easy enough to query flat JSON
-    val people = spark.read.json("src/main/resources/data/flat.json")
+    val people = spark.read.json("src/main/resource/data/flat.json")
     people.printSchema()
     people.createOrReplaceTempView("people")
     val young = spark.sql("SELECT firstName, lastName FROM people WHERE age < 30")
     young.foreach(r => println(r))
 
     // nested JSON results in fields that have compound names, like address.state
-    val peopleAddr = spark.read.json("src/main/resources/data/notFlat.json")
+    val peopleAddr = spark.read.json("src/main/resource/data/notFlat.json")
     peopleAddr.printSchema()
     peopleAddr.foreach(r => println(r))
     peopleAddr.createOrReplaceTempView("peopleAddr")
@@ -31,12 +31,12 @@ object JSON {
 
     // interesting characters in field names lead to problems with querying, as Spark SQL
     // has no quoting mechanism for identifiers
-    val peopleAddrBad = spark.read.json("src/main/resources/data/notFlatBadFieldName.json")
+    val peopleAddrBad = spark.read.json("src/main/resource/data/notFlatBadFieldName.json")
     peopleAddrBad.printSchema()
 
     // instead read the JSON in as an RDD[String], do necessary string
     // manipulations (example below is simplistic) and then turn it into a Schema RDD
-    val lines = spark.read.textFile("src/main/resources/data/notFlatBadFieldName.json")
+    val lines = spark.read.textFile("src/main/resource/data/notFlatBadFieldName.json")
     val linesFixed = lines.map(s => s.replaceAllLiterally("$", ""))
     val peopleAddrFixed = spark.read.json(linesFixed)
     peopleAddrFixed.printSchema()

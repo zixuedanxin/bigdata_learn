@@ -35,7 +35,7 @@ object CustomPartitioner {
     val sc = new SparkContext(conf)
 
     val triplets =
-      for (x <- 1 to 3; y <- 1 to 20; z <- 'a' to 'd')
+      for (x <- 1 to 3; y <- 1 to 3; z <- 'a' to 'c')
       yield ((x, y, z), x * y)
 
     // Spark has the good sense to use the first tuple element
