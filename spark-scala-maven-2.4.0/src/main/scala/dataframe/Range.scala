@@ -16,7 +16,7 @@ object Range {
         .appName("DataFrame-Range")
         .master("local[4]")
         .getOrCreate()
-
+    spark.sparkContext.setLogLevel("WARN")
     println("*** dense range with default partitioning")
     val df1 = spark.range(10, 14)
     df1.show()

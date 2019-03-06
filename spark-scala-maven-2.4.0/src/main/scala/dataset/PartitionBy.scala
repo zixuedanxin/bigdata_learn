@@ -54,7 +54,7 @@ object PartitionBy {
         // set the parallelism to emphasize the impact of partitioning
         .config("spark.default.parallelism", 12)
         .getOrCreate()
-
+    spark.sparkContext.setLogLevel("WARN")
     utils.PartitionedTableHierarchy.deleteRecursively(new File(exampleRoot))
 
     import spark.implicits._

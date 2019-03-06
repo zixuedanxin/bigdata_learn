@@ -37,7 +37,10 @@ object Transform {
 
     // get the columns, having applied the UDF to the "discount" column and leaving the others as they were
     val colNames = customerDF.columns
+    println(colNames.mkString("-"))
     val cols = colNames.map(cName => customerDF.col(cName))
+    cols.foreach(println)
+    println(cols.mkString("-"))
     val theColumn = customerDF("discount")
     // I'd like to find a "better" way to match the column but this works.
     // Use as() to give the column a new name just because we can!

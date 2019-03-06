@@ -11,7 +11,7 @@ object DropDuplicates {
         .getOrCreate()
 
     import spark.implicits._
-
+spark.sparkContext.setLogLevel("WARN")
     // create an RDD of tuples with some data
     val custs = Seq(
       (1, "Widget Co", 120000.00, 0.00, "AZ"),
@@ -23,21 +23,14 @@ object DropDuplicates {
       (6, "Widget Co", 12000.00, 10.00, "AZ")
     )
     val customerRows = spark.sparkContext.parallelize(custs, 4)
-
     // convert RDD of tuples to DataFrame by supplying column names
     val customerDF = customerRows.toDF("id", "name", "sales", "discount", "state")
-
     println("*** Here's the whole DataFrame with duplicates")
-
     customerDF.printSchema()
-
     customerDF.show()
-
     // drop fully identical rows
     val withoutDuplicates = customerDF.dropDuplicates()
-
     println("*** Now without duplicates")
-
     withoutDuplicates.show()
 
     // drop fully identical rows

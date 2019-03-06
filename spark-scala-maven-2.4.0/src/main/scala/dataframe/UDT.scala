@@ -24,37 +24,37 @@ import org.apache.spark.sql.types._
 /** *** SPECIAL NOTE ***
   * This feature has been removed in Spark 2.0.0 -- please see
   * https://issues.apache.org/jira/browse/SPARK-14155
-
-@SQLUserDefinedType(udt = classOf[MyPoint3DUDT])
+**/
+//@SQLUserDefinedType(udt = classOf[MyPoint3DUDT])
 private case class MyPoint3D(x: Double, y: Double, z: Double)
 
 //
 // The UDT definition for 3D points: basically how to serialize and deserialize.
 //
 
-private class MyPoint3DUDT extends UserDefinedType[MyPoint3D] {
-  override def sqlType: DataType = ArrayType(DoubleType, containsNull = false)
-
-  override def serialize(obj: Any): ArrayData = {
-    obj match {
-      case features: MyPoint3D =>
-        new GenericArrayData(Array(features.x, features.y, features.z))
-    }
-  }
-
-  override def deserialize(datum: Any): MyPoint3D = {
-    datum match {
-      case data: ArrayData if data.numElements() == 3 => {
-        val arr = data.toDoubleArray()
-        new MyPoint3D(arr(0), arr(1), arr(2))
-      }
-    }
-  }
-
-  override def userClass: Class[MyPoint3D] = classOf[MyPoint3D]
-
-  override def asNullable: MyPoint3DUDT = this
-}
+//private class MyPoint3DUDT extends UserDefinedType[MyPoint3D] {
+//  override def sqlType: DataType = ArrayType(DoubleType, containsNull = false)
+//
+//  override def serialize(obj: Any): ArrayData = {
+//    obj match {
+//      case features: MyPoint3D =>
+//        new GenericArrayData(Array(features.x, features.y, features.z))
+//    }
+//  }
+//
+//  override def deserialize(datum: Any): MyPoint3D = {
+//    datum match {
+//      case data: ArrayData if data.numElements() == 3 => {
+//        val arr = data.toDoubleArray()
+//        new MyPoint3D(arr(0), arr(1), arr(2))
+//      }
+//    }
+//  }
+//
+//  override def userClass: Class[MyPoint3D] = classOf[MyPoint3D]
+//
+//  override def asNullable: MyPoint3DUDT = this
+//}
 
 object UDT {
 
@@ -103,4 +103,3 @@ object UDT {
 
 }
 
-**/

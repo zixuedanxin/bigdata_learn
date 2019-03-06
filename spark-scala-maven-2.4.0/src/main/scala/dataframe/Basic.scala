@@ -19,7 +19,7 @@ object Basic {
         .getOrCreate()
 
     import spark.implicits._
-
+    spark.sparkContext.setLogLevel("WARN")
     // create a sequence of case class objects
     // (we defined the case class above)
     val custs = Seq(
@@ -55,6 +55,7 @@ object Basic {
     println("*** use filter() to choose rows")
 
     customerDF.filter($"state".equalTo("CA")).show()
+    customerDF.filter("state='CA'").show()
 
   }
 }

@@ -2,6 +2,7 @@ package dataframe
 
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions._
+import org.apache.spark.sql.types.DataTypes
 
 object Select {
 
@@ -13,7 +14,7 @@ object Select {
         .appName("DataFrame-Select")
         .master("local[4]")
         .getOrCreate()
-
+  //spark.sparkContext.setLogLevel("WARN")
     import spark.implicits._
 
     // create an RDD with some data
@@ -69,5 +70,17 @@ object Select {
     println("*** use rand() to add random numbers between 0.0 and 1.0 inclusive ")
 
     customerDF.select($"id", rand().as("r")).show()
+    customerDF.select(col("*"),
+          udf{
+            (e:Int) =>
+                    if(e >3) {
+                         1
+                       } else {
+                          2
+                      }
+            }.apply(customerDF("id")).cast(DataTypes.DoubleType).as("rsrp_udf")
+         ).show
+    customerDF.withColumn("id", $"discount"*2).show
   }
+
 }

@@ -19,7 +19,7 @@ object DateTime {
         .getOrCreate()
 
     import spark.implicits._
-
+    spark.sparkContext.setLogLevel("WARN")
     val schema = StructType(
       Seq(
         StructField("id", IntegerType, true),
@@ -65,6 +65,12 @@ object DateTime {
                       trunc($"dt", "MM")).show()
 
     println("Date formatting")
+
+
+
+
+
+
     tdf.select($"dt", date_format($"dt", "MMM dd, YYYY")).show()
 
     println("Pull a Timestamp type apart when querying")

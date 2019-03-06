@@ -68,7 +68,7 @@ object Ex6_Accumulators {
   def main(args: Array[String]) {
     val conf = new SparkConf().setAppName("Ex6_Accumulators").setMaster("local[4]")
     val sc = new SparkContext(conf)
-
+    sc.setLogLevel("WARN")
     // an RDD containing names
     val words = sc.parallelize(Seq("Fred", "Bob", "Francis",
       "James", "Frederick", "Frank", "Joseph"), 4)

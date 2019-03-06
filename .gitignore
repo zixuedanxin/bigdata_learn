@@ -5,6 +5,7 @@ target/
 artifacts/
 .idea/
 .idea/*
+spark-scala-maven-2.4.0/.idea/
 metastore_db/
 spark-warehouse/
 

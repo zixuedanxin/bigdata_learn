@@ -11,7 +11,7 @@ object DropColumns {
         .getOrCreate()
 
     import spark.implicits._
-
+    spark.sparkContext.setLogLevel("WARN")
     // create an RDD of tuples with some data
     val custs = Seq(
       (1, "Widget Co", 120000.00, 0.00, "AZ"),

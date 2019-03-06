@@ -15,7 +15,7 @@ object Basic {
         .getOrCreate()
 
     import spark.implicits._
-
+    spark.sparkContext.setLogLevel("WARN")
     // Create a tiny Dataset of integers
     val s = Seq(10, 11, 12, 13, 14, 15)
     val ds = s.toDS()
@@ -41,7 +41,8 @@ object Basic {
 
     val tuples = Seq((1, "one", "un"), (2, "two", "deux"), (3, "three", "trois"))
     val tupleDS = tuples.toDS()
-
+    println("*** only one column, and it always has the same name")
+    tupleDS.columns.foreach(println(_))
     println("*** Tuple Dataset types")
     tupleDS.dtypes.foreach(println(_))
 

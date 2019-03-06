@@ -18,7 +18,7 @@ object ComplexSchema {
         .getOrCreate()
 
     import spark.implicits._
-
+    spark.sparkContext.setLogLevel("WARN")
     //
     // Example 1: nested StructType for nested rows
     //

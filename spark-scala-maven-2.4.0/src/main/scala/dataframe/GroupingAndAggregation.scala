@@ -17,7 +17,7 @@ object GroupingAndAggregation {
         .getOrCreate()
 
     import spark.implicits._
-
+    spark.sparkContext.setLogLevel("WARN")
     // create a sequence of case class objects
     // (we defined the case class above)
     val custs = Seq(
@@ -73,7 +73,6 @@ object GroupingAndAggregation {
 
     println("*** Sort-of a user-defined aggregation function")
     customerDF.groupBy("state").agg($"state", stddevFunc($"discount")).show()
-
     // there are some special short cuts on GroupedData to aggregate
     // all numeric columns
     println("*** Aggregation short cuts")

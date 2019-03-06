@@ -28,7 +28,7 @@ object ComplexType {
         .appName("Dataset-ComplexType")
         .master("local[4]")
         .getOrCreate()
-
+    spark.sparkContext.setLogLevel("WARN")
     import spark.implicits._
 
     //

@@ -18,7 +18,7 @@ object CaseClass {
         .appName("Dataset-CaseClass")
         .master("local[4]")
         .getOrCreate()
-
+     spark.sparkContext.setLogLevel("WARN")
     import spark.implicits._
 
     val numbers = Seq(

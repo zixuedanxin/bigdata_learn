@@ -25,7 +25,7 @@ object Ex5_Partitions {
   def main(args: Array[String]) {
     val conf = new SparkConf().setAppName("Ex5_Partitions").setMaster("local[4]")
     val sc = new SparkContext(conf)
-
+     sc.setLogLevel("WARN")
     // look at the distribution of numbers across partitions
     val numbers =  sc.parallelize(1 to 100, 4)
     println("original RDD:")
