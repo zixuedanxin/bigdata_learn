@@ -84,11 +84,11 @@ object PageViewGenerator {
   def main(args: Array[String]) {
     if (args.length != 2) {
       System.err.println("Usage: PageViewGenerator <port> <viewsPerSecond>")
-      System.exit(1)
+     // System.exit(1)
     }
-    val port = args(0).toInt
-    val viewsPerSecond = args(1).toFloat
-    val sleepDelayMs = (1000.0 / viewsPerSecond).toInt
+    val port =3000// args(0).toInt
+    val viewsPerSecond =0.5 //args(1).toFloat
+    val sleepDelayMs = 10000//(1000.0 / viewsPerSecond).toInt
     val listener = new ServerSocket(port)
     println("Listening on port: " + port)
 
@@ -101,7 +101,9 @@ object PageViewGenerator {
 
           while (true) {
             Thread.sleep(sleepDelayMs)
-            out.write(getNextClickEvent())
+            val tp=getNextClickEvent()
+            println(tp)
+            out.write(tp)
             out.flush()
           }
           socket.close()

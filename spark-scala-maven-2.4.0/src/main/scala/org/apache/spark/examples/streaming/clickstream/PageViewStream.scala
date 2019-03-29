@@ -40,17 +40,18 @@ object PageViewStream {
       System.err.println("Usage: PageViewStream <metric> <host> <port>")
       System.err.println("<metric> must be one of pageCounts, slidingPageCounts," +
                          " errorRatePerZipCode, activeUserCount, popularUsersSeen")
-      System.exit(1)
+      // System.exit(1)
     }
     StreamingExamples.setStreamingLogLevels()
-    val metric = args(0)
-    val host = args(1)
-    val port = args(2).toInt
+    val metric = "slidingPageCounts" //args(0)
+    val host = "localhost"//args(1)
+    val port =3000// args(2).toInt
 
     // Create the context
-    val ssc = new StreamingContext("local[2]", "PageViewStream", Seconds(1),
+    val ssc = new StreamingContext("local[2]", "PageViewStream", Seconds(10),
       System.getenv("SPARK_HOME"), StreamingContext.jarOfClass(this.getClass).toSeq)
-
+      ssc.sparkContext.setLogLevel("ERROR")
+    ssc.checkpoint("/tmp/hua")
     // Create a ReceiverInputDStream on target host:port and convert each line to a PageView
     val pageViews = ssc.socketTextStream(host, port)
                        .flatMap(_.split("\n"))
@@ -61,11 +62,11 @@ object PageViewStream {
 
     // Return a sliding window of page views per URL in the last ten seconds
     val slidingPageCounts = pageViews.map(view => view.url)
-                                     .countByValueAndWindow(Seconds(10), Seconds(2))
+                                     .countByValueAndWindow(Seconds(100), Seconds(20))
 
 
     // Return the rate of error pages (a non 200 status) in each zip code over the last 30 seconds
-    val statusesPerZipCode = pageViews.window(Seconds(30), Seconds(2))
+    val statusesPerZipCode = pageViews.window(Seconds(300), Seconds(20))
                                       .map(view => ((view.zipCode, view.status)))
                                       .groupByKey()
     val errorRatePerZipCode = statusesPerZipCode.map{
@@ -81,7 +82,7 @@ object PageViewStream {
     }
 
     // Return the number unique users in last 15 seconds
-    val activeUserCount = pageViews.window(Seconds(15), Seconds(2))
+    val activeUserCount = pageViews.window(Seconds(150), Seconds(20))
                                    .map(view => (view.userID, 1))
                                    .groupByKey()
                                    .count()
