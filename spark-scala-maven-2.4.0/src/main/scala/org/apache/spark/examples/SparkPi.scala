@@ -18,19 +18,21 @@
 // scalastyle:off println
 package org.apache.spark.examples
 
-import scala.math.random
+import java.util.Date
 
+import scala.math.random
 import org.apache.spark.sql.SparkSession
 
 /** Computes an approximation to pi */
 object SparkPi {
   def main(args: Array[String]) {
+    var start_time =new Date().getTime
     val spark = SparkSession
       .builder
       .appName("Spark Pi").master("local")
       .getOrCreate()
-    val slices = if (args.length > 0) args(0).toInt else 20
-    val n = math.min(100000L * slices, Int.MaxValue).toInt // avoid overflow
+    val slices = if (args.length > 0) args(0).toInt else 10
+    val n = math.min(1000000L * slices, Int.MaxValue).toInt // avoid overflow
     val count = spark.sparkContext.parallelize(1 until n, slices).map { i =>
       val x = random * 2 - 1
       val y = random * 2 - 1
@@ -38,6 +40,8 @@ object SparkPi {
     }.reduce(_ + _)
     println("Pi is roughly " + 4.0 * count / (n - 1))
     spark.stop()
+    var end_time =new Date().getTime
+    println(end_time-start_time) //单位毫秒
   }
 }
 // scalastyle:on println
