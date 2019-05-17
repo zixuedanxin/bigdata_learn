@@ -34,7 +34,7 @@ object PageRankExample {
   def main(args: Array[String]): Unit = {
     // Creates a SparkSession.
     val spark = SparkSession
-      .builder
+      .builder.master("local[2]")
       .appName(s"${this.getClass.getSimpleName}")
       .getOrCreate()
     val sc = spark.sparkContext
@@ -44,6 +44,7 @@ object PageRankExample {
     val graph = GraphLoader.edgeListFile(sc, "data/graphx/followers.txt")
     // Run PageRank
     val ranks = graph.pageRank(0.0001).vertices
+    ranks.foreach(println)
     // Join the ranks with the usernames
     val users = sc.textFile("data/graphx/users.txt").map { line =>
       val fields = line.split(",")

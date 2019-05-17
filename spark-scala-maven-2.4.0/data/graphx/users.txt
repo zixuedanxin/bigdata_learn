@@ -2,6 +2,7 @@
 2,ladygaga,Goddess of Love
 3,jeresig,John Resig
 4,justinbieber,Justin Bieber
+5,xuzh,xzh
 6,matei_zaharia,Matei Zaharia
 7,odersky,Martin Odersky
 8,anonsys

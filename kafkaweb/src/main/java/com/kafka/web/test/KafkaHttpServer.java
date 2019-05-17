@@ -50,48 +50,49 @@ public class KafkaHttpServer {
         router.route().handler(BodyHandler.create());
         String authFilePath=System.getProperty("user.dir")+ "/auths.csv";
         Map authMap = readAuth(authFilePath);
-        router.route("/logs").handler(ctx -> {
+        router.route("/logs/:topic").handler(ctx -> {
             String tp = ctx.getBodyAsString();//ctx.request().params().toString();
             //LOG.info(tp);
             String topic = ctx.request().getParam("topic");
             String ip = ctx.request().remoteAddress().host();
             String authip=ip.trim() + topic.trim();
-            if (authMap.containsKey(authip) || readAuth(authFilePath).containsKey(authip)) {
-                if (tp.length() > 9) {
-                    try {
-                        JSONObject json = JSONObject.parseObject(tp);
-                        if (json.containsKey("data")) {
-                            json.getJSONArray("data");
-                            String[] messages = new String[1];
-                            messages[0] = tp; //json.getString("data");
-    //                        JSONArray jsonArray = json.getJSONArray("data");
-    //                        String[] messages = new String[jsonArray.size()];
-    //                        for (int i = 0; i < jsonArray.size(); i++) {
-    //                            JSONObject message = jsonArray.getJSONObject(i);
-    //                            // message.put("post_ip", ip);
-    //                            messages[i] = message.toString();
-    //                        }
-                            sendMessages(sender, ctx, topic, messages);
-                            messages=null;
-                        } else {
-                            LOG.info(tp);
-                            LOG.error("json格式不对，需要{'data':{XXXX}}");
-                            error(ctx.response(),"json格式不对，格式{\"data\":[{rs1},{rs2}]}");
-                        }
-                        json=null;
-                    } catch (Exception e) {
-                        LOG.info(tp);
-                        LOG.error(e.getMessage());
-                        error(ctx.response(), e.getMessage());
-                    }
-                }
-            }else {
-                LOG.error("无操作权限："+authip);
-                error(ctx.response(), "no auth to send message for:"+authip);
-            }
-            tp=null;
-            ip=null;
-            authip=null;
+            System.out.println(tp);
+            System.out.println(topic);
+            ok(ctx.response(), "null data");
+//            if (authMap.containsKey(authip) || readAuth(authFilePath).containsKey(authip)) {
+//                if (tp.length() > 9) {
+//                    try {
+//                        JSONObject json = JSONObject.parseObject(tp);
+//                        if (json.containsKey("data")) {
+//                            json.getJSONArray("data");
+//                            String[] messages = new String[1];
+//                            messages[0] = tp; //json.getString("data");
+//    //                        JSONArray jsonArray = json.getJSONArray("data");
+//    //                        String[] messages = new String[jsonArray.size()];
+//    //                        for (int i = 0; i < jsonArray.size(); i++) {
+//    //                            JSONObject message = jsonArray.getJSONObject(i);
+//    //                            // message.put("post_ip", ip);
+//    //                            messages[i] = message.toString();
+//    //                        }
+//                            sendMessages(sender, ctx, topic, messages);
+//                            //messages=null;
+//                        } else {
+//                            LOG.info(tp);
+//                            LOG.error("json格式不对，需要{'data':{XXXX}}");
+//                            error(ctx.response(),"json格式不对，格式{\"data\":[{rs1},{rs2}]}");
+//                        }
+//                        //json=null;
+//                    } catch (Exception e) {
+//                        LOG.info(tp);
+//                        LOG.error(e.getMessage());
+//                        error(ctx.response(), e.getMessage());
+//                    }
+//                }
+//            }else {
+//                LOG.error("无操作权限："+authip);
+//                error(ctx.response(), "no auth to send message for:"+authip);
+//            }
+
         });
 
         server.requestHandler(router::accept).listen(port, result -> {
@@ -143,15 +144,35 @@ public class KafkaHttpServer {
      * @param cachePath cachePath
      */
     private void cacheLocal(String message, String cachePath) {
+
+        BufferedWriter bw = null;
+        FileWriter fileWriter = null;
         try {
-            FileWriter fileWriter = new FileWriter(cachePath, true);
-            BufferedWriter bw = new BufferedWriter(fileWriter);
+            fileWriter = new FileWriter(cachePath, true);
+            bw = new BufferedWriter(fileWriter);
             bw.write(message);
             bw.newLine();
             bw.flush();
             bw.close();
+            fileWriter.close();
         } catch (IOException e) {
             e.printStackTrace();
+            if (bw != null) {
+                try {
+                    bw.close();
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                    bw = null;
+                }
+            }
+            if (fileWriter !=null) {
+                try {
+                    fileWriter.close();
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                    fileWriter = null;
+                }
+            }
         }
     }
 
@@ -172,15 +193,15 @@ public class KafkaHttpServer {
                     LOG.info(str);
                     String topic = str.split("\\.")[0];
                     String filepath =path +"/"+ str;
+                    BufferedReader reader =null;
                     try {
-                        BufferedReader reader = new BufferedReader(new FileReader(path +"/"+ str));
+                        reader = new BufferedReader(new FileReader(path +"/"+ str));
                         while ((message = reader.readLine()) != null) {
                             sender.send(topic, message, (metadata, exception) -> {
                                 if (metadata != null) {
                                     LOG.info("缓存的备份数据正在一条一条的插入kafka中");
                                 } else {
                                     //程序错误重新运行
-//                                    exception.printStackTrace();
                                     LOG.error("kafka连接异常为：===> 10分钟后会自动重试，" + exception.getMessage(), exception);
                                     deleteFile = false;
                                 }
@@ -194,12 +215,22 @@ public class KafkaHttpServer {
                         reader.close();
                     } catch (IOException e) {
                         e.printStackTrace();
+                        if(reader!=null) {
+                            try {
+                                reader.close();
+                            } catch (IOException e1) {
+                                e1.printStackTrace();
+                                reader = null;
+                            }
+                        }
                     }
                 }
             } else {
                 LOG.info("缓存目录中没有备份文件");
             }
         }
+        sender.close();
+        file=null;
     }
 
     private static void deleteFile(String filePath) {
@@ -210,21 +241,32 @@ public class KafkaHttpServer {
         }else{
             LOG.info("删除文件失败" + filePath );
         }
+        file=null;
     }
 
     private static Map<String,String> readAuth(String path) {
         Map<String,String> map = new HashMap<>();
+        BufferedReader reader=null;
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(path));//你的文件名
+            reader = new BufferedReader(new FileReader(path));//你的文件名
             reader.readLine();//第一行信息，为标题信息，不用,如果需要，注释掉
             String line;
             while ((line = reader.readLine()) != null) {
                 String item[] = line.split(",");//CSV格式文件为逗号分隔符文件，这里根据逗号切分
                 map.put(item[0].trim() + item[1].trim(), "true");
             }
+            reader.close();
             return map;
         } catch (Exception e) {
             e.printStackTrace();
+            if (reader!=null){
+                try {
+                    reader.close();
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                    reader=null;
+                }
+            }
             return map;
         }
     }
@@ -238,10 +280,10 @@ public class KafkaHttpServer {
             @Override
             public void run() {
                 // appkeys.addAll(getAppkeys());
-                LOG.info("同步备份文件上的数据(每隔十分钟)");
+                LOG.info("同步备份文件上的数据(每隔60分钟)");
                 sendToKafka(Configuration.conf.getString("webbase.backup.dir"));
             }
-        }, 0L, 10 * 60 * 1000L);
+        }, 0L, 60 * 60 * 1000L);
 
         try {
             int port = Configuration.conf.getInt("server.port");

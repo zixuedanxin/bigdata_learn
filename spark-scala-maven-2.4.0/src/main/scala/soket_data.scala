@@ -16,24 +16,23 @@
  */
 
 // scalastyle:off println
-package org.apache.spark.examples.streaming.clickstream
-
 import java.io.PrintWriter
 import java.net.ServerSocket
-import java.util.Random
+import java.text.SimpleDateFormat
+import java.util.{Date, Random}
 
 /** Represents a page view on a website with associated dimension data. */
-class PageView(val url: String, val status: Int, val zipCode: Int, val userID: Int)
+class PageView(val url: String, val status: Int, val zipCode: Int, val userID: Int,val oper_dtm:String)
     extends Serializable {
   override def toString(): String = {
-    "%s\t%s\t%s\t%s\n".format(url, status, zipCode, userID)
+    "%s\t%s\t%s\t%s\t%s\n".format(url, status, zipCode, userID,oper_dtm)
   }
 }
 
 object PageView extends Serializable {
   def fromString(in: String): PageView = {
     val parts = in.split("\t")
-    new PageView(parts(0), parts(1).toInt, parts(2).toInt, parts(3).toInt)
+    new PageView(parts(0), parts(1).toInt, parts(2).toInt, parts(3).toInt,parts(4).toString)
   }
 }
 
@@ -51,9 +50,9 @@ object PageView extends Serializable {
  *
  */
 // scalastyle:on
-object PageViewGenerator {
+object soket_data {
   val pages = Map("foo.com" -> .7,
-                  "baidu.com" -> 0.2,
+                  "baidu.com" -> .2,
                   "qq.com" -> .1)
   val httpStatus = Map(200 -> .95,
                        404 -> .05)
@@ -78,17 +77,18 @@ object PageViewGenerator {
     val page = pickFromDistribution(pages)
     val status = pickFromDistribution(httpStatus)
     val zipCode = pickFromDistribution(userZipCode)
-    new PageView(page, status, zipCode, id).toString()
+    val oper_dtm=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date)
+    new PageView(page, status, zipCode, id,oper_dtm).toString()
   }
 
   def main(args: Array[String]) {
-    if (args.length != 2) {
-      System.err.println("Usage: PageViewGenerator <port> <viewsPerSecond>")
-     // System.exit(1)
-    }
+//    if (args.length != 2) {
+//      //System.err.println("Usage: PageViewGenerator <port> <viewsPerSecond>")
+//     // System.exit(1)
+//    }
     val port =3000// args(0).toInt
     val viewsPerSecond =0.5 //args(1).toFloat
-    val sleepDelayMs = 10000//(1000.0 / viewsPerSecond).toInt
+    val sleepDelayMs = 10000//(1000.0 / viewsPerSecond).toInt 10000表示10秒
     val listener = new ServerSocket(port)
     println("Listening on port: " + port)
 
@@ -100,6 +100,7 @@ object PageViewGenerator {
           val out = new PrintWriter(socket.getOutputStream(), true)
 
           while (true) {
+            print("新增：")
             Thread.sleep(sleepDelayMs)
             val tp=getNextClickEvent()
             println(tp)

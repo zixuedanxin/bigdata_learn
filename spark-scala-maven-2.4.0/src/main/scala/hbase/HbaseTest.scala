@@ -21,9 +21,9 @@ class HbaseTest {
     */
   @Test
   def createTable(): Unit = {
-        val list = List("family1", "family2")
+        val list = List("cf", "cf1")
    // val list = List("family1")
-    hBaseUtils.createTable(admin, "test3", list)
+    hBaseUtils.createTable(admin, "applogs", list)
   }
 
   /**

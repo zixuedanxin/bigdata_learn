@@ -37,6 +37,38 @@ public class KafkaHttpServer {
                 .encode());
     }
 
+    private void process(RoutingContext ctx,KafkaProducerWrapper sender,Map authMap,String authFilePath){
+        String tp = ctx.getBodyAsString();//ctx.request().params().toString();
+        //LOG.info(tp);
+        String topic = ctx.request().getParam("topic");
+        String ip = ctx.request().remoteAddress().host();
+        String authip=ip.trim() + topic.trim();
+        if (authMap.containsKey(authip) || readAuth(authFilePath).containsKey(authip)) {
+            if (tp.length() > 9) {
+                try {
+                    JSONObject json = JSONObject.parseObject(tp);
+                    if (json.containsKey("data")) {
+                        json.getJSONArray("data");
+                        String[] messages = new String[1];
+                        messages[0] = tp;
+                        sendMessages(sender, ctx, topic, messages);
+                    } else {
+                        LOG.info(tp);
+                        LOG.error("json格式不对，需要{'data':{XXXX}}");
+                        error(ctx.response(),"json格式不对，格式{\"data\":[{rs1},{rs2}]}");
+                    }
+                } catch (Exception e) {
+                    LOG.info(tp);
+                    LOG.error(e.getMessage());
+                    error(ctx.response(), e.getMessage());
+                }
+            }
+        }else {
+            LOG.error("无操作权限："+authip);
+            error(ctx.response(), "no auth to send message for:"+authip);
+        }
+    }
+
     private void startService(int port) {
         KafkaProducerWrapper sender = new KafkaProducerWrapper();
         Vertx vertx = Vertx.vertx();
@@ -46,49 +78,48 @@ public class KafkaHttpServer {
         String authFilePath=System.getProperty("user.dir")+ "/auths.csv";
         Map authMap = readAuth(authFilePath);
         router.route("/logs").handler(ctx -> {
-            String tp = ctx.getBodyAsString();//ctx.request().params().toString();
-            //LOG.info(tp);
-            String topic = ctx.request().getParam("topic");
-            String ip = ctx.request().remoteAddress().host();
-            String authip=ip.trim() + topic.trim();
-            if (authMap.containsKey(authip) || readAuth(authFilePath).containsKey(authip)) {
-                if (tp.length() > 9) {
-                    try {
-                        JSONObject json = JSONObject.parseObject(tp);
-                        if (json.containsKey("data")) {
-                            json.getJSONArray("data");
-                            String[] messages = new String[1];
-                            messages[0] = tp; //json.getString("data");
-    //                        JSONArray jsonArray = json.getJSONArray("data");
-    //                        String[] messages = new String[jsonArray.size()];
-    //                        for (int i = 0; i < jsonArray.size(); i++) {
-    //                            JSONObject message = jsonArray.getJSONObject(i);
-    //                            // message.put("post_ip", ip);
-    //                            messages[i] = message.toString();
-    //                        }
-                            sendMessages(sender, ctx, topic, messages);
-                            //messages=null;
-                        } else {
-                            LOG.info(tp);
-                            LOG.error("json格式不对，需要{'data':{XXXX}}");
-                            error(ctx.response(),"json格式不对，格式{\"data\":[{rs1},{rs2}]}");
-                        }
-                        //json=null;
-                    } catch (Exception e) {
-                        LOG.info(tp);
-                        LOG.error(e.getMessage());
-                        error(ctx.response(), e.getMessage());
-                    }
-                }
-            }else {
-                LOG.error("无操作权限："+authip);
-                error(ctx.response(), "no auth to send message for:"+authip);
-            }
-            //tp=null;
-            //ip=null;
-            //authip=null;
-        });
+            process(ctx,sender,authMap,authFilePath);
+//            String tp = ctx.getBodyAsString();//ctx.request().params().toString();
+//            //LOG.info(tp);
+//            String topic = ctx.request().getParam("topic");
+//            String ip = ctx.request().remoteAddress().host();
+//            String authip=ip.trim() + topic.trim();
+//            if (authMap.containsKey(authip) || readAuth(authFilePath).containsKey(authip)) {
+//                if (tp.length() > 9) {
+//                    try {
+//                        JSONObject json = JSONObject.parseObject(tp);
+//                        if (json.containsKey("data")) {
+//                            json.getJSONArray("data");
+//                            String[] messages = new String[1];
+//                            messages[0] = tp; //json.getString("data");
+//    //                        JSONArray jsonArray = json.getJSONArray("data");
+//    //                        String[] messages = new String[jsonArray.size()];
+//    //                        for (int i = 0; i < jsonArray.size(); i++) {
+//    //                            JSONObject message = jsonArray.getJSONObject(i);
+//    //                            // message.put("post_ip", ip);
+//    //                            messages[i] = message.toString();
+//    //                        }
+//                            sendMessages(sender, ctx, topic, messages);
+//                            //messages=null;
+//                        } else {
+//                            LOG.info(tp);
+//                            LOG.error("json格式不对，需要{'data':{XXXX}}");
+//                            error(ctx.response(),"json格式不对，格式{\"data\":[{rs1},{rs2}]}");
+//                        }
+//                        //json=null;
+//                    } catch (Exception e) {
+//                        LOG.info(tp);
+//                        LOG.error(e.getMessage());
+//                        error(ctx.response(), e.getMessage());
+//                    }
+//                }
+//            }else {
+//                LOG.error("无操作权限："+authip);
+//                error(ctx.response(), "no auth to send message for:"+authip);
+//            }
 
+        });
+        router.route("/logs/:topic").handler(ctx -> process(ctx, sender, authMap, authFilePath));
         server.requestHandler(router::accept).listen(port, result -> {
             if (result.succeeded()) {
                 LOG.info("listen on port:{0}", String.valueOf(port));

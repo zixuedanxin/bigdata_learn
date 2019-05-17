@@ -36,8 +36,6 @@ public class Counter {
             double maxMem = runtime.maxMemory() * 1.0 / 1024 / 1024;
             double freeMem = runtime.freeMemory() * 1.0 / 1024 / 1024;
             LOG.info("{0}:Message/S, {1}:MBytes/S", rps, mbps);
-            //LOG.info("{0}:Message/S, {1}:MBytes/S", messages.get() * 1000.0 / time, (bytes.get() * 1000.0 / 1024.0 / 1024.0) / time);
-            //LOG.info("totalMem:{0}MB maxMem:{1}MB freeMem:{2}MB", runtime.totalMemory() * 1.0 / 1024 / 1024, runtime.maxMemory() * 1.0 / 1024 / 1024, runtime.freeMemory() * 1.0 / 1024 / 1024);
             LOG.info("totalMem:{0}MB maxMem:{1}MB freeMem:{2}MB", totalMem, maxMem, freeMem);
             reset();
         });
