@@ -149,6 +149,8 @@
       <change afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/standalone/wordcount/spark/session/WorldCount.scala" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/standalone/wordcount/spark/session/WorldCount2.scala" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/standalone/wordcount/spark/session/WorldCountSaveHDFS.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/recommand/als/OnlineRecommender.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/recommand/colfliter/sparkUtils.scala" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/scala/hbase/HbaseTest.scala" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/scala/hbase/HbaseUtils.scala" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/scala/hbase/insert.scala" afterDir="false" />
@@ -687,84 +689,136 @@
     <session id="1115653753">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="24" />
+          <entry key="project.closed" value="25" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.44" value="4" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.47" value="1" />
-          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.53" value="1" />
           <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.74" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.opened" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="31" />
+          <entry key="class" value="33" />
           <entry key="conf" value="1" />
           <entry key="crc" value="1" />
-          <entry key="java" value="9" />
+          <entry key="java" value="16" />
           <entry key="json" value="1" />
           <entry key="log" value="1" />
-          <entry key="md" value="7" />
+          <entry key="md" value="8" />
           <entry key="mdj" value="1" />
+          <entry key="part-00000" value="1" />
+          <entry key="part-00001" value="1" />
           <entry key="properties" value="2" />
           <entry key="py" value="5" />
           <entry key="sc" value="1" />
-          <entry key="scala" value="335" />
-          <entry key="txt" value="6" />
-          <entry key="xml" value="9" />
+          <entry key="scala" value="449" />
+          <entry key="txt" value="10" />
+          <entry key="xml" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="31" />
+          <entry key="CLASS" value="33" />
           <entry key="HOCON" value="1" />
-          <entry key="JAVA" value="9" />
+          <entry key="JAVA" value="16" />
           <entry key="JSON" value="1" />
-          <entry key="Markdown" value="7" />
-          <entry key="PLAIN_TEXT" value="14" />
+          <entry key="Markdown" value="8" />
+          <entry key="PLAIN_TEXT" value="20" />
           <entry key="Properties" value="2" />
-          <entry key="Scala" value="336" />
-          <entry key="XML" value="9" />
+          <entry key="Scala" value="450" />
+          <entry key="XML" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="java" value="16" />
           <entry key="md" value="22" />
           <entry key="properties" value="4" />
           <entry key="sc" value="7" />
-          <entry key="scala" value="2795" />
-          <entry key="txt" value="56" />
-          <entry key="xml" value="75" />
+          <entry key="scala" value="3426" />
+          <entry key="txt" value="60" />
+          <entry key="xml" value="87" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="JAVA" value="16" />
           <entry key="Markdown" value="22" />
-          <entry key="PLAIN_TEXT" value="56" />
+          <entry key="PLAIN_TEXT" value="60" />
           <entry key="Properties" value="4" />
-          <entry key="Scala" value="2802" />
-          <entry key="XML" value="75" />
+          <entry key="Scala" value="3433" />
+          <entry key="XML" value="87" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/graphx/LiveJournalPageRank.scala">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/LoadJsonWithSparkSQL.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+            <state relative-caret-position="198">
+              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/LoadKeyValueTextInput.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/PipeExample.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/SparkSQLTwitter.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/StreamingLogInput.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/WordCount.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -799,6 +853,8 @@
       <find>socket</find>
       <find>baidu</find>
       <find>\t</find>
+      <find>Jackson</find>
+      <find>jackson</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -812,44 +868,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/dataframe/Transform.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/dataframe/UDT.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/dataframe/UDAF.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/experiments/CoPartitioning.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/experiments/WindowFunctions.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/special/CustomPartitioner.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/special/HashJoin.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/special/PairRDD.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/sql/JSON.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/sql/CustomRelationProvider.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/sql/MixedJSONQuery.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/sql/OutputJSON.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/streaming/FileBased.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/experiments/scriptFile.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/experiments/AdClickedStreamingStats.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/streaming/StreamingExamples.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/streaming/clickstream/PageViewStream.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/sql/SparkSQLExample.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/streaming/structured/Basic.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/SparkStreamingDemo/FileWordCount.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/SparkStreamingDemo/SqlNetworkWordCount.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/LogParser.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/kafkaDemo/KafkaOffsetManager.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/kafkaDemo/SparkDirectStreaming.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/streaming/StatefulWordCount.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/rdd/Ex9_Scraps.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/rdd/Ex6_Accumulators.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/dataframe/ComplexSchema.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/SparkPi.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/LocalPi.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/hbase/scriptFile.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/hbase/HBaseReadRowWriteStats.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/hbase/HBaseReadWrite.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/hbase/sparkToHbase.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/hbase/sync_mysql2hbase_prd.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/hbase/insert.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/kafkaDemo/KafkaToMongo.scala" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/scala/hbase/HbaseUtils.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/hbase/HbaseTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/streaming/structured/WebPagePopularityValueCalculator.scala" />
@@ -861,8 +879,46 @@
         <option value="$PROJECT_DIR$/src/main/scala/soket_data.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/graphx/ComprehensiveExample.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/graphx/PageRankExample.scala" />
-        <option value="$PROJECT_DIR$/data/graphx/followers.txt" />
         <option value="$PROJECT_DIR$/data/graphx/users.txt" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/BasicAvgWithKryo.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/SparkSQLTwitter.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/logs/LogAnalyzerTotal.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/recommand/colfliter/sparkUtils.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/BasicAvgFromFile.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/BasicAvgFromFiles.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/BasicIntersectByKey.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/BasicParseJson.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/BasicParseJsonWithJackson.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/BasicParseWholeFileCsv.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicAvgFromFile.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/KafkaInput.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicMapPartitions.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicAvgFromFiles.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/logs/LogAnalyzerWindowed.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicParseJsonWithJackson.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicParseWholeFileCsv.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/FlumeInput.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicSaveProtoBuf.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/ChapterSixExample.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/LoadKeyValueTextInput.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/LoadJsonWithSparkSQL.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/LoadSimpleJdbc.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/WriteSimpleDB.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicQueryCassandra.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/LoadHive.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/LoadJsonWithElephantBird.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oreilly/learningsparkexamples/java/SparkSQLTwitter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oreilly/learningsparkexamples/java/ChapterSixExample.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicAvg.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicAvgMapPartitions.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicIntersectByKey.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/rdd/Ex6_Accumulators.scala" />
+        <option value="$PROJECT_DIR$/data/graphx/followers.txt" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicLoadNums.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicParseCsv.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicParseJson.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/StreamingLogInput.scala" />
       </list>
     </option>
   </component>
@@ -895,13 +951,19 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="spark-scala-maven-2.4.0" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-          <item name="org.apache.kafka:kafka-streams:1.1.1" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+          <item name="com.typesafe.play:play_2.11:2.7.0-M1" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="spark-scala-maven-2.4.0" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-          <item name="org.apache.spark:spark-streaming-kafka-0-10_2.11:2.2.1" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+          <item name="com.datastax.spark:spark-cassandra-connector_2.10:1.0.0-rc5" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spark-scala-maven-2.4.0" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="com.datastax.spark:spark-cassandra-connector-java_2.10:1.0.0-rc5" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
         </path>
       </expand>
       <select />
@@ -922,6 +984,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -932,12 +995,37 @@
             <path>
               <item name="spark-scala-maven-2.4.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="spark-scala-maven-2.4.0" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spark-scala-maven-2.4.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="spark-scala-maven-2.4.0" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spark-scala-maven-2.4.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark-scala-maven-2.4.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spark-scala-maven-2.4.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark-scala-maven-2.4.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spark-scala-maven-2.4.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark-scala-maven-2.4.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spark-scala-maven-2.4.0" type="b2602c69:ProjectViewProjectNode" />
@@ -947,13 +1035,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558074988521" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558668691698" />
     <property name="last_opened_file_path" value="$USER_HOME$/dps/hyspark" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -967,7 +1054,12 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="rdd" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.recommand.colfliter" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/scala/com/recommand/als" />
+      <recent name="$PROJECT_DIR$/src/main/scala/com/oreilly" />
       <recent name="$PROJECT_DIR$/src/main/scala" />
     </key>
   </component>
@@ -983,13 +1075,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PageRankExample">
-    <configuration name="ComprehensiveExample" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.apache.spark.examples.graphx.ComprehensiveExample" />
+  <component name="RunManager" selected="Application.BasicParseJson">
+    <configuration name="BasicMapNoCache" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.oreilly.learningsparkexamples.scala.BasicMapNoCache" />
       <module name="spark-scala-maven-2.4.0" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.apache.spark.examples.graphx.*" />
+          <option name="PATTERN" value="com.oreilly.learningsparkexamples.scala.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -997,12 +1089,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PageRankExample" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.apache.spark.examples.graphx.PageRankExample" />
+    <configuration name="BasicMapPartitions" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.oreilly.learningsparkexamples.scala.BasicMapPartitions" />
       <module name="spark-scala-maven-2.4.0" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.apache.spark.examples.graphx.*" />
+          <option name="PATTERN" value="com.oreilly.learningsparkexamples.scala.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasicMapThenFilter" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.oreilly.learningsparkexamples.scala.BasicMapThenFilter" />
+      <module name="spark-scala-maven-2.4.0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oreilly.learningsparkexamples.scala.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasicParseCsv" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.oreilly.learningsparkexamples.scala.BasicParseCsv" />
+      <module name="spark-scala-maven-2.4.0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oreilly.learningsparkexamples.scala.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasicParseJson" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.oreilly.learningsparkexamples.scala.BasicParseJson" />
+      <module name="spark-scala-maven-2.4.0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oreilly.learningsparkexamples.scala.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1036,55 +1167,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="quick_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="streaming.structured.quick_start" />
-      <module name="spark-scala-maven-2.4.0" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="streaming.structured.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="soket_data" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="soket_data" />
-      <module name="spark-scala-maven-2.4.0" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="sparkUpdateState" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="streaming.structured.sparkUpdateState" />
-      <module name="spark-scala-maven-2.4.0" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="streaming.structured.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.insert" />
       <item itemvalue="Application.Run" />
-      <item itemvalue="Application.sparkUpdateState" />
-      <item itemvalue="Application.soket_data" />
-      <item itemvalue="Application.quick_start" />
-      <item itemvalue="Application.ComprehensiveExample" />
-      <item itemvalue="Application.PageRankExample" />
+      <item itemvalue="Application.BasicMapNoCache" />
+      <item itemvalue="Application.BasicMapPartitions" />
+      <item itemvalue="Application.BasicMapThenFilter" />
+      <item itemvalue="Application.BasicParseCsv" />
+      <item itemvalue="Application.BasicParseJson" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PageRankExample" />
-        <item itemvalue="Application.ComprehensiveExample" />
-        <item itemvalue="Application.soket_data" />
-        <item itemvalue="Application.quick_start" />
-        <item itemvalue="Application.sparkUpdateState" />
+        <item itemvalue="Application.BasicParseJson" />
+        <item itemvalue="Application.BasicParseCsv" />
+        <item itemvalue="Application.BasicMapThenFilter" />
+        <item itemvalue="Application.BasicMapPartitions" />
+        <item itemvalue="Application.BasicMapNoCache" />
       </list>
     </recent_temporary>
   </component>
@@ -1124,6 +1222,8 @@
       <workItem from="1555998547122" duration="6407000" />
       <workItem from="1557802906779" duration="31400000" />
       <workItem from="1558077838631" duration="1000" />
+      <workItem from="1558324361666" duration="18334000" />
+      <workItem from="1558661189656" duration="3446000" />
     </task>
     <servers />
   </component>
@@ -1160,12 +1260,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="262972000" />
+    <option name="totallyTimeSpent" value="284752000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1600" height="840" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22193548" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25032258" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1173,15 +1274,15 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8754839" weight="0.50359714" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.36834532" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8754839" weight="0.31654677" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3582734" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.23884892" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.12451613" side_tool="true" weight="0.52949643" />
-      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.7064516" weight="0.3856115" />
+      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.7064516" weight="0.3352518" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.3294964" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
@@ -1193,9 +1294,9 @@
       <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.22774194" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
-      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.18" />
-      <window_info anchor="right" id="Bean Validation" order="9" weight="0.32967743" />
-      <window_info anchor="right" id="Ant Build" order="10" weight="0.17741935" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.36064517" />
+      <window_info anchor="right" id="Ant Build" order="9" weight="0.17741935" />
+      <window_info anchor="right" id="Bean Validation" order="10" weight="0.32967743" />
       <window_info anchor="right" id="SciView" order="11" />
     </layout>
   </component>
@@ -1210,352 +1311,327 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hbase/hbase-common/1.2.0/hbase-common-1.2.0.jar!/org/apache/hadoop/hbase/TableName.class">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicParseWholeFileCsv.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        <state relative-caret-position="180">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hbase/hbase-client/1.2.0/hbase-client-1.2.0.jar!/org/apache/hadoop/hbase/client/Result.class">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicSaveProtoBuf.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="239" column="18" selection-start-line="239" selection-start-column="18" selection-end-line="239" selection-end-column="18" />
+        <state relative-caret-position="152">
+          <caret line="11" column="50" lean-forward="true" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hbase/hbase-client/1.2.0/hbase-client-1.2.0.jar!/org/apache/hadoop/hbase/client/BufferedMutator.class">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/ChapterSixExample.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        <state relative-caret-position="139">
+          <caret line="68" column="5" lean-forward="true" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hbase/hbase-client/1.2.0/hbase-client-1.2.0-sources.jar!/org/apache/hadoop/hbase/client/BufferedMutator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/LoadSimpleJdbc.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="95" column="7" selection-start-line="95" selection-start-column="7" selection-end-line="95" selection-end-column="7" />
+        <state relative-caret-position="94">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.2.2/spark-core_2.11-2.2.2-sources.jar!/org/apache/spark/rdd/PairRDDFunctions.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/WriteSimpleDB.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="1083" column="6" selection-start-line="1083" selection-start-column="6" selection-end-line="1083" selection-end-column="6" />
+        <state relative-caret-position="94">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.7/hadoop-mapreduce-client-core-2.7.7.jar!/org/apache/hadoop/mapred/JobConf.class">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/LoadJsonWithElephantBird.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="136" column="11" selection-start-line="136" selection-start-column="11" selection-end-line="136" selection-end-column="11" />
+        <state relative-caret-position="666">
+          <caret line="37" column="3" lean-forward="true" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/LoadHive.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/dataframe/Basic.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oreilly/learningsparkexamples/java/SparkSQLTwitter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="21" column="32" lean-forward="true" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oreilly/learningsparkexamples/java/ChapterSixExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="114" column="57" selection-end-line="247" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oreilly/learningsparkexamples/java/LoadHive.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oreilly/learningsparkexamples/java/StreamingLogInput.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oreilly/learningsparkexamples/java/logs/Flags.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/hbase/sync_mysql2hbase_prd.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="187" column="16" lean-forward="true" selection-start-line="187" selection-start-column="16" selection-end-line="187" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oreilly/learningsparkexamples/java/logs/Renderer.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="205" selection-start-line="205" selection-end-line="205" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/module/jackson-module-scala_2.11/2.6.5/jackson-module-scala_2.11-2.6.5.jar!/com/fasterxml/jackson/module/scala/JacksonModule.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.2.2/spark-core_2.11-2.2.2-sources.jar!/org/apache/spark/rdd/RDDOperationScope.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.2.2/spark-core_2.11-2.2.2-sources.jar!/org/apache/spark/SparkContext.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="286" column="6" selection-start-line="286" selection-start-column="6" selection-end-line="286" selection-end-column="6" />
+        <state relative-caret-position="-36">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.7/hadoop-mapreduce-client-core-2.7.7-sources.jar!/org/apache/hadoop/mapred/JobConf.java">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicAvg.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="457" column="9" selection-start-line="457" selection-start-column="9" selection-end-line="457" selection-end-column="9" />
+        <state relative-caret-position="124">
+          <caret line="51" column="53" selection-start-line="51" selection-start-column="53" selection-end-line="51" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="261" column="21" selection-start-line="261" selection-start-column="21" selection-end-line="261" selection-end-column="21" />
+        <state relative-caret-position="208">
+          <caret line="294" column="28" selection-start-line="294" selection-start-column="28" selection-end-line="294" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/kafkaDemo/Kafka_Word_Count.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicAvgMapPartitions.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="17" />
+        <state relative-caret-position="378">
+          <caret line="35" column="48" lean-forward="true" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hbase/hbase-server/1.2.0/hbase-server-1.2.0.jar!/org/apache/hadoop/hbase/mapreduce/MultiTableOutputFormat.class">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicAvgFromFile.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicAvgFromFiles.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="18" column="45" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicFilterUnionCombo.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hbase/hbase-common/1.2.0/hbase-common-1.2.0.jar!/org/apache/hadoop/hbase/io/ImmutableBytesWritable.class">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicIntersectByKey.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/hbase/sparkToHbase.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="61" column="75" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hbase/hbase-client/1.2.0/hbase-client-1.2.0-sources.jar!/org/apache/hadoop/hbase/client/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="79" column="19" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/hbase/sync_mysql2hbase_prd.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6156">
-          <caret line="369" column="55" selection-start-line="369" selection-start-column="55" selection-end-line="369" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/kafkaDemo/KafkaToMongo.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="66" column="28" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/hbase/HbaseTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/hbase/HbaseUtils.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/streaming/structured/BasicAggregation.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/derby.log" />
-    <entry file="file://$PROJECT_DIR$/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-streaming_2.11/2.2.2/spark-streaming_2.11-2.2.2.jar!/org/apache/spark/streaming/dstream/PairDStreamFunctions.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-streaming_2.11/2.2.2/spark-streaming_2.11-2.2.2-sources.jar!/org/apache/spark/streaming/dstream/PairDStreamFunctions.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="432" column="54" selection-start-line="432" selection-start-column="44" selection-end-line="432" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/streaming/structured/sparkUpdateState.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/streaming/structured/WebPagePopularityValueCalculator.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/streaming/structured/StatefulNetworkWordCount.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="49" column="26" lean-forward="true" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/dataset/Basic.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-catalyst_2.11/2.2.2/spark-catalyst_2.11-2.2.2-sources.jar!/org/apache/spark/sql/types/DataType.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="107" column="6" selection-start-line="107" selection-start-column="6" selection-end-line="107" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.2.2/spark-sql_2.11-2.2.2-sources.jar!/org/apache/spark/sql/SparkSession.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="717" column="17" lean-forward="true" selection-start-line="717" selection-start-column="17" selection-end-line="717" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/hbase/insert.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="97" column="13" selection-start-line="97" selection-start-column="13" selection-end-line="97" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/streaming/structured/NetworkWordCount.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/experiments/WindowFunctions.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/streaming/NetworkWordCount.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/streaming/CustomReceiver.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="64" column="6" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/streaming/RawNetworkGrep.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/streaming/clickstream/PageViewGenerator.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/soket_data.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="85" column="80" lean-forward="true" selection-start-line="85" selection-start-column="80" selection-end-line="85" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.2.2/spark-sql_2.11-2.2.2-sources.jar!/org/apache/spark/sql/streaming/DataStreamWriter.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-273">
-          <caret line="61" column="13" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/pythonconverters/AvroConverters.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="76" column="53" selection-start-line="76" selection-start-column="53" selection-end-line="76" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/streaming/structured/quick_start.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/BroadcastTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="36" column="31" lean-forward="true" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/ALSExample.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/graphx/Analytics.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/graphx/ComprehensiveExample.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="70" column="50" selection-start-line="70" selection-start-column="42" selection-end-line="70" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/graphx/SynthBenchmark.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1428">
-          <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-graphx_2.11/2.2.2/spark-graphx_2.11-2.2.2.jar!/org/apache/spark/graphx/GraphOps.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        <state relative-caret-position="252">
+          <caret line="31" column="35" lean-forward="true" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/graphx/users.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicAvgWithKryo.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="234">
+          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/output2.txt/part-00000" />
+    <entry file="file://$PROJECT_DIR$/output2.txt/part-00001" />
     <entry file="file://$PROJECT_DIR$/data/graphx/followers.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
+        <state relative-caret-position="72">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.2.2/spark-core_2.11-2.2.2-sources.jar!/org/apache/spark/util/AccumulatorV2.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-831">
+          <caret line="293" lean-forward="true" selection-start-line="293" selection-end-line="293" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicLoadSequenceFile.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicLoadTextFromFTP.scala">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/rdd/Ex6_Accumulators.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1443">
+          <caret line="131" column="30" lean-forward="true" selection-start-line="131" selection-start-column="4" selection-end-line="131" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicMapNoCache.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicMapPartitions.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicMap.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.2.2/spark-core_2.11-2.2.2-sources.jar!/org/apache/spark/rdd/RDD.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-179">
+          <caret line="1467" column="6" selection-start-line="1467" selection-start-column="6" selection-end-line="1467" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicParseCsv.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicMapThenFilter.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicParseJson.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="31" />
+          <folding>
+            <element signature="e#223#248#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicParseJsonWithJackson.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicLoadNums.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="37" column="47" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="47" />
+          <folding>
+            <element signature="e#150#253#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicQueryCassandra.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#104#129#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-graphx_2.11/2.2.2/spark-graphx_2.11-2.2.2-sources.jar!/org/apache/spark/graphx/GraphOps.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/LoadJsonWithSparkSQL.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4406" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/graphx/PageRankExample.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="58" column="14" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="14" />
+        <state relative-caret-position="198">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/graphx/LiveJournalPageRank.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/LoadKeyValueTextInput.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        <state relative-caret-position="180">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/PipeExample.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/SparkSQLTwitter.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/StreamingLogInput.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/WordCount.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="31" />
         </state>
       </provider>
     </entry>

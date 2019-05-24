@@ -43,6 +43,14 @@
             <id>confluent</id>
             <url>http://packages.confluent.io/maven/</url>
         </repository>
+        <repository>
+            <id>Akka repository</id>
+            <url>http://repo.akka.io/releases</url>
+        </repository>
+        <repository>
+            <id>twitter</id>
+            <url>http://maven.twttr.com/</url>
+        </repository>
     </repositories>
 
     <pluginRepositories>
@@ -264,6 +272,41 @@
             <groupId>org.mongodb</groupId>
             <artifactId>mongo-java-driver</artifactId>
             <version>3.6.4</version>
+        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.eclipse.jetty</groupId>-->
+            <!--<artifactId>jetty-server</artifactId>-->
+            <!--<version>9.4.10.v20180503</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.eclipse.jetty</groupId>-->
+            <!--<artifactId>jetty-client</artifactId>-->
+            <!--<version>9.4.10.v20180503</version>-->
+        <!--</dependency>-->
+        <dependency> <!-- Jetty demmo -->
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-client</artifactId>
+            <version>8.1.14.v20131031</version>
+        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.fasterxml.jackson.core</groupId>-->
+            <!--<artifactId>jackson-databind</artifactId>-->
+            <!--<version>2.9.5</version>-->
+        <!--</dependency>-->
+        <dependency>
+            <groupId>com.typesafe.play</groupId>
+            <artifactId>play_2.11</artifactId>
+            <version>2.7.0-M1</version>
+        </dependency>
+        <dependency> <!-- Cassandra -->
+            <groupId>com.datastax.spark</groupId>
+            <artifactId>spark-cassandra-connector_2.10</artifactId>
+            <version>1.0.0-rc5</version>
+        </dependency>
+        <dependency> <!-- Cassandra -->
+            <groupId>com.datastax.spark</groupId>
+            <artifactId>spark-cassandra-connector-java_2.10</artifactId>
+            <version>1.0.0-rc5</version>
         </dependency>
 
 
