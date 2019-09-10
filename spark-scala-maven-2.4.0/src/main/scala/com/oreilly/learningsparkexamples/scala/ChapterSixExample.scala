@@ -41,6 +41,7 @@ object ChapterSixExample {
     val invalidSignCount = sc.accumulator(0)
     val unknownCountry = sc.accumulator(0)
     val resolvedCountry = sc.accumulator(0)
+    val hua=sc.longAccumulator("hua")
     val callSigns = file.flatMap(line => {
       if (line == "") {
         errorLines += 1

@@ -1,16 +1,17 @@
-package kafkaDemo
-import kafka.common.TopicAndPartition
-import kafka.utils.ZkUtils
-import org.I0Itec.zkclient.ZkClient
-import org.apache.spark.rdd.RDD
-import org.apache.spark.streaming.kafka010.HasOffsetRanges
-
-/**
-  *
-  * 负责kafka偏移量的读取和保存
-  *
-  * Created by QinDongLiang on 2017/11/28.
-  */
+//package kafkaDemo
+//import kafka.common.TopicAndPartition
+//import kafka.utils.ZkUtils
+//import org.I0Itec.zkclient.ZkClient
+//import org.apache.spark.rdd.RDD
+//import org.apache.spark.streaming.kafka010.HasOffsetRanges
+////import org.apache.spark.streaming.kafka.HasOffsetRanges
+//
+///**
+//  *
+//  * 负责kafka偏移量的读取和保存
+//  *
+//  * Created by QinDongLiang on 2017/11/28.
+//  */
 //object KafkaOffsetManager {
 //
 //
@@ -23,7 +24,7 @@ import org.apache.spark.streaming.kafka010.HasOffsetRanges
 //    * @param topic    topic名字
 //    * @return  偏移量Map or None
 //    */
-//   def readOffsets(zkClient: ZkClient, zkOffsetPath: String, topic: String): Option[Map[TopicAndPartition, Long]] = {
+//  def readOffsets(zkClient: ZkClient, zkOffsetPath: String, topic: String): Option[Map[TopicAndPartition, Long]] = {
 //    //（偏移量字符串,zk元数据)
 //    val (offsetsRangesStrOpt, _) = ZkUtils.readDataMaybeNull(zkClient, zkOffsetPath)//从zk上读取偏移量
 //    offsetsRangesStrOpt match {
@@ -32,7 +33,7 @@ import org.apache.spark.streaming.kafka010.HasOffsetRanges
 //        val  lastest_partitions= ZkUtils.getPartitionsForTopics(zkClient,Seq(topic)).get(topic).get
 //        var offsets = offsetsRangesStr.split(",")//按逗号split成数组
 //          .map(s => s.split(":"))//按冒号拆分每个分区和偏移量
-//          .map { case Array(partitionStr, offsetStr) => TopicAndPartition(topic, partitionStr.toInt) -> offsetStr.toLong }//加工成最终的格式
+//          .map { case Array(partitionStr, offsetStr) => (TopicAndPartition(topic, partitionStr.toInt) -> offsetStr.toLong) }//加工成最终的格式
 //          .toMap//返回一个Map
 //
 //        //说明有分区扩展了
@@ -50,7 +51,9 @@ import org.apache.spark.streaming.kafka010.HasOffsetRanges
 //
 //          }
 //
-//        }else log.warn("没有发现新增的kafka分区："+lastest_partitions.mkString(","))
+//        }else{
+//          log.warn("没有发现新增的kafka分区："+lastest_partitions.mkString(","))
+//        }
 //
 //
 //        Some(offsets)//将Map返回
@@ -83,7 +86,7 @@ import org.apache.spark.streaming.kafka010.HasOffsetRanges
 //
 //  class Stopwatch {
 //    private val start = System.currentTimeMillis()
-//    def get():Long = System.currentTimeMillis() - start
+//    def get():Long = (System.currentTimeMillis() - start)
 //  }
 //
 //
