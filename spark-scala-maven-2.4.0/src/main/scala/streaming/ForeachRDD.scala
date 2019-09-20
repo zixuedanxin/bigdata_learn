@@ -16,7 +16,7 @@ object ForeachRDD {
     val sparkConf = new SparkConf().setAppName("ForeachRDD").setMaster("local[2]")
     val ssc = new StreamingContext(sparkConf, Seconds(5))
 
-    val lines = ssc.socketTextStream("localhost", 6789)
+    val lines = ssc.socketTextStream("localhost", 3000)
 
     val result = lines.flatMap(_.split(" ")).map((_, 1)).reduceByKey(_ + _)
 
@@ -25,12 +25,13 @@ object ForeachRDD {
 
     result.foreachRDD(rdd => {
       rdd.foreachPartition(partionOfRecords => {
-        val connection = createConnection()
+        //val connection = createConnection()
           partionOfRecords.foreach(record => {
+            print(record)
             val sql = "insert into wordcount(word,wordcount) values('" + record._1 + "'," + record._2 + ")"
-            connection.createStatement().execute(sql)
+            //connection.createStatement().execute(sql)
           })
-          connection.close()
+          //connection.close()
       })
     })
       //      val connection = createConnection()

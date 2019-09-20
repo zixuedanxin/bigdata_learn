@@ -2,6 +2,7 @@
 *.log
 *.class
 target/
+*/target/*
 artifacts/
 .idea/
 .idea/*

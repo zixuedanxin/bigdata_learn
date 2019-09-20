@@ -16,20 +16,21 @@ object JsonUtil {
     参考费控：/usr/hdp/2.6.0.3-8/spark2/bin/spark-submit --driver-memory 27g --executor-memory 16g --executor-cores 3  --num-executors 20  --master yarn-cluster --class com.dingxin.entrance.EntranceD  --name 费控计算lhr --driver-class-path /usr/local/jar/ojdbc7.jar,/usr/local/jar/mysql-connector-java-8.0.11.jar --jars /usr/local/jar/ojdbc7.jar,/usr/local/jar/mysql-connector-java-8.0.11.jar,/usr/local/jar/sparkts-0.4.0.jar,/usr/local/jar/json.jar,/usr/local/jar/spark-hbase-connector-2.2.0-1.1.2-3.4.6.jar,/usr/local/jar/lihaoran/dl.jar,/usr/local/jar/lihaoran/df.jar,/usr/local/jar/lihaoran/DataInit.jar  /usr/local/jar/lihaoran/feikong.jar  "{\"in_csrq\":\"2018-12-12\"}"
    */
   def main(args: Array[String]) {
-    if (0) {
-      //val jsonStr = """{"key1":"Ricky", "key2":"21"}"""
+    val start=2
+    if (start==1) {
+      val jsonStr = """{"key1":"Ricky", "key2":"21"}"""
       println("JSON字符串解析===========")
-      val jsonStr = args(0)
+      //val jsonStr = args(0)
       println(jsonStr)
       val jsonValue = JSON.parseFull(jsonStr)
-      println(jsonValue.toString)
+      println(jsonValue)
       val map: Map[String, Any] = jsonValue.get.asInstanceOf[Map[String, Any]]
       val key1 = map.get("key1").get.asInstanceOf[String]
       val key2 = map.get("key2").get.asInstanceOf[String]
       print(key1 + key2)
     }
 
-    if (0) {
+    if (start==2) {
       println("多级JSON字符串解析=============")
       val jsonStr = """{"username":"Ricky", "attribute":{"age":21, "weight": 60}}"""
       val jsonValue = JSON.parseFull(jsonStr)
@@ -37,7 +38,7 @@ object JsonUtil {
       val map: Map[String, Any] = jsonValue.get.asInstanceOf[Map[String, Any]]
       val username = map.get("username").get.asInstanceOf[String]
       val attribute = map.get("attribute").get.asInstanceOf[Map[String, Double]]
-      val age = attribute.get("age").get
+      val age = attribute.get("age")//.get
       val weight = attribute.get("weight").get
       print(username + " " + age + " " + weight)
 

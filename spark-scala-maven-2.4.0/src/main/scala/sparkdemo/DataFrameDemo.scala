@@ -19,12 +19,14 @@ object DataFrameDemo extends App {
   val df = spark.createDataset(Seq(("aaa", 1, 2), ("bbb", 3, 4), ("bbb", 1, 5), ("bbb", 2, 1), ("ccc", 4, 5), ("bbb", 4, 6))).toDF("key1", "key2", "key3")
 
   case class Person(name: String, age: Int)
+  def manOf[T: Manifest](t: T): Manifest[T] = manifest[T]
 
-  val people = sc.textFile("src/sparkdemo/testfile/person.txt")
+  val people = sc.textFile("src/main/resource/data/text/people.txt")
       .map(_.split(",")).map(p => Person(p(0), p(1).trim.toInt)).toDF() //转化为df后，统统为Row类型
-
+  //df.show(30) //最多打印30行
+  //df.explain()
   val DF打印操作 = 0
-  if (0) {
+  if (1) {
     //打印的时候对不齐没事。
     df.show(30) //最多打印30行
     df.show(30, truncate = 20) // 每个元素最大20个字符，其他折叠
@@ -102,7 +104,7 @@ object DataFrameDemo extends App {
   }
 
   val RDD_DF_DS的相互转化 = 0
-  if (0) {
+  if (1) {
     //——————————————————————————RDD、DF、DS的相互转化————————————————————————————————————————————————
     //RDD转化为DF，参考创建DF方式1，2，一种是直接map到Person，然后toDF；一种是case Class，然后createDF
     //RDD转化为DS,同DF，不需要创建Schema
@@ -112,6 +114,9 @@ object DataFrameDemo extends App {
     df.rdd.map(x => (x.getString(0), x.getInt(1), x.getInt(2)))
     //DF转化为DS
     val ds = people.as[Person]
+    //println(ds.)
+    println(ds.rdd.collect())
+    println(manOf(ds))
 
     //DS转化为RDD,带Person类型，比DF更好
     ds.rdd.map(x => (x.name, x.age))
@@ -203,18 +208,16 @@ object DataFrameDemo extends App {
     df.count() //必须计算一次才有缓存
     //如果要写入两个parquet，必须加缓存，否则会重新计算两次。
     //比如说费控数据初始化，不加缓存，写两个路径，又TM重新读取一次。
-
     //持久化级别
     import org.apache.spark.storage.StorageLevel
     df.persist(StorageLevel.DISK_ONLY)
     df.persist(StorageLevel.MEMORY_ONLY)
-
     //取消缓存，这个一般不需要，JVM自动垃圾回收。
     df.unpersist()
   }
 
   val SQL风格语法 = 0
-  if (0) {
+  if (1) {
     //如果想使用SQL风格的语法，需要将DataFrame注册成临时视图
     people.createOrReplaceTempView("people")
     //查询年龄最大的前两名
@@ -257,7 +260,7 @@ object DataFrameDemo extends App {
   }
 
   val 对Column的操作 = 0
-  if (0) {
+  if (1) {
     //—————————————————————————对Column的操作—————————————————————————
     //select三种调用方法
     //通过键选择
@@ -435,7 +438,7 @@ object DataFrameDemo extends App {
   }
 
   val 对聚合操作后的Value进行操作 = 0
-  if (0) {
+  if (1) {
     //具体案例见sparkdemo.practice.Demo05
     df.groupByKey(row => row.getAs[String]("key1")).mapGroups((key1, group) => {
       var res = ""
@@ -865,6 +868,7 @@ object DataFrameDemo extends App {
     df.coalesce(3) //当df有10个分区减少到3个分区时，不会触发shuffle
     df.coalesce(100) //触发shuffle 返回一个100分区的DataFrame，等价于repartition(100)
   }
-
+  df.groupBy("key1").sum().show
+  //df.groupByKey(row => row.getAs[String]("key1"))
 
 }
