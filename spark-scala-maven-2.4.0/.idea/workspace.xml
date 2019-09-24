@@ -2,679 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b71f93c1-c3e4-4e07-bc65-2c329b8a0c48" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark-scala-maven-2.4.0.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/als.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/avro_inputformat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/kmeans.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/logistic_regression.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/aft_survival_regression.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/als_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/binarizer_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/bisecting_k_means_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/bucketed_random_projection_lsh_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/bucketizer_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/chi_square_test_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/chisq_selector_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/correlation_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/count_vectorizer_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/cross_validator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/dataframe_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/dct_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/decision_tree_classification_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/decision_tree_regression_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/elementwise_product_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/estimator_transformer_param_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/fpgrowth_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/gaussian_mixture_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/generalized_linear_regression_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/gradient_boosted_tree_classifier_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/gradient_boosted_tree_regressor_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/imputer_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/index_to_string_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/isotonic_regression_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/kmeans_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/lda_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/linear_regression_with_elastic_net.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/linearsvc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/logistic_regression_summary_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/logistic_regression_with_elastic_net.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/max_abs_scaler_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/min_hash_lsh_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/min_max_scaler_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/multiclass_logistic_regression_with_elastic_net.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/multilayer_perceptron_classification.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/n_gram_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/naive_bayes_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/normalizer_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/one_vs_rest_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/onehot_encoder_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/pca_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/pipeline_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/polynomial_expansion_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/quantile_discretizer_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/random_forest_classifier_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/random_forest_regressor_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/rformula_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/sql_transformer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/standard_scaler_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/stopwords_remover_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/string_indexer_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/tf_idf_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/tokenizer_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/train_validation_split.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/vector_assembler_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/vector_indexer_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/vector_slicer_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/ml/word2vec_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/binary_classification_metrics_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/bisecting_k_means_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/correlations.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/correlations_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/decision_tree_classification_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/decision_tree_regression_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/elementwise_product_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/fpgrowth_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/gaussian_mixture_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/gaussian_mixture_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/gradient_boosting_classification_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/gradient_boosting_regression_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/hypothesis_testing_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/hypothesis_testing_kolmogorov_smirnov_test_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/isotonic_regression_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/k_means_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/kernel_density_estimation_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/kmeans.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/latent_dirichlet_allocation_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/linear_regression_with_sgd_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/logistic_regression.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/logistic_regression_with_lbfgs_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/multi_class_metrics_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/multi_label_metrics_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/naive_bayes_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/normalizer_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/pca_rowmatrix_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/power_iteration_clustering_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/random_forest_classification_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/random_forest_regression_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/random_rdd_generation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/ranking_metrics_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/recommendation_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/regression_metrics_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/sampled_rdds.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/standard_scaler_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/stratified_sampling_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/streaming_k_means_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/streaming_linear_regression_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/summary_statistics_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/svd_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/svm_with_sgd_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/tf_idf_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/word2vec.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/mllib/word2vec_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/pagerank.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/parquet_inputformat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/pi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/sort.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/sql/basic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/sql/datasource.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/sql/hive.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/sql/streaming/structured_kafka_wordcount.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/sql/streaming/structured_network_wordcount.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/sql/streaming/structured_network_wordcount_windowed.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/status_api_demo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/streaming/direct_kafka_wordcount.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/streaming/flume_wordcount.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/streaming/hdfs_wordcount.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/streaming/kafka_wordcount.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/streaming/network_wordcount.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/streaming/network_wordjoinsentiments.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/streaming/queue_stream.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/streaming/recoverable_network_wordcount.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/streaming/sql_network_wordcount.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/streaming/stateful_network_wordcount.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/transitive_closure.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/wordcount.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/LocalRunTextFileCount.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/LocalRunTextFileMkString.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/action/fold/n_02_scala_fold_处理/Run.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_17_dataframe_groupBy_agg_map/Run.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_22_dataframe_rdd_toDF_StructType/Run.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_04_spark_text/n_02_text_text_hdfs/Run.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_05_spark_json/n_03_json_read_as_class_foreach/Run.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_09_spark_datasource/n_03_csv/WriteRun.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_09_spark_datasource/n_06_bucketBy/ReadRunRestart.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_09_spark_datasource/n_07_partitionBy/ReadRunRestart.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/standalone/wordcount/WorldCount2.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/standalone/wordcount/WorldCountSaveHDFS_bak.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/standalone/wordcount/spark/session/WorldCount.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/standalone/wordcount/spark/session/WorldCount2.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/standalone/wordcount/spark/session/WorldCountSaveHDFS.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/days/ALSDemo.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/days/AdPVMain.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/days/AnnualTotal.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/days/BlackUserList.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/days/HotIP.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/days/HotProductByArea.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/days/ItemBasedCF.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/days/PeopleInfo/ALSDemo.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/days/PredictProduct.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/days/PredictProducts.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/days/ProductSalesInfo.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/days/UserBasedCF.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/recommand/als/OnlineRecommender.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/recommand/colfliter/sparkUtils.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/sha/sparkmall/realtime/app/RealtimeApp.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/sha/sparkmall/realtime/handler/AreaCityAdsDaycountHandler.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/sha/sparkmall/realtime/handler/AreaTop3AdsCountHandler.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/sha/sparkmall/realtime/handler/BlackListHandler.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/dataframe/DataFrameDemo.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/dataset/RddDemo.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/graphx/demo01.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/hbase/HbaseTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/hbase/HbaseUtils.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/hbase/insert.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/hbase/sparkToHbase.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/hbase/sync_mysql2hbase_prd.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/kafkaDemo/BasicKafkaConsumer.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/kafkaDemo/BasicRDD.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/kafkaDemo/BasicStream.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/kafkaDemo/CommitAsync.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/kafkaDemo/IdempotentExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/kafkaDemo/Kafka_Word_Count.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/kafkaDemo/LogParser.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/kafkaDemo/SetupJdbc.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/kafkaDemo/Throughput.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/kafkaDemo/TlsStream.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/kafkaDemo/TransactionalPerBatch.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/kafkaDemo/TransactionalPerPartition.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/kafkaDemo/Windowed.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/BroadcastTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/DFSReadWriteTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/DriverSubmissionTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ExceptionHandlingTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/GroupByTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/HdfsTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/LocalALS.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/LocalFileLR.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/LocalKMeans.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/LocalLR.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/LocalPi.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/LogQuery.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/MultiBroadcastTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/SimpleSkewedGroupByTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/SkewedGroupByTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/SparkALS.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/SparkHdfsLR.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/SparkKMeans.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/SparkLR.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/SparkPageRank.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/SparkPi.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/SparkTC.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/graphx/AggregateMessagesExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/graphx/Analytics.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/graphx/ComprehensiveExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/graphx/ConnectedComponentsExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/graphx/LiveJournalPageRank.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/graphx/PageRankExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/graphx/SSSPExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/graphx/SynthBenchmark.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/graphx/TriangleCountingExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/AFTSurvivalRegressionExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/ALSExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/BinarizerExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/BisectingKMeansExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/BucketedRandomProjectionLSHExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/BucketizerExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/ChiSqSelectorExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/ChiSquareTestExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/CorrelationExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/CountVectorizerExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/DCTExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/DataFrameExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/DecisionTreeClassificationExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/DecisionTreeExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/DecisionTreeRegressionExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/DeveloperApiExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/ElementwiseProductExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/EstimatorTransformerParamExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/FPGrowthExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/GBTExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/GaussianMixtureExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/GeneralizedLinearRegressionExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/GradientBoostedTreeClassifierExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/GradientBoostedTreeRegressorExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/ImputerExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/IndexToStringExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/InteractionExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/IsotonicRegressionExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/KMeansExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/LDAExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/LinearRegressionExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/LinearRegressionWithElasticNetExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/LinearSVCExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/LogisticRegressionExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/LogisticRegressionSummaryExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/LogisticRegressionWithElasticNetExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/MaxAbsScalerExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/MinHashLSHExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/MinMaxScalerExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/ModelSelectionViaCrossValidationExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/ModelSelectionViaTrainValidationSplitExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/MulticlassLogisticRegressionWithElasticNetExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/MultilayerPerceptronClassifierExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/NGramExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/NaiveBayesExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/NormalizerExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/OneHotEncoderExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/OneVsRestExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/PCAExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/PipelineExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/PolynomialExpansionExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/QuantileDiscretizerExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/RFormulaExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/RandomForestClassifierExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/RandomForestExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/RandomForestRegressorExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/SQLTransformerExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/StandardScalerExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/StopWordsRemoverExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/StringIndexerExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/TfIdfExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/TokenizerExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/UnaryTransformerExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/VectorAssemblerExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/VectorIndexerExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/VectorSlicerExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/ml/Word2VecExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/AbstractParams.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/AssociationRulesExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/BinaryClassification.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/BinaryClassificationMetricsExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/BisectingKMeansExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/ChiSqSelectorExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/Correlations.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/CorrelationsExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/CosineSimilarity.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/DecisionTreeClassificationExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/DecisionTreeRegressionExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/DecisionTreeRunner.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/DenseKMeans.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/ElementwiseProductExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/FPGrowthExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/GaussianMixtureExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/GradientBoostedTreesRunner.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/GradientBoostingClassificationExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/GradientBoostingRegressionExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/HypothesisTestingExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/HypothesisTestingKolmogorovSmirnovTestExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/IsotonicRegressionExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/KMeansExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/KernelDensityEstimationExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/LBFGSExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/LDAExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/LatentDirichletAllocationExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/LinearRegression.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/LinearRegressionWithSGDExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/LogisticRegressionWithLBFGSExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/MovieLensALS.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/MultiLabelMetricsExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/MulticlassMetricsExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/MultivariateSummarizer.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/NaiveBayesExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/NormalizerExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/PCAExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/PCAOnRowMatrixExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/PCAOnSourceVectorExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/PMMLModelExportExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/PowerIterationClusteringExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/PrefixSpanExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/RandomForestClassificationExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/RandomForestRegressionExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/RandomRDDGeneration.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/RankingMetricsExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/RecommendationExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/RegressionMetricsExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/SVDExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/SVMWithSGDExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/SampledRDDs.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/SimpleFPGrowth.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/SparseNaiveBayes.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/StandardScalerExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/StratifiedSamplingExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/StreamingKMeansExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/StreamingLinearRegressionExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/StreamingLogisticRegression.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/StreamingTestExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/SummaryStatisticsExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/TFIDFExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/TallSkinnyPCA.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/TallSkinnySVD.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/mllib/Word2VecExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/pythonconverters/AvroConverters.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/sql/RDDRelation.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/sql/SQLDataSourceExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/sql/SparkSQLExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/sql/UserDefinedTypedAggregation.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/sql/UserDefinedUntypedAggregation.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/sql/hive/SparkHiveExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/sql/streaming/StructuredKafkaWordCount.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/sql/streaming/StructuredNetworkWordCount.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/sql/streaming/StructuredNetworkWordCountWindowed.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/sql/streaming/StructuredSessionization.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/streaming/CustomReceiver.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/streaming/HdfsWordCount.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/streaming/NetworkWordCount.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/streaming/QueueStream.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/streaming/RawNetworkGrep.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/streaming/RecoverableNetworkWordCount.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/streaming/SqlNetworkWordCount.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/streaming/StatefulNetworkWordCount.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/streaming/StreamingExamples.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/streaming/clickstream/PageViewGenerator.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/org/apache/spark/examples/streaming/clickstream/PageViewStream.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/rdd/ChooseWithinGroups.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/rdd/Ex1_SimpleRDD.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/rdd/Ex2_Computations.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/rdd/Ex3_CombiningRDDs.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/rdd/Ex4_MoreOperationsOnRDDs.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/rdd/Ex5_Partitions.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/rdd/Ex6_Accumulators.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/rdd/Ex9_Scraps.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/rdd/PairRDD.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/soket_data.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/special/WindowFunctions.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/streaming/Fifa_Stats.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/streaming/FileWordCount.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/streaming/ForeachRDD.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/streaming/NetWordCount.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/streaming/SentimentAnalysisOnDemonetization.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/streaming/SqlNetworkWordCount.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/streaming/StatefulWordCount.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/streaming/TransformApp.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/streaming/structured/NetworkWordCount.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/streaming/structured/StatefulNetworkWordCount.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/streaming/structured/StructureStreaming.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/streaming/structured/WebPagePopularityValueCalculator.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/streaming/structured/quick_start.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/streaming/structured/sparkUpdateState.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Ex1_SimpleRDD.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Ex2_Computations.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Ex3_CombiningRDDs.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Ex4_MoreOperationsOnRDDs.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Ex5_Partitions.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Ex6_Accumulators.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Ex9_Scraps.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/LocalRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/LocalRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/LocalRunTextFile.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/LocalRunTextFile.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/LocalRunTextFileCount.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/LocalRunTextFileMkString.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/CollectRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/action/CollectRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/CountByKeyRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/action/CountByKeyRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/CountByValueRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/action/CountByValueRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/CountByValueRun2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/action/CountByValueRun2.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/CountRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/action/CountRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/FirstRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/action/FirstRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/GroupByKeyAndSortWithRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/action/GroupByKeyAndSortWithRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/GroupByKeyRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/action/GroupByKeyRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/GroupByRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/action/GroupByRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/ReduceByKeyRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/action/ReduceByKeyRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/ReduceRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/action/ReduceRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/SortByKeyRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/action/SortByKeyRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/SortByRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/action/SortByRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/TakeOrderedRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/action/TakeOrderedRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/TopRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/action/TopRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/fold/n_01_map_遍历/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/action/fold/n_01_map_遍历/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/fold/n_02_scala_fold_处理/Run.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/fold/n_03_rdd_fold/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/action/fold/n_03_rdd_fold/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/fold/n_03_rdd_fold/Run2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/action/fold/n_03_rdd_fold/Run2.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/sortby/n_01_升序排序/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/action/sortby/n_01_升序排序/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/sortby/n_02_降序排序/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/action/sortby/n_02_降序排序/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/take/n_01_take_取top_n/TakeRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/action/take/n_01_take_取top_n/TakeRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/action/take/n_02_take_排序后取_top_n/TakeRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/action/take/n_02_take_排序后取_top_n/TakeRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/base/BaseScalaSparkContext.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/base/BaseScalaSparkContext.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/dependency/narrow/n_01_OneToOneDependency/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/dependency/narrow/n_01_OneToOneDependency/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/dependency/narrow/n_01_OneToOneDependency/Run1.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/dependency/narrow/n_01_OneToOneDependency/Run1.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/dependency/narrow/n_02_RangeDependency/Run1.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/dependency/narrow/n_02_RangeDependency/Run1.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/dependency/narrow/n_02_RangeDependency/Run2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/dependency/narrow/n_02_RangeDependency/Run2.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/dependency/narrow/n_02_RangeDependency/Run3.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/dependency/narrow/n_02_RangeDependency/Run3.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/dependency/narrow/n_03_pruneDependency/n_01_sortByKey/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/dependency/narrow/n_03_pruneDependency/n_01_sortByKey/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/dependency/narrow/n_03_pruneDependency/n_02_filterByRange/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/dependency/narrow/n_03_pruneDependency/n_02_filterByRange/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/dependency/narrow/n_03_pruneDependency/n_03_filterByRange_filter/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/dependency/narrow/n_03_pruneDependency/n_03_filterByRange_filter/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/dependency/shuffle/n_01_ShuffleDependency/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/dependency/shuffle/n_01_ShuffleDependency/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/dependency/shuffle/n_01_ShuffleDependency/Run2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/dependency/shuffle/n_01_ShuffleDependency/Run2.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/partition/n_05_partitionPruningRDDPartition/n_01_sortByKey/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/partition/n_05_partitionPruningRDDPartition/n_01_sortByKey/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/partition/n_05_partitionPruningRDDPartition/n_02_filterByRange/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/partition/n_05_partitionPruningRDDPartition/n_02_filterByRange/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/CogroupRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/transformation/CogroupRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/DistinctRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/transformation/DistinctRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/FilterRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/transformation/FilterRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/FlatMapRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/transformation/FlatMapRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/ForeachPartitionsRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/transformation/ForeachPartitionsRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/FullOuterJoinRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/transformation/FullOuterJoinRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/IntersectionRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/transformation/IntersectionRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/JoinRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/transformation/JoinRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/LeftOuterJoinRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/transformation/LeftOuterJoinRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/MapPartitionsRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/transformation/MapPartitionsRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/MapRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/transformation/MapRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/RightOuterJoinRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/transformation/RightOuterJoinRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/SampleRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/transformation/SampleRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/SampleRun2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/transformation/SampleRun2.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/filter/n_01_过滤偶数/FilterRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/transformation/filter/n_01_过滤偶数/FilterRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/union/n_01_集合rdd/UnionRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/transformation/union/n_01_集合rdd/UnionRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/rdd/operation/transformation/union/n_02_文件rdd/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/rdd/operation/transformation/union/n_02_文件rdd/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/sample/LineCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/sample/LineCount.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/sql/dataset/n_01_textFile.show/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/sql/dataset/n_01_textFile.show/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/sql/dataset/n_01_textFile/head/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/sql/dataset/n_01_textFile/head/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/sql/dataset/n_02_textFile/count/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/sql/dataset/n_02_textFile/count/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/sql/dataset/n_03_textFile_worldCount/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/sql/dataset/n_03_textFile_worldCount/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/wordcount/spark/session/LocalWorldCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/wordcount/spark/session/LocalWorldCount.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/worldcount/WorldCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/worldcount/WorldCount.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/worldcount/WorldCountDetail.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/worldcount/WorldCountDetail.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/worldcount/WorldCountDetailPartition.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/worldcount/WorldCountDetailPartition.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/worldcount/WorldCountDetailPartitionOrder.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/worldcount/WorldCountDetailPartitionOrder.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/worldcount/WorldCountDetailPartitionOrderHDFS.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/worldcount/WorldCountDetailPartitionOrderHDFS.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/worldcount/WorldCountDetailPartitionOrderHDFSOutput.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/worldcount/WorldCountDetailPartitionOrderHDFSOutput.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/worldcount/WorldCountDetailPartitionOrderOutput.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/worldcount/WorldCountDetailPartitionOrderOutput.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/worldcount/WorldCountDetailPartitionOrderOutput2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/worldcount/WorldCountDetailPartitionOrderOutput2.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/local/worldcount/WorldCountDetailPartitionOrderSecond.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/local/worldcount/WorldCountDetailPartitionOrderSecond.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_01_getting_started/n_01_spark_sql_sparkSession/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_01_getting_started/n_01_spark_sql_sparkSession/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_01_getting_started/n_02_spark_sql_create_dataframe/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_01_getting_started/n_02_spark_sql_create_dataframe/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_01_getting_started/n_03_spark_sql_untyped_dataset_operations/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_01_getting_started/n_03_spark_sql_untyped_dataset_operations/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_01_getting_started/n_04_spark_sql_TempView/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_01_getting_started/n_04_spark_sql_TempView/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_01_getting_started/n_05_spark_sql_GlobalTempView/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_01_getting_started/n_05_spark_sql_GlobalTempView/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_01_getting_started/n_06_spark_sql_creating_dataset/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_01_getting_started/n_06_spark_sql_creating_dataset/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_01_getting_started/n_07_spark_sql_example/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_01_getting_started/n_07_spark_sql_example/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_01_dataset_base/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/action/n_01_dataset_base/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_01_dataset_base/run.sc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_02_dataset_first/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/action/n_02_dataset_first/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_02_dataset_first/run.sc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_03_dataset_head/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/action/n_03_dataset_head/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_04_dataset_head_n/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/action/n_04_dataset_head_n/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_05_dataset_count/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/action/n_05_dataset_count/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_06_dataset_collect/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/action/n_06_dataset_collect/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_06_dataset_collectAsList/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/action/n_06_dataset_collectAsList/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_07_dataset_foreach/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/action/n_07_dataset_foreach/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_07_dataset_foreach_class/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/action/n_07_dataset_foreach_class/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_08_dataset_map/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/action/n_08_dataset_map/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_09_dataset_reduce/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/action/n_09_dataset_reduce/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_09_dataset_reduce_计算行中最多单词的个数/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/action/n_09_dataset_reduce_计算行中最多单词的个数/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_10_dataset_reduce_单词数量最多的行数据/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/action/n_10_dataset_reduce_单词数量最多的行数据/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_11_dataset_show/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/action/n_11_dataset_show/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_12_dataset_show_n/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/action/n_12_dataset_show_n/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_13_dataset_show_truncate/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/action/n_13_dataset_show_truncate/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_14_dataset_show_truncate_false/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/action/n_14_dataset_show_truncate_false/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_15_dataset_show_truncate_vertical/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/action/n_15_dataset_show_truncate_vertical/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_16_dataset_take/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/action/n_16_dataset_take/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_17_dataset_takeAsList/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/action/n_17_dataset_takeAsList/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_18_dataset_toLocalIterator/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/action/n_18_dataset_toLocalIterator/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_19_dataset_describe/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/action/n_19_dataset_describe/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/action/n_20_dataset_summary/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/action/n_20_dataset_summary/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/create/n_01_dataset_seq_toDS/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/create/n_01_dataset_seq_toDS/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/create/n_02_dataset_seq_class_toDS/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/create/n_02_dataset_seq_class_toDS/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/create/n_03_dataset_seq_class_foreach/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/create/n_03_dataset_seq_class_foreach/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/create/n_04_dataset_seq_class_toDS_foreach/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/create/n_04_dataset_seq_class_toDS_foreach/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/function/n_01_dataset_cache/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/function/n_01_dataset_cache/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/transformation/n_01_dataset_filter_string/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/transformation/n_01_dataset_filter_string/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/transformation/n_02_dataset_filter_func_boolean/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/transformation/n_02_dataset_filter_func_boolean/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/user_defined_type_aggregation/n_01_udta_MyAverage/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/user_defined_type_aggregation/n_01_udta_MyAverage/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_02_spark_dataset/user_defined_untype_aggregation/n_01_uduta_MyAverage/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_02_spark_dataset/user_defined_untype_aggregation/n_01_uduta_MyAverage/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_01_dataframe_创建_json/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_01_dataframe_创建_json/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_02_dataframe_schema/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_02_dataframe_schema/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_02_dataframe_schema_hdfs/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_02_dataframe_schema_hdfs/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_03_dataframe_select_column/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_03_dataframe_select_column/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_03_dataframe_select_column_hdfs/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_03_dataframe_select_column_hdfs/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_04_dataframe_select_column_expr/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_04_dataframe_select_column_expr/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_05_dataframe_selectExpr_column/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_05_dataframe_selectExpr_column/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_06_dataframe_filter_string/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_06_dataframe_filter_string/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_07_dataframe_filter_column/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_07_dataframe_filter_column/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_08_dataframe_where_string/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_08_dataframe_where_string/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_09_dataframe_where_column/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_09_dataframe_where_column/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_10_dataframe_groupBy_string/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_10_dataframe_groupBy_string/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_11_dataframe_groupBy_column/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_11_dataframe_groupBy_column/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_12_dataframe_groupBy_count/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_12_dataframe_groupBy_count/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_13_dataframe_groupBy_max/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_13_dataframe_groupBy_max/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_14_dataframe_groupBy_min/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_14_dataframe_groupBy_min/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_15_dataframe_groupBy_avg/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_15_dataframe_groupBy_avg/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_16_dataframe_groupBy_agg_string/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_16_dataframe_groupBy_agg_string/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_17_dataframe_groupBy_agg_map/Run.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_18_dataframe_groupBy_agg_column/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_18_dataframe_groupBy_agg_column/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_19_dataframe_sql/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_19_dataframe_sql/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_20_dataframe_sql_string/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_20_dataframe_sql_string/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_21_dataframe_sql_GlobalTempView/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_21_dataframe_sql_GlobalTempView/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_22_dataframe_rdd_toDF/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_22_dataframe_rdd_toDF/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_22_dataframe_rdd_toDF_StructType/Run.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_23_dataframe_sql_map/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_23_dataframe_sql_map/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_24_dataframe_sql_map_fieldName/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_24_dataframe_sql_map_fieldName/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_25_dataframe_to_class/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_25_dataframe_to_class/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_26_dataframe_to_class_foreach/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_26_dataframe_to_class_foreach/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_27_dataframe_to_sql_foreach/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_27_dataframe_to_sql_foreach/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_28_dataframe_to_sql_class_foreach/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_28_dataframe_to_sql_class_foreach/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_03_spark_dataframe/n_29_dataframe_to_sql_class_foreach_getValuesMap/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_03_spark_dataframe/n_29_dataframe_to_sql_class_foreach_getValuesMap/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_04_spark_text/n_01_text_textFile/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_04_spark_text/n_01_text_textFile/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_04_spark_text/n_01_text_textFile_hdfs/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_04_spark_text/n_01_text_textFile_hdfs/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_04_spark_text/n_02_text_text/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_04_spark_text/n_02_text_text/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_04_spark_text/n_02_text_text_hdfs/Run.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_04_spark_text/n_03_text_foreach_class/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_04_spark_text/n_03_text_foreach_class/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_05_spark_json/n_01_json_read/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_05_spark_json/n_01_json_read/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_05_spark_json/n_02_json_read_as_class/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_05_spark_json/n_02_json_read_as_class/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_05_spark_json/n_03_json_read_as_class_foreach/Run.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_05_spark_json/n_04_json_read_as_class_foreach_null/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_05_spark_json/n_04_json_read_as_class_foreach_null/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_06_spark_sql/n_01_df_to_sql/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_06_spark_sql/n_01_df_to_sql/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_06_spark_sql/n_02_sql_TempView/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_06_spark_sql/n_02_sql_TempView/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_06_spark_sql/n_03_sql_GlobalTempView/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_06_spark_sql/n_03_sql_GlobalTempView/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_07_spark_udf/n_01_udf_str_length/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_07_spark_udf/n_01_udf_str_length/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_07_spark_udf/n_02_udf_str_length/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_07_spark_udf/n_02_udf_str_length/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_07_spark_udf/n_03_udf_str_toUpperCase/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_07_spark_udf/n_03_udf_str_toUpperCase/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_08_spark_udaf/n_01_spark_udaf_count/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_08_spark_udaf/n_01_spark_udaf_count/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_08_spark_udaf/n_01_spark_udaf_count/Run2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_08_spark_udaf/n_01_spark_udaf_count/Run2.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_08_spark_udaf/n_02_spark_udaf_max/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_08_spark_udaf/n_02_spark_udaf_max/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_08_spark_udaf/n_02_spark_udaf_max/Run2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_08_spark_udaf/n_02_spark_udaf_max/Run2.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_08_spark_udaf/n_02_spark_udaf_max/RunGroupByMax.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_08_spark_udaf/n_02_spark_udaf_max/RunGroupByMax.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_08_spark_udaf/n_03_spark_udaf_sum/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_08_spark_udaf/n_03_spark_udaf_sum/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_08_spark_udaf/n_04_spark_udaf_average/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_08_spark_udaf/n_04_spark_udaf_average/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_08_spark_udaf/n_05_spark_udaf_groupby_max/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_08_spark_udaf/n_05_spark_udaf_groupby_max/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_01_parquet/ExampleRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_09_spark_datasource/n_01_parquet/ExampleRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_01_parquet/ReadRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_09_spark_datasource/n_01_parquet/ReadRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_01_parquet/WriteRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_09_spark_datasource/n_01_parquet/WriteRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_01_seq_to_parquet/ReadRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_09_spark_datasource/n_01_seq_to_parquet/ReadRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_01_seq_to_parquet/WriteRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_09_spark_datasource/n_01_seq_to_parquet/WriteRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_02_json/ReadRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_09_spark_datasource/n_02_json/ReadRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_02_json/WriteRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_09_spark_datasource/n_02_json/WriteRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_03_csv/ReadRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_09_spark_datasource/n_03_csv/ReadRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_03_csv/WriteRun.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_04_orc/ReadRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_09_spark_datasource/n_04_orc/ReadRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_04_orc/WriteRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_09_spark_datasource/n_04_orc/WriteRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_05_sql_run_on_file_directly/ReadRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_09_spark_datasource/n_05_sql_run_on_file_directly/ReadRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_06_bucketBy/ReadRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_09_spark_datasource/n_06_bucketBy/ReadRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_06_bucketBy/ReadRunRestart.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_06_bucketBy/WriteRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_09_spark_datasource/n_06_bucketBy/WriteRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_06_saveAsTable/ReadRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_09_spark_datasource/n_06_saveAsTable/ReadRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_06_saveAsTable/WriteRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_09_spark_datasource/n_06_saveAsTable/WriteRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_07_partitionBy/ReadRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_09_spark_datasource/n_07_partitionBy/ReadRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_07_partitionBy/ReadRunRestart.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_07_partitionBy/WriteRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_09_spark_datasource/n_07_partitionBy/WriteRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_09_merging_dataSet/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_09_spark_datasource/n_09_merging_dataSet/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_10_mysql/n_01_mysql_查询表数据/ReadRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_09_spark_datasource/n_10_mysql/n_01_mysql_查询表数据/ReadRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_10_mysql/n_01_mysql_查询表数据/WriteRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_09_spark_datasource/n_10_mysql/n_01_mysql_查询表数据/WriteRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_10_mysql/n_02_mysql_查询表数据方式2/ReadRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_09_spark_datasource/n_10_mysql/n_02_mysql_查询表数据方式2/ReadRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_09_spark_datasource/n_10_mysql/n_02_mysql_查询表数据方式2/WriteRun.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_09_spark_datasource/n_10_mysql/n_02_mysql_查询表数据方式2/WriteRun.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_10_spark_hive/n_01_create_database/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_10_spark_hive/n_01_create_database/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_10_spark_hive/n_01_show_database/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_10_spark_hive/n_01_show_database/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_10_spark_hive/n_02_use_database/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_10_spark_hive/n_02_use_database/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_10_spark_hive/n_03_show_table/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_10_spark_hive/n_03_show_table/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_10_spark_hive/n_04_select_table/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_10_spark_hive/n_04_select_table/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_10_spark_hive/n_05_create_table/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_10_spark_hive/n_05_create_table/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_10_spark_hive/n_06_insert_table/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_10_spark_hive/n_06_insert_table/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_10_spark_hive/n_07_truncate_table/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_10_spark_hive/n_07_truncate_table/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_10_spark_hive/n_08_drop_table/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/sql/n_10_spark_hive/n_08_drop_table/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/RunTextFileMkString.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/standalone/RunTextFileMkString.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/RunTextFileMkString2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/standalone/RunTextFileMkString2.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/base/BaseScalaSparkContext.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/standalone/base/BaseScalaSparkContext.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/base/BaseSparkSession.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/standalone/base/BaseSparkSession.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/sql/dataset/n_01_head/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/standalone/sql/dataset/n_01_head/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/sql/dataset/n_01_show/Run_dataset_show.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/standalone/sql/dataset/n_01_show/Run_dataset_show.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/sql/dataset/n_01_show_count/Run_dataset_count.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/standalone/sql/dataset/n_01_show_count/Run_dataset_count.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/wordcount/WorldCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/standalone/wordcount/WorldCount.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/wordcount/WorldCount2.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/wordcount/WorldCountHDFS.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/standalone/wordcount/WorldCountHDFS.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/wordcount/WorldCountSaveHDFS.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/standalone/wordcount/WorldCountSaveHDFS.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/wordcount/WorldCountSaveHDFS_bak.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/wordcount/WorldCountTheadOne.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/standalone/wordcount/WorldCountTheadOne.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/wordcount/WorldTotalCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/standalone/wordcount/WorldTotalCount.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/wordcount/spark/session/WorldCount.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/wordcount/spark/session/WorldCount2.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/wordcount/spark/session/WorldCountFile.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/standalone/wordcount/spark/session/WorldCountFile.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/wordcount/spark/session/WorldCountSaveHDFS.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/wordcount/spark/session/n/n_01_show/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/standalone/wordcount/spark/session/n/n_01_show/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/wordcount/spark/session/n/n_02_group_show/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/standalone/wordcount/spark/session/n/n_02_group_show/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/wordcount/spark/session/n/n_03_collect/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/standalone/wordcount/spark/session/n/n_03_collect/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/standalone/wordcount/spark/session/n/n_04_group_collect/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bigdata/spark/standalone/wordcount/spark/session/n/n_04_group_collect/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dataframe/Basic.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataframe/Basic.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dataframe/ComplexSchema.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataframe/ComplexSchema.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dataframe/DateTime.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataframe/DateTime.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dataframe/DropColumns.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataframe/DropColumns.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dataframe/DropDuplicates.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataframe/DropDuplicates.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dataframe/GroupingAndAggregation.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataframe/GroupingAndAggregation.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dataframe/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataframe/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dataframe/Range.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataframe/Range.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dataframe/Select.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataframe/Select.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dataframe/Transform.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataframe/Transform.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dataframe/UDAF.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataframe/UDAF.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dataframe/UDT.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataframe/UDT.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dataset/Basic.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataset/Basic.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dataset/CaseClass.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataset/CaseClass.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dataset/ComplexType.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataset/ComplexType.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dataset/PartitionBy.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataset/PartitionBy.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dataset/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/experiments/ChooseWithinGroups.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/special/ChooseWithinGroups.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/experiments/CoPartitioning.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/special/CoPartitioning.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/experiments/PartitionedTableColumnOrder.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/special/PartitionedTableColumnOrder.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/experiments/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/experiments/SemiStructuredUtilUDF.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/special/SemiStructuredUtilUDF.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/experiments/UDFExtraParameter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/special/UDFExtraParameter.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/experiments/WindowFunctions.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/hiveql/LateralViewExplode.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/sql/hiveql/LateralViewExplode.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/hiveql/PartitionedTable.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/sql/hiveql/PartitionedTable.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/hiveql/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/sql/hiveql/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/hiveql/SimpleUDAF.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/sql/hiveql/SimpleUDAF.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/hiveql/SimpleUDF.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/sql/hiveql/SimpleUDF.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/pairs/ChooseWithinGroups.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/pairs/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/special/CustomPartitioner.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/special/CustomPartitioner.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/special/HashJoin.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/special/HashJoin.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/special/PairRDD.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/special/PairRDD.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/special/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/sql/CustomRelationProvider.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/sql/CustomRelationProvider.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/sql/JSON.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/sql/JSON.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/sql/JSONSchemaInference.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/sql/JSONSchemaInference.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/sql/MixedJSONQuery.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/sql/MixedJSONQuery.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/sql/OutputJSON.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/sql/OutputJSON.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/streaming/FileBased.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/streaming/FileBased.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/streaming/structured/Basic.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/streaming/structured/Basic.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/opensource/MainTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/opensource/MainTest.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/说明.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -790,7 +118,7 @@
           <entry key="properties" value="2" />
           <entry key="py" value="10" />
           <entry key="sc" value="1" />
-          <entry key="scala" value="723" />
+          <entry key="scala" value="724" />
           <entry key="sql" value="1" />
           <entry key="txt" value="11" />
           <entry key="xml" value="13" />
@@ -807,7 +135,7 @@
           <entry key="Properties" value="2" />
           <entry key="Python" value="5" />
           <entry key="SQL" value="1" />
-          <entry key="Scala" value="724" />
+          <entry key="Scala" value="725" />
           <entry key="XML" value="13" />
         </counts>
       </usages-collector>
@@ -839,8 +167,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/sql/JSON.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="239">
+              <caret line="41" column="33" lean-forward="true" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/sql/DateTime.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -892,7 +229,7 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -1077,14 +414,14 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569294253475" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569294534488" />
     <property name="last_opened_file_path" value="$USER_HOME$/davinci" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/main/scala/com/opensource/bigdata/spark/sql/n_08_spark_udaf/n_05_spark_udaf_groupby_max/Run.scala" />
   </component>
   <component name="RecentsManager">
@@ -1277,7 +614,7 @@
       <workItem from="1568083932453" duration="14252000" />
       <workItem from="1568622618863" duration="10568000" />
       <workItem from="1568712359178" duration="29588000" />
-      <workItem from="1568951357111" duration="46297000" />
+      <workItem from="1568951357111" duration="46669000" />
     </task>
     <servers />
   </component>
@@ -1314,13 +651,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="428824000" />
+    <option name="totallyTimeSpent" value="429196000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1600" height="840" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1329,14 +665,14 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.36834532" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8754839" visible="true" weight="0.16546762" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8754839" visible="true" weight="0.4388489" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3582734" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.12451613" side_tool="true" weight="0.52949643" />
       <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.7064516" weight="0.3467626" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.0" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.23741007" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.3294964" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
@@ -1394,6 +730,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -1410,9 +751,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/dataset/RddDemo.scala">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/special/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1745,10 +1083,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sql/DateTime.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/sql/JSON.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="239">
+          <caret line="41" column="33" lean-forward="true" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
         </state>
       </provider>
     </entry>
