@@ -1,2 +1,0 @@
-# PairRDD examples
-

@@ -9,6 +9,7 @@ import utils.UdfUtil._
 import utils.ConnectUtil
 
 object DataFrameDemo extends App {
+  // https://blog.csdn.net/dabokele/article/details/52802150 dataframe操作
 
   //1.6后基本上不用sc了，用spark.sparkContext代替
   val sc = ConnectUtil.sc
@@ -438,7 +439,7 @@ object DataFrameDemo extends App {
   }
 
   val 对聚合操作后的Value进行操作 = 0
-  if (1) {
+  if (0) {
     //具体案例见sparkdemo.practice.Demo05
     df.groupByKey(row => row.getAs[String]("key1")).mapGroups((key1, group) => {
       var res = ""
@@ -485,7 +486,7 @@ object DataFrameDemo extends App {
     val rankSpec2 = Window.partitionBy("seller_id").orderBy("price")
     orders.withColumn("rank2", rank.over(rankSpec2)).show() //1,2,2,4
     orders.withColumn("dense_rank2", dense_rank.over(rankSpec2)).show() //1,2,2,3
-
+    //row_number().over()
     //定义前一单和本单的窗口
     val winSpec = Window.partitionBy("seller_id").orderBy("pay_time").rowsBetween(-1, 0)
     //店铺这个订单及前一单的价格和
@@ -512,8 +513,15 @@ object DataFrameDemo extends App {
   val 排序 = 0
   if (0) {
     //orderby是调用的sort
-    df.orderBy(df("key1").desc, df("key2").asc_nulls_first).limit(3).show()
+    df.orderBy(df("key1").desc).show()
+    // df.orderBy(desc("key3" )).show()
+    // df.orderBy(-col("col2")).show
+    // df.orderBy(col("col2").desc).show df.orderBy(col("col2").desc).show
+    //df.orderBy("key3").show()
+    df.orderBy(df("key1").desc, df("key2").asc_nulls_first).show() //limit(3)
     df.sort(df("key1").desc).show()
+    // df.sort(desc("col2")).show
+    //df.sort($"key1".desc).show
   }
 
   val 单表操作 = 0
@@ -555,7 +563,7 @@ object DataFrameDemo extends App {
     //两个DF的连接操作,通过主键连接
     //val df1 = spark.createDataset(Seq(("aaa", 1, 2), ("bbb", 3, 4), ("ccc", 3, 5), ("bbb", 4, 6))).toDF("key1", "key2", "key3")
     //val df2 = spark.createDataset(Seq(("aaa", 2, 2), ("bbb", 3, 5), ("ddd", 3, 5), ("bbb", 4, 6), ("eee", 1, 2), ("aaa", 1, 5), ("fff", 5, 6))).toDF("key1", "key2", "key4")
-    val df1 = spark.createDataset(Seq(("aaa", 1, 2))).toDF("key1", "key2", "key3")
+    val df1 = spark.createDataset(Seq(("aaa", 1, 2), ("bbb", 3, 5))).toDF("key1", "key2", "key3")
     val df2 = spark.createDataset(Seq(("aaa", 2, 2), ("bbb", 3, 5))).toDF("key3", "key2", "key1")
 
     println("求并集：union====Cost：Low=========")
@@ -567,7 +575,7 @@ object DataFrameDemo extends App {
   }
 
   val 多表Join = 0
-  if (0) {
+  if (1) {
     val df1 = spark.createDataset(Seq(("aaa", 1, 2), ("bbb", 3, 4), ("ccc", 3, 5), ("bbb", 4, 6))).toDF("key1", "key2", "key3")
     val df2 = spark.createDataset(Seq(("aaa", 2, 2), ("bbb", 3, 5), ("ddd", 3, 5), ("bbb", 4, 6), ("eee", 1, 2), ("aaa", 1, 5), ("fff", 5, 6))).toDF("key1", "key2", "key4")
 
@@ -849,10 +857,10 @@ object DataFrameDemo extends App {
   // 涉及到关联操作的时候，对数据进行重新分区操作可以提高程序运行效率
   // 内部是通过shuffle进行操作的。
   // 很多时候效率的提升远远高于重新分区的消耗，所以进行重新分区还是很有价值的
-  if (0) {
+  if (1) {
     //有明确的分区
     df.repartition(10)
-    df.rdd.getNumPartitions
+    println(df.rdd.getNumPartitions)
 
     //它由保留现有分区数量的给定分区表达式划分。得到的DataFrame是哈希分区的。
     // 这与SQL (Hive QL)中的“distribution BY”操作相同
@@ -869,6 +877,6 @@ object DataFrameDemo extends App {
     df.coalesce(100) //触发shuffle 返回一个100分区的DataFrame，等价于repartition(100)
   }
   df.groupBy("key1").sum().show
-  //df.groupByKey(row => row.getAs[String]("key1"))
+  // df.groupByKey(row => row.getAs[String]("key1"))
 
 }

@@ -21,9 +21,7 @@ object Demo02 extends App{
     val sc = new SparkContext(new SparkConf().setAppName("Exam04").setMaster("local[2]"))
     val spark = SparkSession.builder().appName("Exam04").config("spark.some.config.option", "some-value").getOrCreate()
     import spark.implicits._
-
     //  val df = spark.read.textFile("source/userindo.txt").map(x=>x.split(",")).map(x=>(x(0),x(1))).toDF("id","time")
-
     //测试用
     val df = spark.read.textFile("F:\\桌面\\spark\\lihaoran\\source\\userindo.txt").map(x=>x.split(",")).map(x=>(x(0),x(1))).toDF("id","time")
 

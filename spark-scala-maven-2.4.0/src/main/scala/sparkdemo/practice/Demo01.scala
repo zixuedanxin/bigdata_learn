@@ -21,9 +21,10 @@ object Demo01 extends App {
     val spark = ConnectUtil.spark
     val sc = ConnectUtil.sc
 
+
     import spark.implicits._
 
-    if (0) {
+    if (1) {
         //方法1:推荐
         //val words1 = sc.textFile("src/sparkdemo/testfile/hello.txt")
         //val words1 = sc.textFile("file:/usr/local/jar/lihaoran/hello.txt")

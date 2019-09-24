@@ -58,7 +58,7 @@ object RddDemo extends App {
     val count = lines.flatMap(_.split("\\s+")).map((_, 1)).reduceByKey(_ + _).sortBy(_._2).collect
 
     println("从文件中读取======")
-    val lines2 = sc.textFile("src/sparkdemo/xxxxxx.md")
+    val lines2 = sc.textFile("src/main/resource/data/text/people.txt")
     lines2.foreach(println(_))
   }
 
@@ -70,7 +70,7 @@ object RddDemo extends App {
   // 可以直接出结果的，比如collect，reduce
 
   val map_mapValues_mapPartitions_mapPartitionsWithIndex = 0
-  if (0) {
+  if (1) {
     println("map：对RDD的每个元素进行处理，并将结果作为新RDD返回=========")
     val rdd1 = sc.parallelize(Seq(1, 2, 3, 4))
     rdd1.map(_ + 1)
@@ -98,11 +98,13 @@ object RddDemo extends App {
       }
       res.iterator //第一个分区：List((2,3),(1,2))
     }
+
     rdd3.mapPartitions(myfunc).collect
     //Array[(Int, Int)] = Array((2,3), (1,2), (5,6), (4,5), (8,9), (7,8))
 
     //案例2：
     val rdd4 = sc.parallelize(List(1, 2, 3, 4, 5, 6, 7, 8, 9, 10), 3)
+
     def myfunc2(iter: Iterator[Int]): Iterator[Int] = {
       var res = List[Int]()
       while (iter.hasNext) {
@@ -120,7 +122,8 @@ object RddDemo extends App {
       }
       res.iterator
     }
-    rdd4.mapPartitions(myfunc2).collect
+    rdd4.printItemLoc()
+    println(rdd4.mapPartitions(myfunc2).collect)
 
     //案例2的简化版：
     val rdd5 = sc.parallelize(1 to 10, 3)
@@ -210,7 +213,7 @@ object RddDemo extends App {
   }
 
   val combineByKey = 0
-  if (0) {
+  if (1) {
     //—————————————————————combineByKey
     //  combineByKey[C](createCombiner: V => C, mergeValue: (C, V) => C, mergeCombiners: (C, C) => C, partitioner: Partitioner): RDD[(K, C)]
     //  非常高效的实现，通过一个接一个地应用多个聚合器，组合由双组件元组组成的RDD的值。 和reduceByKey是相同的效果
@@ -219,7 +222,8 @@ object RddDemo extends App {
     val a = sc.parallelize(List("dog", "dog", "gnu", "salmon", "rabbit", "turkey", "bee", "bear", "bee"), 3) //注意dog和bee
     val b = sc.parallelize(List(1, 1, 2, 2, 2, 1, 2, 2, 2), 3)
     val c = a.zip(b) //c.getNumPartitions，具有三个分区
-    //res3: Array[(String, Int)] = Array((dog,1), (dog,1), (gnu,2), (salmon,2), (rabbi t,2), (turkey,1), (bee,2), (bear,2), (bee,2))
+    //res3: Array[(String, Int)] = Array((dog,1), (dog,1), (gnu,2),
+    // (salmon,2), (rabbi t,2), (turkey,1), (bee,2), (bear,2), (bee,2))
 
     c.combineByKey(x => x, (a: Int, b: Int) => a + b, (m: Int, n: Int) => m + n)
     //第一个参数x:原封不动取出来, 第二个参数:是函数, 局部运算, 第三个:是函数, 对局部运算后的结果再做运算
@@ -230,7 +234,16 @@ object RddDemo extends App {
     //第一个参数加10
     //res13: Array[(String, Int)] = Array((rabbit,12), (turkey,11), (bee,14), (gnu,12) , (salmon,12), (bear,12), (dog,12))
     //bee是(2,2)->(12,2),同理dog是(11,1)
-
+//    """
+// |1、createCombiner:V=>C　　分组内的创建组合的函数。通俗点将就是对读进来的数据进行初始化，其把当前的值作为参数，可以对该值做一些转换操作，转换为我们想要的数据格式
+// |2、mergeValue:(C,V)=>C　　该函数主要是分区内的合并函数，作用在每一个分区内部。其功能主要是将V合并到之前(createCombiner)的元素C上,注意，这里的C指的是上一函数转换之后的数据格式，而这里的V指的是原始数据格式(上一函数为转换之前的)
+//      |
+// |3、mergeCombiners:(C,C)=>R　　该函数主要是进行多分取合并，此时是将两个C合并为一个C，例如两个C:(Int)进行相加之后得到一个R:(Int)
+//      |
+// |4、partitioner:自定义分区数，默认是hashPartitioner
+//      |
+// 5、mapSideCombine:Boolean=true　　该参数是设置是否在map端进行combine操作
+//    """
 
     //案例2：
     val a2 = sc.parallelize(List("dog", "cat", "gnu", "salmon", "rabbit", "turkey", "wolf", "bear", "bee"), 3)
@@ -253,7 +266,7 @@ object RddDemo extends App {
       (v) => (v, 1), //注意v是value值而不是key值  (1,2,9)->((1,1),2,9)
       (acc: (Int, Int), v) => (acc._1 + v, acc._2 + 1), //coffee(3,2)，第一个参数是sum，第二个参数是次数
       (acc1: (Int, Int), acc2: (Int, Int)) => (acc1._1 + acc2._1, acc1._2 + acc2._2)) //同上
-        .map { case (key, value) => (key, value._1 / value._2.toFloat) } //用到模式匹配
+      .map { case (key, value) => (key, value._1 / value._2.toFloat) } //用到模式匹配
     result.collectAsMap().map(println(_))
     //(coffee,4.0)  (panda,3.0)
   }
@@ -363,7 +376,7 @@ object RddDemo extends App {
   }
 
   val 针对两个pairRDD的连接操作 = 0
-  if (0) {
+  if (1) {
     val rdd = sc.parallelize(Seq((1, 2), (3, 4), (3, 6)))
     val other = sc.parallelize(Seq((3, 9))) //注意不要写成Seq(3,9)
 
@@ -500,7 +513,7 @@ object RddDemo extends App {
     //案例1：
     val a2 = sc.parallelize(List(1, 2, 3, 4), 2)
     a2.fold(0)(_ + _) //10
-    a2.fold(2)(_ + _) //16     初始值参与每个分区和总的计算。
+    a2.fold(2)(_ + _) //16     初始值参与每个分区和总的计算。先是两个分区中2*2 再在分区合并中初始值是2，所以多出了6
     a2.fold(2)(_ * _) //192    2*(2*1*2)*(2*3*4)=2*4*24=192
 
 
@@ -614,12 +627,12 @@ object RddDemo extends App {
   //见笔记spark调优-01代码调优
 
   val 分区Partition = 0
-  if (0) {
+  if (1) {
     import org.apache.spark.HashPartitioner
     import org.apache.spark.RangePartitioner
 
     println("partitionBy的使用========================================================================")
-    if (0) {
+    if (1) {
       //参考：https://blog.csdn.net/zhangzeyuan56/article/details/80935034
       println("HashPartitioner================")
       //HashPartitioner确定分区的方式：partition = key.hashCode () % numPartitions
@@ -640,6 +653,7 @@ object RddDemo extends App {
       class CustomPartitioner(numParts: Int) extends Partitioner {
         //分多少个区
         override def numPartitions: Int = numParts
+
         //什么数据放到哪个区
         override def getPartition(key: Any): Int = {
           if (key == 2) {
@@ -662,13 +676,13 @@ object RddDemo extends App {
     }
 
     println("事先使用partitionBy对RDD进行分区,可以减少大量的shuffle======================================")
-    if (0) {
+    if (1) {
       //如果一个RDD需要多次在join(特别是迭代)中使用,那么事先使用partitionBy对RDD进行分区,可以减少大量的shuffle
       //参考：https://blog.csdn.net/wy250229163/article/details/52388305
       //https://blog.csdn.net/yhb315279058/article/details/50955282
 
       val rdd1 = sc.parallelize(Array((1, 1), (1, 2), (2, 1), (3, 1), (1, 2), (2, 1), (3, 1))).
-          partitionBy(new HashPartitioner(2)).persist()
+        partitionBy(new HashPartitioner(2)).persist()
       val rdd2 = sc.parallelize(Array((1, 'x'), (2, 'y'), (2, 'z'), (4, 'w'), (2, 'y'), (2, 'z'), (4, 'w')))
       //有优化效果,rdd1不再需要shuffle
       val (res1, time1) = getMethodRunTime(rdd1.join(rdd2))
@@ -680,7 +694,7 @@ object RddDemo extends App {
 
     println("计算质数通过分区(Partition)提高Spark的运行性能=============================================")
     //https://blog.csdn.net/u012102306/article/details/53101424
-    if (0) {
+    if (1) {
       val n = 2000000
       //val composite = sc.parallelize(2 to n, 8).map(x => (x, 2 to n / x)).flatMap(kv => kv._2.map(_ * kv._1)) //14s
       val composite = sc.parallelize(2 to n, 8).map(x => (x, (2 to (n / x)))).repartition(8).flatMap(kv => kv._2.map(_ * kv._1)) //7s

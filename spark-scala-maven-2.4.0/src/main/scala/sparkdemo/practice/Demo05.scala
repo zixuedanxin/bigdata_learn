@@ -171,7 +171,6 @@ object Demo05 extends App {
   //或
   spark.sql("select ID,INTIME,OUTTIME,minusHour(INTIME,OUTTIME) as minusHour from dfb")
 
-
   //——————————————————————————————————————————————————————————————————
   //3、全部旅客的每次入店时间和出店时间（以小时为单位，四舍五入），
   //    比如李华2018-08-15 12:01:00入店，则入店时间记为12，2018-08-15 21:49:00出店，则记为22。
