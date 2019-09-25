@@ -65,18 +65,18 @@ object MLlibPipeline {
     // Fit the pipeline to training documents.
     // RDDs of case classes work well with Pipelines since Spark SQL can infer a schema from
     // case classes and convert the data into a SchemaRDD.
-    val model = pipeline.fit(trainingData)
-
-    // Make predictions on test documents.
-    // The fitted model automatically transforms features using Tokenizer and HashingTF.
-    val testData = sc.parallelize(Seq(
-      Document(0, "O M G GET cheap stuff by sending money to ..."), // positive example (spam)
-      Document(1, "Hi Dad, I started studying Spark the other ...")   // negative example (ham)
-    ))
-    val predictions = model.transform(testData)
-      .select('id, 'prediction).collect()
-      .map { case Row(id, prediction) => (id, prediction) }.toMap
-    println(s"Prediction for positive test example: ${predictions(0)}")
-    println(s"Prediction for negative test example: ${predictions(1)}")
+//    val model = pipeline.fit(trainingData)
+//
+//    // Make predictions on test documents.
+//    // The fitted model automatically transforms features using Tokenizer and HashingTF.
+//    val testData = sc.parallelize(Seq(
+//      Document(0, "O M G GET cheap stuff by sending money to ..."), // positive example (spam)
+//      Document(1, "Hi Dad, I started studying Spark the other ...")   // negative example (ham)
+//    ))
+//    val predictions = model.transform(testData)
+//      .select('id, 'prediction).collect()
+//      .map { case Row(id, prediction) => (id, prediction) }.toMap
+//    println(s"Prediction for positive test example: ${predictions(0)}")
+//    println(s"Prediction for negative test example: ${predictions(1)}")
   }
 }

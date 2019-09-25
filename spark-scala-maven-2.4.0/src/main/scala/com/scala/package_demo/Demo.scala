@@ -11,7 +11,7 @@ import utils.BaseUtil.{printMap => _, _}
   * Time: 9:57 
   * Description: 源文件的目录和包之间并没有强制的关联关系。但是会警告。
   */
-package com.scalademo {
+package com.scala {
   package package_demo {
 
     //包对象，所有子包可以用的函数，变量等。

@@ -1,4 +1,4 @@
-package com.scalademo
+package com.scala
 
 import java.io.PrintWriter
 

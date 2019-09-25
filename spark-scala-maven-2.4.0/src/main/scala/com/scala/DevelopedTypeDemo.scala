@@ -1,4 +1,4 @@
-package com.scalademo
+package com.scala
 
 import java.awt.{Point, Rectangle, Shape}
 import java.awt.geom.Area

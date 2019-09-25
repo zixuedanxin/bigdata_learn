@@ -2,95 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b71f93c1-c3e4-4e07-bc65-2c329b8a0c48" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicAvg.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicAvgFromFile.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicAvgFromFiles.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicAvgMapPartitions.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicIntersectByKey.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicLoadNums.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicLoadTextFromFTP.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicMapThenFilter.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicParseJson.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicParseJsonWithJackson.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicQueryCassandra.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicSaveProtoBuf.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicSaveSequenceFile.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicStreamingExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicSum.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/ChapterSixExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/FlumeInput.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/LoadHive.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/LoadJsonWithElephantBird.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/LoadJsonWithSparkSQL.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/MLlibPipeline.disabled_until_111" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/RemoveOutliers.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/SparkSQLTwitter.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/WordCount.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/WriteSimpleDB.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/logs/LogAnalyzerTotal.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/logs/LogAnalyzerWindowed.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/logs/ReadTransferStats.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/cn/glod/beans/Log.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/cn/huage/beans/Log.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/cn/glod/beans/ProvinceCityData.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/cn/huage/beans/ProvinceCityData.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/cn/glod/beans/ReportBeans.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/cn/huage/beans/ReportBeans.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/cn/glod/beans/RichString.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/cn/huage/beans/RichString.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/cn/glod/config/ConfigHelper.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/cn/huage/config/ConfigHelper.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/cn/glod/core/ReadFile.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/cn/huage/core/ReadFile.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/cn/glod/core/ReadParquet.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/cn/huage/core/ReadParquet.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/cn/glod/mysql/DmpKPI.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/cn/huage/mysql/DmpKPI.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/cn/glod/mysql/MySQLHandler.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/cn/huage/mysql/MySQLHandler.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/cn/glod/practice/AppDataDistributedBroadcastCore.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/cn/huage/practice/AppDataDistributedBroadcastCore.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/cn/glod/practice/AppDataDistributedJedisCore.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/cn/huage/practice/AppDataDistributedJedisCore.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/cn/glod/practice/AppDataMarkReport.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/cn/huage/practice/AppDataMarkReport.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/cn/glod/practice/ProvinceDataDistributedCore.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/cn/huage/practice/ProvinceDataDistributedCore.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/cn/glod/practice/ProvinceDataDistributedSQL.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/cn/huage/practice/ProvinceDataDistributedSQL.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/cn/glod/utils/DataUtils.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/cn/huage/utils/DataUtils.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/cn/glod/utils/Jtools.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/cn/huage/utils/Jtools.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/cn/glod/utils/MySparkUtils.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/cn/huage/utils/MySparkUtils.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicAvg.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicAvg.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicAvgFromFile.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicAvgFromFile.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicAvgFromFiles.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicAvgFromFiles.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicAvgMapPartitions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicAvgMapPartitions.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicAvgWithKryo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicAvgWithKryo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicFilterUnionCombo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicFilterUnionCombo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicIntersectByKey.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicIntersectByKey.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicLoadNums.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicLoadNums.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicLoadSequenceFile.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicLoadSequenceFile.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicLoadTextFromFTP.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicLoadTextFromFTP.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicMap.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicMap.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicMapNoCache.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicMapNoCache.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicMapPartitions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicMapPartitions.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicMapThenFilter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicMapThenFilter.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicParseJson.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicParseJson.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicParseJsonWithJackson.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicParseJsonWithJackson.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicParseWholeFileCsv.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicParseWholeFileCsv.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicQueryCassandra.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicQueryCassandra.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicSaveProtoBuf.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicSaveProtoBuf.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicSaveSequenceFile.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicSaveSequenceFile.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicStreamingExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicStreamingExample.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/BasicSum.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicSum.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/ChapterSixExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/ChapterSixExample.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/FlumeInput.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/FlumeInput.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/KafkaInput.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/KafkaInput.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/LoadHive.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/LoadHive.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/LoadJsonWithElephantBird.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/LoadJsonWithElephantBird.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/LoadJsonWithSparkSQL.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/LoadJsonWithSparkSQL.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/LoadKeyValueTextInput.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/LoadKeyValueTextInput.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/LoadSimpleJdbc.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/LoadSimpleJdbc.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/MLlib.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/MLlib.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/MLlibPipeline.disabled_until_111" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/MLlibPipeline.disabled_until_111" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/PerKeyAvg.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/PerKeyAvg.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/PipeExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/PipeExample.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/RemoveOutliers.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/RemoveOutliers.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/SparkSQLTwitter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/SparkSQLTwitter.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/StreamingLogInput.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/StreamingLogInput.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/WordCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/WordCount.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/WriteSimpleDB.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/WriteSimpleDB.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/logs/LogAnalyzerAppMain.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/logs/LogAnalyzerAppMain.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/logs/LogAnalyzerTotal.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/logs/LogAnalyzerTotal.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/logs/LogAnalyzerWindowed.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/logs/LogAnalyzerWindowed.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/logs/ReadTransferStats.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/logs/ReadTransferStats.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/MLlibPipeline.disabled_until_111" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/MLlibPipeline.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/AnnotationDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/AnnotationDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/ClassDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/ClassDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/CollectionDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/CollectionDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/ControlAndFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/ControlAndFunction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/DataDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/DataDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/DateDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/DateDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/DevelopedTypeDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/DevelopedTypeDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/DocDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/DocDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/ExceptionDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/ExceptionDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/ExtendsDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/ExtendsDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/IODemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/IODemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/ImplicitDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/ImplicitDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/MatchDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/MatchDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/NoDecompile.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/NoDecompile.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/OrderDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/OrderDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/Regexp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/Regexp.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/TraitDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/TraitDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/generic_type_demo/GenericTypeDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/generic_type_demo/GenericTypeDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/package_demo/Demo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/package_demo/Demo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/practice/Demo01.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/practice/Demo01.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/practice/Demo02.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/practice/Demo02.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/practice/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/practice/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/streaming/README.md" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -197,6 +133,7 @@
           <entry key="class" value="40" />
           <entry key="conf" value="2" />
           <entry key="crc" value="1" />
+          <entry key="disabled_until_111" value="1" />
           <entry key="java" value="25" />
           <entry key="json" value="4" />
           <entry key="log" value="1" />
@@ -207,7 +144,7 @@
           <entry key="properties" value="2" />
           <entry key="py" value="17" />
           <entry key="sc" value="1" />
-          <entry key="scala" value="780" />
+          <entry key="scala" value="791" />
           <entry key="sql" value="1" />
           <entry key="txt" value="11" />
           <entry key="xml" value="15" />
@@ -220,11 +157,11 @@
           <entry key="JAVA" value="25" />
           <entry key="JSON" value="4" />
           <entry key="Markdown" value="16" />
-          <entry key="PLAIN_TEXT" value="21" />
+          <entry key="PLAIN_TEXT" value="22" />
           <entry key="Properties" value="2" />
           <entry key="Python" value="12" />
           <entry key="SQL" value="1" />
-          <entry key="Scala" value="781" />
+          <entry key="Scala" value="792" />
           <entry key="XML" value="15" />
         </counts>
       </usages-collector>
@@ -235,7 +172,7 @@
           <entry key="properties" value="4" />
           <entry key="py" value="35" />
           <entry key="sc" value="7" />
-          <entry key="scala" value="4537" />
+          <entry key="scala" value="4540" />
           <entry key="txt" value="60" />
           <entry key="xml" value="107" />
         </counts>
@@ -247,7 +184,7 @@
           <entry key="PLAIN_TEXT" value="60" />
           <entry key="Properties" value="4" />
           <entry key="Python" value="35" />
-          <entry key="Scala" value="4544" />
+          <entry key="Scala" value="4547" />
           <entry key="XML" value="107" />
         </counts>
       </usages-collector>
@@ -255,11 +192,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicAvg.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+            <state relative-caret-position="72">
+              <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/scala/MLlibPipeline.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="79" column="73" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="79" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -318,9 +264,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/sql/UDT.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/days/AnnualTotal.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/days/AdPVMain.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/days/UserBasedCF.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/days/PredictProduct.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/days/PeopleInfo/ALSDemo.scala" />
@@ -367,8 +310,11 @@
         <option value="$PROJECT_DIR$/src/main/python/streaming/structedstream.py" />
         <option value="$PROJECT_DIR$/src/main/python/streaming/StructStreamingKafka.py" />
         <option value="$PROJECT_DIR$/src/main/scala/sparkdemo/CustomPartitioner.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/logs/LogAnalyzerWindowed.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/KafkaInput.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/scala/DataDemo.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/BasicMap.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/logs/LogAnalyzerWindowed.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/MLlibPipeline.scala" />
       </list>
     </option>
   </component>
@@ -503,7 +449,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569400919932" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569402862424" />
     <property name="last_opened_file_path" value="$USER_HOME$/davinci" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -560,6 +506,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BasicMap (1)" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.oreilly.BasicMap" />
+      <module name="spark-scala-maven-2.4.0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oreilly.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BasicMap" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.oreilly.scala.BasicMap" />
       <module name="spark-scala-maven-2.4.0" />
@@ -573,12 +532,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HashJoin" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="special.HashJoin" />
+    <configuration name="Demo02" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.scala.package_demo.Demo02" />
       <module name="spark-scala-maven-2.4.0" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="special.*" />
+          <option name="PATTERN" value="com.scala.package_demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -586,12 +545,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PairRDD" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="sparkdemo.PairRDD" />
+    <configuration name="IODemo" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.scala.IODemo" />
       <module name="spark-scala-maven-2.4.0" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sparkdemo.*" />
+          <option name="PATTERN" value="com.scala.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -625,44 +584,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StructStreamingKafka" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="spark-scala-maven-2.4.0" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/python/streaming" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main/python/streaming/StructStreamingKafka.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Application.insert" />
       <item itemvalue="Application.Run" />
-      <item itemvalue="Python.StructStreamingKafka" />
-      <item itemvalue="Application.HashJoin" />
-      <item itemvalue="Application.PairRDD" />
       <item itemvalue="Application.BasicMap" />
       <item itemvalue="Application.BasicAvg" />
+      <item itemvalue="Application.IODemo" />
+      <item itemvalue="Application.Demo02" />
+      <item itemvalue="Application.BasicMap (1)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.BasicAvg" />
+        <item itemvalue="Application.BasicMap (1)" />
         <item itemvalue="Application.BasicMap" />
-        <item itemvalue="Application.PairRDD" />
-        <item itemvalue="Application.HashJoin" />
-        <item itemvalue="Python.StructStreamingKafka" />
+        <item itemvalue="Application.Demo02" />
+        <item itemvalue="Application.IODemo" />
       </list>
     </recent_temporary>
   </component>
@@ -713,7 +650,7 @@
       <workItem from="1568622618863" duration="10568000" />
       <workItem from="1568712359178" duration="29588000" />
       <workItem from="1568951357111" duration="48774000" />
-      <workItem from="1569320355660" duration="15201000" />
+      <workItem from="1569320355660" duration="16927000" />
     </task>
     <servers />
   </component>
@@ -750,7 +687,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="446502000" />
+    <option name="totallyTimeSpent" value="448228000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1600" height="840" extended-state="6" />
@@ -765,14 +702,14 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.36834532" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8754839" weight="0.42733812" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8754839" weight="0.38273382" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3582734" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.12451613" side_tool="true" weight="0.52949643" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.7064516" weight="0.7338129" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3294964" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.7064516" weight="0.4561151" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.18273382" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.3294964" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
@@ -822,54 +759,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/hbase/HbaseTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-557">
-          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sql/JSON.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/python/BasicSum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#149#159#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/python/sql/basic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1458" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/dataframe/Basic.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1044">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/python/dataframe/base01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/dataframe/UDT.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -1031,17 +920,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/scala/logs/LogAnalyzerAppMain.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/logs/LogAnalyzerAppMain.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
           <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/scala/logs/LogAnalyzerWindowed.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1073,13 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicMap.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
@@ -1123,10 +998,85 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicAvgMapPartitions.scala">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/scala/IODemo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="51" column="14" lean-forward="true" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/imooc/spark/DataFrameApp.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-175">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/scala/package_demo/Demo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding>
+            <element signature="e#7#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/scala/DataDemo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="191" column="10" lean-forward="true" selection-start-line="191" selection-start-column="10" selection-end-line="191" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/MLlibPipeline.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
+          <folding>
+            <element signature="e#851#900#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/scala/logs/LogAnalyzerWindowed.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-86">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="e#32#98#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/BasicMap.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/BasicParseWholeFileCsv.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicAvg.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        <state relative-caret-position="72">
+          <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/scala/MLlibPipeline.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="79" column="73" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="79" selection-end-column="73" />
         </state>
       </provider>
     </entry>

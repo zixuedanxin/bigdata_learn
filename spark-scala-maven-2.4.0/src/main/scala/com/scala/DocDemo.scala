@@ -1,4 +1,4 @@
-package com.scalademo
+package com.scala
 
 /**
   * Created with IntelliJ IDEA.
