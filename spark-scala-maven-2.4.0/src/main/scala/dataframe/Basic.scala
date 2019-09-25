@@ -2,7 +2,7 @@ package dataframe
 
 import org.apache.spark.sql.SparkSession
 
-//
+//https://www.cnblogs.com/code2one/p/9872010.html
 // Create a DataFrame based on an RDD of case class objects and perform some basic
 // DataFrame operations. The DataFrame can instead be created more directly from
 // the standard building blocks -- an RDD[Row] and a schema -- see the example
@@ -56,6 +56,7 @@ object Basic {
 
     customerDF.filter($"state".equalTo("CA")).show()
     customerDF.filter("state='CA'").show()
+
 
   }
 }

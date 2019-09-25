@@ -19,7 +19,7 @@ import org.apache.spark.sql.types._
 //
 // Underlying case class defining 3D points. The annotation conencts it with
 // the UDT definition below.
-//
+//https://www.cnblogs.com/code2one/p/9872010.html
 
 /** *** SPECIAL NOTE ***
   * This feature has been removed in Spark 2.0.0 -- please see
