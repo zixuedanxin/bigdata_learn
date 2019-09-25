@@ -1,8 +1,7 @@
-package special
+package sparkdemo
 
 import org.apache.spark.rdd.RDD
-import org.apache.spark.{Partitioner, SparkContext, SparkConf}
-import org.apache.spark.SparkContext._
+import org.apache.spark.{Partitioner, SparkConf, SparkContext}
 
 class SpecialPartitioner extends Partitioner {
   def numPartitions = 10

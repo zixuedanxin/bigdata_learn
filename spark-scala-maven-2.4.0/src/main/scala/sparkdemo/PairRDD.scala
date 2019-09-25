@@ -1,12 +1,10 @@
-package special
+package sparkdemo
 
 import org.apache.spark.rdd.RDD
-import org.apache.spark.{Partitioner, SparkContext, SparkConf}
+import org.apache.spark.{Partitioner, SparkConf, SparkContext}
 
 // This gives is access to the PairRDDFunctions
-import org.apache.spark.SparkContext._
-
-import scala.collection.{mutable, Iterator}
+import scala.collection.{Iterator, mutable}
 
 // Partition a pair RDD with an integer key with the given
 // partition count

@@ -1,12 +1,11 @@
-package special
+package sparkdemo
 
 import org.apache.spark.rdd.RDD
-import org.apache.spark.{SparkContext, SparkConf}
+import org.apache.spark.{SparkConf, SparkContext}
 
 import scala.collection.mutable
 
 // This gives is access to the PairRDDFunctions
-import org.apache.spark.SparkContext._
 
 // encapsulate a small sequence of pairs to be joined with pair RDDs --
 // making this serializable effectively allows the hash table to be

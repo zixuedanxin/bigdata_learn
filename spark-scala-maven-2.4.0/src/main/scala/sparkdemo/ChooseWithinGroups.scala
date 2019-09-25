@@ -1,4 +1,4 @@
-package special
+package sparkdemo
 
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.SparkSession
