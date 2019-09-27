@@ -3,30 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b71f93c1-c3e4-4e07-bc65-2c329b8a0c48" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/MLlibPipeline.disabled_until_111" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/MLlibPipeline.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/AnnotationDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/AnnotationDemo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/ClassDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/ClassDemo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/CollectionDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/CollectionDemo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/ControlAndFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/ControlAndFunction.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/DataDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/DataDemo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/DateDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/DateDemo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/DevelopedTypeDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/DevelopedTypeDemo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/DocDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/DocDemo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/ExceptionDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/ExceptionDemo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/ExtendsDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/ExtendsDemo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/IODemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/IODemo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/ImplicitDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/ImplicitDemo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/MatchDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/MatchDemo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/NoDecompile.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/NoDecompile.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/OrderDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/OrderDemo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/Regexp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/Regexp.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/TraitDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/TraitDemo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/generic_type_demo/GenericTypeDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/generic_type_demo/GenericTypeDemo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/package_demo/Demo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/package_demo/Demo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/practice/Demo01.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/practice/Demo01.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/practice/Demo02.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/practice/Demo02.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/scalademo/practice/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/scala/practice/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/streaming/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/sql/hiveql/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/streaming/structured/Basic01.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/streaming/structured/Basic01.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/streaming/structured/README.md" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -103,7 +82,7 @@
     <session id="1115653753">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="33" />
+          <entry key="project.closed" value="34" />
           <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="3" />
@@ -124,27 +103,28 @@
           <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.68" value="1" />
           <entry key="project.open.time.74" value="1" />
+          <entry key="project.open.time.86" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="37" />
+          <entry key="project.opened" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="40" />
+          <entry key="class" value="43" />
           <entry key="conf" value="2" />
           <entry key="crc" value="1" />
           <entry key="disabled_until_111" value="1" />
           <entry key="java" value="25" />
           <entry key="json" value="4" />
           <entry key="log" value="1" />
-          <entry key="md" value="16" />
+          <entry key="md" value="17" />
           <entry key="mdj" value="1" />
           <entry key="part-00000" value="1" />
           <entry key="part-00001" value="1" />
           <entry key="properties" value="2" />
           <entry key="py" value="17" />
           <entry key="sc" value="1" />
-          <entry key="scala" value="791" />
+          <entry key="scala" value="801" />
           <entry key="sql" value="1" />
           <entry key="txt" value="11" />
           <entry key="xml" value="15" />
@@ -152,16 +132,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="40" />
+          <entry key="CLASS" value="43" />
           <entry key="HOCON" value="2" />
           <entry key="JAVA" value="25" />
           <entry key="JSON" value="4" />
-          <entry key="Markdown" value="16" />
+          <entry key="Markdown" value="17" />
           <entry key="PLAIN_TEXT" value="22" />
           <entry key="Properties" value="2" />
           <entry key="Python" value="12" />
           <entry key="SQL" value="1" />
-          <entry key="Scala" value="792" />
+          <entry key="Scala" value="802" />
           <entry key="XML" value="15" />
         </counts>
       </usages-collector>
@@ -172,7 +152,7 @@
           <entry key="properties" value="4" />
           <entry key="py" value="35" />
           <entry key="sc" value="7" />
-          <entry key="scala" value="4540" />
+          <entry key="scala" value="4575" />
           <entry key="txt" value="60" />
           <entry key="xml" value="107" />
         </counts>
@@ -184,7 +164,7 @@
           <entry key="PLAIN_TEXT" value="60" />
           <entry key="Properties" value="4" />
           <entry key="Python" value="35" />
-          <entry key="Scala" value="4547" />
+          <entry key="Scala" value="4582" />
           <entry key="XML" value="107" />
         </counts>
       </usages-collector>
@@ -192,20 +172,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicAvg.scala">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/rdd/Ex1_SimpleRDD.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
-              <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/scala/MLlibPipeline.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="79" column="73" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="79" selection-end-column="73" />
+              <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -250,6 +221,7 @@
       <find>Subscribe</find>
       <find>Window</find>
       <find>lag</find>
+      <find>SparkC</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -306,7 +278,6 @@
         <option value="$PROJECT_DIR$/src/main/scala/streaming/structured/StructedStreamingJoin.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/streaming/structured/package.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/streaming/structured/StructuredStreamingOffset.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/streaming/structured/Basic01.scala" />
         <option value="$PROJECT_DIR$/src/main/python/streaming/structedstream.py" />
         <option value="$PROJECT_DIR$/src/main/python/streaming/StructStreamingKafka.py" />
         <option value="$PROJECT_DIR$/src/main/scala/sparkdemo/CustomPartitioner.scala" />
@@ -315,6 +286,7 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/BasicMap.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/logs/LogAnalyzerWindowed.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/oreilly/scala/MLlibPipeline.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/streaming/structured/Basic01.scala" />
       </list>
     </option>
   </component>
@@ -427,7 +399,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="streaming" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spark-scala-maven-2.4.0" type="b2602c69:ProjectViewProjectNode" />
@@ -435,8 +407,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="streaming" type="462c0819:PsiDirectoryNode" />
+              <item name="structured" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -449,7 +421,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569402862424" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569570961763" />
     <property name="last_opened_file_path" value="$USER_HOME$/davinci" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -492,7 +464,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BasicAvg">
+  <component name="RunManager" selected="JUnit.HbaseTest.getByScan">
     <configuration name="BasicAvg" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.oreilly.scala.BasicAvg" />
       <module name="spark-scala-maven-2.4.0" />
@@ -545,19 +517,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IODemo" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.scala.IODemo" />
-      <module name="spark-scala-maven-2.4.0" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.scala.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Run" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.opensource.bigdata.spark.sql.n_02_spark_dataset.action.n_15_dataset_show_truncate_vertical.Run" />
       <module name="spark-scala-maven-2.4.0" />
@@ -584,22 +543,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HbaseTest.getByScan" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spark-scala-maven-2.4.0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hbase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hbase" />
+      <option name="MAIN_CLASS_NAME" value="hbase.HbaseTest" />
+      <option name="METHOD_NAME" value="getByScan" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.insert" />
       <item itemvalue="Application.Run" />
       <item itemvalue="Application.BasicMap" />
       <item itemvalue="Application.BasicAvg" />
-      <item itemvalue="Application.IODemo" />
       <item itemvalue="Application.Demo02" />
       <item itemvalue="Application.BasicMap (1)" />
+      <item itemvalue="JUnit.HbaseTest.getByScan" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HbaseTest.getByScan" />
         <item itemvalue="Application.BasicAvg" />
         <item itemvalue="Application.BasicMap (1)" />
         <item itemvalue="Application.BasicMap" />
         <item itemvalue="Application.Demo02" />
-        <item itemvalue="Application.IODemo" />
       </list>
     </recent_temporary>
   </component>
@@ -650,7 +625,8 @@
       <workItem from="1568622618863" duration="10568000" />
       <workItem from="1568712359178" duration="29588000" />
       <workItem from="1568951357111" duration="48774000" />
-      <workItem from="1569320355660" duration="16927000" />
+      <workItem from="1569320355660" duration="19036000" />
+      <workItem from="1569566275000" duration="3635000" />
     </task>
     <servers />
   </component>
@@ -687,13 +663,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="448228000" />
+    <option name="totallyTimeSpent" value="453972000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1600" height="840" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49902913" visible="true" weight="0.26" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49902913" visible="true" weight="0.26387095" />
       <window_info id="Structure" order="1" sideWeight="0.5009709" side_tool="true" weight="0.26193547" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -702,14 +678,14 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.36834532" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8754839" weight="0.38273382" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8754839" weight="0.552518" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3582734" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.12451613" side_tool="true" weight="0.52949643" />
       <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.7064516" weight="0.4561151" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.18273382" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.13237411" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.3294964" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
@@ -759,115 +735,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/dataframe/UDT.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/streaming/structured/Basic.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#30#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.4.3/spark-sql_2.11-2.4.3-sources.jar!/org/apache/spark/sql/streaming/progress.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-173">
-          <caret line="198" selection-start-line="198" selection-end-line="198" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/streaming/structured/BasicAggregation.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-909">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.4.3/spark-sql_2.11-2.4.3-sources.jar!/org/apache/spark/sql/streaming/StreamingQuery.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-508">
-          <caret line="114" column="6" selection-start-line="114" selection-start-column="6" selection-end-line="114" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/streaming/structured/StructedStreamingJoin.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="370" selection-start-line="370" selection-end-line="378" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/streaming/structured/Basic01.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1064">
-          <caret line="147" column="44" lean-forward="true" selection-start-line="147" selection-start-column="44" selection-end-line="147" selection-end-column="44" />
-          <folding>
-            <element signature="e#30#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/streaming/structured/StructuredStreamingOffset.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="57" column="18" lean-forward="true" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
-          <folding>
-            <element signature="e#19#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/soket_data.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="56" column="34" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/python/streaming/structedstream.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-127">
-          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding>
-            <element signature="e#53#89#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/streaming/structured/StructureStreaming.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="152" column="18" lean-forward="true" selection-start-line="152" selection-start-column="18" selection-end-line="152" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/python/streaming/StructStreamingKafka.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
           <caret line="84" column="22" lean-forward="true" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/special/HashJoin.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/special/HashJoin.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/sparkdemo/PartitionedTableColumnOrder.scala">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -920,13 +795,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/logs/LogAnalyzerAppMain.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/logs/LogAnalyzerAppMain.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/scala/logs/LogAnalyzerTotal.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -941,16 +810,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/logs/LogAnalyzerTotal.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding>
-            <element signature="e#55#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/logs/LogAnalyzerTotal.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/cn/huage/beans/RichString.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
@@ -958,16 +818,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/logs/LogAnalyzerWindowed.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="20" column="75" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
-          <folding>
-            <element signature="e#55#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/learningsparkexamples/scala/logs/LogAnalyzerWindowed.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicParseJson.scala">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1016,9 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding>
-            <element signature="e#7#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1029,54 +877,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/MLlibPipeline.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
-          <folding>
-            <element signature="e#851#900#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/MLlibPipeline.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/scala/logs/LogAnalyzerWindowed.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-86">
           <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding>
-            <element signature="e#32#98#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/BasicMap.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/BasicMap.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/BasicParseWholeFileCsv.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/scala/MLlibPipeline.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="78">
+          <caret line="64" column="46" lean-forward="true" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/BasicParseWholeFileCsv.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/scala/DateDemo.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="263">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/dataframe/Basic.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/scala/BasicAvg.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        <state relative-caret-position="126">
+          <caret line="31" column="35" lean-forward="true" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/oreilly/scala/MLlibPipeline.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sql/JSON.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="79" column="73" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="79" selection-end-column="73" />
+        <state relative-caret-position="-175">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/hbase/HbaseTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.4.3/spark-sql_2.11-2.4.3-sources.jar!/org/apache/spark/sql/SparkSession.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1562">
+          <caret line="904" column="48" lean-forward="true" selection-start-line="904" selection-start-column="48" selection-end-line="904" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.4.3/spark-core_2.11-2.4.3-sources.jar!/org/apache/spark/SparkConf.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6494">
+          <caret line="204" column="55" selection-start-line="204" selection-start-column="38" selection-end-line="204" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.4.3/spark-core_2.11-2.4.3-sources.jar!/org/apache/spark/SparkContext.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="642">
+          <caret line="2098" column="41" lean-forward="true" selection-start-line="2098" selection-start-column="41" selection-end-line="2098" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.4.3/spark-sql_2.11-2.4.3.jar!/org/apache/spark/sql/SparkSession.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="58" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/streaming/structured/Basic01.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2016">
+          <caret line="38" column="35" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="37" />
+          <folding>
+            <element signature="e#30#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/streaming/structured/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/rdd/Ex1_SimpleRDD.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
         </state>
       </provider>
     </entry>

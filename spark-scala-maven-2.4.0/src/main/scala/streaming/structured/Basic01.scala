@@ -31,6 +31,7 @@ object Basic01 {
       .config("spark.master", "local[4]")
       .getOrCreate()
     spark.sparkContext.setLogLevel("WARN")
+    import org.apache.spark.SparkContext
 
     // schema for the streaming records
     val recordSchema = StructType(
