@@ -273,7 +273,7 @@ object BasicStatistics extends App {
      Correlation使用指定的方法计算Vector的输入数据集的相关矩阵。输出将是一个DataFrame，它包含向量列的相关矩阵。
     */
   val 关联Correlation = 0
-  if (0) {
+  if (1) {
     val data = Seq(
       Vectors.sparse(4, Seq((0, 1.0), (3, -2.0))),
       Vectors.dense(4.0, 5.0, 0.0, 3.0),

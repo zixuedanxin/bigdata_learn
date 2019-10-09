@@ -1,0 +1,28 @@
+package com.bigdata.sql.n_02_spark_dataset.action.n_01_dataset_base
+
+import com.bigdata.standalone.base.BaseSparkSession
+
+
+object Run extends BaseSparkSession{
+
+
+  def main(args: Array[String]): Unit = {
+
+
+    val spark = sparkSession(true)
+
+    //spark.read.textFile("/home/liuwen/data/line.txt").show
+    spark.read.textFile("file:///"+ getProjectPath +"/src/main/resource/data/text/people.txt").show
+
+
+
+
+
+
+
+    spark.stop()
+
+
+  }
+}
+
