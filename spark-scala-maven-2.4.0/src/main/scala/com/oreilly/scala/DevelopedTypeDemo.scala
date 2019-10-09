@@ -1,4 +1,4 @@
-package com.scala
+package com.oreilly.scala
 
 import java.awt.{Point, Rectangle, Shape}
 import java.awt.geom.Area

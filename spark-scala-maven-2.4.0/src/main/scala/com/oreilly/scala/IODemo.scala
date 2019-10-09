@@ -1,4 +1,4 @@
-package com.scala
+package com.oreilly.scala
 
 import utils.BaseUtil.int2boolen
 import java.io.{File, FileInputStream, PrintWriter}

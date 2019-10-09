@@ -1,4 +1,4 @@
-package com.scala
+package com.oreilly.scala
 
 /**
   * Created with IntelliJ IDEA.

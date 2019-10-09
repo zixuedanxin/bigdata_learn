@@ -1,4 +1,4 @@
-package com.scala.practice
+package com.oreilly.scala.practice
 
 /**
   * Created with IntelliJ IDEA.

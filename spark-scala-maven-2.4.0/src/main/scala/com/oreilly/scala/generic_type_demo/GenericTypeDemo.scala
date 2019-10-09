@@ -1,4 +1,4 @@
-package com.scala.generic_type_demo
+package com.oreilly.scala.generic_type_demo
 
 import utils.BaseUtil.int2boolen
 
