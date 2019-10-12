@@ -1,5 +1,8 @@
 package com.hy.test
 
+import java.io.FileInputStream
+import java.util.Properties
+
 import com.mongodb.spark.MongoSpark
 import org.apache.kafka.common.serialization.StringDeserializer
 import org.apache.spark.SparkConf
@@ -7,53 +10,66 @@ import org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe
 import org.apache.spark.streaming.kafka010.KafkaUtils
 import org.apache.spark.streaming.kafka010.LocationStrategies.PreferConsistent
 import org.apache.spark.streaming.{Seconds, StreamingContext}
-import org.bson.Document
+import org.bson.{BsonArray, BsonDocument, Document}
+import org.slf4j.{Logger, LoggerFactory}
 
-class SparkKafkaToMongo {
+object SparkKafkaToMongo {
   def main(args: Array[String]): Unit = {
+    val logger: Logger = LoggerFactory.getLogger(this.getClass)
     //创建streamingContext
-    var conf=new SparkConf().setMaster("local[*]")
-      .setAppName("SparkStreamKaflaWordCount Demo")
-      .set("spark.mongodb.output.uri", "mongodb://usertest:123456@10.12.5.35:27017/applogs")
-      .set("spark.mongodb.output.collection","testlog2");
-    var ssc=new StreamingContext(conf,Seconds(2));
-    var topic=Array("app_log");
-    var groupId="con-consumer-group2"
+    val properties = new Properties()
+    val configFile = System.getProperty("user.dir") + "/config.properties"
+    properties.load(new FileInputStream(configFile))
+    val topics = properties.get("topics").toString
+    val mongodb_url = properties.get("spark.mongodb.output.uri").toString
+    val batchSleepSec = properties.get("batchSleepSec").toString
+    val mongodb_db = properties.get("spark.mongodb.output.database").toString
+    val mongodb_coll = properties.get("spark.mongodb.output.collection").toString
+    val conf = new SparkConf().setMaster("local[*]")
+      .setAppName("SparkStreamKafkaToMongodb")
+      .set("spark.mongodb.output.uri", mongodb_url)
+      .set("spark.mongodb.output.database", mongodb_db)
+      .set("spark.mongodb.output.collection", mongodb_coll)
+    val ssc = new StreamingContext(conf, Seconds(batchSleepSec.toInt))
+    ssc.sparkContext.setLogLevel("INFO")
+    val topic = topics.split("\\W") // Array("hydd_log","testlog","df") 配置消费主题
+    val groupId = properties.get("group_id").toString
+    // 不能随便改topics.replace(",","_")+"-consumer"
     //消费者配置
     val kafkaParam = Map(
-      "bootstrap.servers" ->  "broker1:9092,broker2:9092",
-      "group.id"-> groupId,
-      "max.poll.records"-> "50",
+      "bootstrap.servers" -> properties.get("bootstrap.servers").toString,
+      "group.id" -> groupId,
+      "max.poll.records" -> "50",
       "key.deserializer" -> classOf[StringDeserializer],
       "value.deserializer" -> classOf[StringDeserializer],
-      "security.protocol"-> "SASL_PLAINTEXT",
-      "sasl.mechanism"-> "PLAIN",
-      "sasl.kerberos.service.name" -> "kafka",
-      "sasl.jaas.config"-> "org.apache.kafka.common.security.plain.PlainLoginModule required username=\"mooc\" password=\"moocpswd\";",
+      "security.protocol" -> "SASL_PLAINTEXT",
+      "sasl.mechanism" -> "PLAIN",
+      // "sasl.kerberos.service.name" -> "kafka", 可以不配置
+      "sasl.jaas.config" -> properties.get("sasl.jaas.config").toString,
       "auto.offset.reset" -> "earliest",
       //如果是true，则这个消费者的偏移量会在后台自动提交
       "enable.auto.commit" -> (true: java.lang.Boolean)
-    );
+    )
     //创建DStream，返回接收到的输入数据
-    var stream=KafkaUtils.createDirectStream[String,String](ssc, PreferConsistent,Subscribe[String,String](topic,kafkaParam))
+    val stream = KafkaUtils.createDirectStream[String, String](ssc, PreferConsistent, Subscribe[String, String](topic, kafkaParam))
     //每一个stream都是一个ConsumerRecord
-    //var rdd=stream.map(s =>(s.key(),s.value())).map//print();
-    //var rdd=stream.map(s =>Document.parse(s.value())).map(doc => doc.saveToMongoDB());
-    //    stream.foreachRDD({ rdd =>
-    //      val wordCounts = rdd.map(s =>Document.parse(s.value()))
-    //      MongoSpark.save(wordCounts)
-    //    })
-    stream.foreachRDD({ rdd =>
-      val wordCounts = rdd.map(s =>Document.parse(s.value()))
-        .map(doc => {
-          doc.put("crt_dtm", doc.getString("crt_dtm").toLong)
-          doc
-        })
-      MongoSpark.save(wordCounts)
+
+
+
+    stream.foreachRDD({ rdd => {
+      if (rdd.isEmpty()) {
+        // 为空时不处理
+      } else {
+        // replace 是对字符串格式的json做特殊处理，减少解析错误
+         rdd.map(s =>
+          println(s)
+        )
+
+
+      }
+    }
     })
-    // Document.parse(s"{test: $i}")
-    // MongoSpark.save(rdd); // 读取后直接插入
-    ssc.start();
-    ssc.awaitTermination();
+    ssc.start()
+    ssc.awaitTermination()
   }
 }
