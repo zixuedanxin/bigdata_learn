@@ -8,7 +8,7 @@ object Run {
     println(map.mkString(" "))
     val result = map.fold("d" -> 4)((a,b) => (a._1 + b._1  ,a._2 + b._2))
 
-    println(s"${result}")
+    println(s" result : $result")
 
   }
 }

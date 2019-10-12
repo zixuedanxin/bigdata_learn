@@ -13,7 +13,8 @@ object Run extends BaseSparkSession{
     val df = spark.read.json("file:///"+ getProjectPath +"/src/main/resource/data/json/people.json")
 
 
-    df.createOrReplaceTempView("people")
+     df.createOrReplaceTempView("people")
+    //df.createOrReplaceGlobalTempView("people")
 
     val sqlDF = spark.sql("select * from people")
     val sqlDF2 = spark.sql("select name,age from people")

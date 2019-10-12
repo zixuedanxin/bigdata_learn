@@ -36,7 +36,7 @@ object Run extends BaseSparkSession{
     sqlDF2.show()
     sqlDF3.show()
 
-
+    Thread.sleep(1000000)
     spark.stop()
   }
 
