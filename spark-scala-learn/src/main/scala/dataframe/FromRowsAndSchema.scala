@@ -28,11 +28,11 @@ object FromRowsAndSchema {
 
     val customerSchema = StructType(
       Seq(
-        StructField("id", IntegerType, true),
-        StructField("name", StringType, true),
-        StructField("sales", DoubleType, true),
-        StructField("discount", DoubleType, true),
-        StructField("state", StringType, true)
+        StructField("id", IntegerType, nullable = true),
+        StructField("name", StringType, nullable = true),
+        StructField("sales", DoubleType, nullable = true),
+        StructField("discount", DoubleType, nullable = true),
+        StructField("state", StringType, nullable = true)
       )
     )
 

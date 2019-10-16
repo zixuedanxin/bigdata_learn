@@ -33,19 +33,22 @@ object Transform {
     customerDF.show()
 
     // a trivial UDF
-    val myFunc = udf {(x: Double) => x + 1}
+    val myFunc = udf {x: Double => x + 1}
 
     // get the columns, having applied the UDF to the "discount" column and leaving the others as they were
     val colNames = customerDF.columns
     println(colNames.mkString("-"))
     val cols = colNames.map(cName => customerDF.col(cName))
+
     cols.foreach(println)
     println(cols.mkString("-"))
     val theColumn = customerDF("discount")
+    println(theColumn.toString())
     // I'd like to find a "better" way to match the column but this works.
     // Use as() to give the column a new name just because we can!
     val mappedCols = cols.map(c => if (c.toString() == theColumn.toString()) myFunc(c).as("transformed") else c)
-
+    mappedCols.foreach(println)
+    println(mappedCols)
     // use select() to produce the new DataFrame
     val newDF = customerDF.select(mappedCols:_*)
     newDF.show()

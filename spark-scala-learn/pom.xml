@@ -309,13 +309,13 @@
         </dependency>
         <dependency> <!-- Cassandra -->
             <groupId>com.datastax.spark</groupId>
-            <artifactId>spark-cassandra-connector_2.10</artifactId>
-            <version>1.0.0-rc5</version>
+            <artifactId>spark-cassandra-connector_${spark.scala.version}</artifactId>
+            <version>2.3.3</version>
         </dependency>
         <dependency> <!-- Cassandra -->
             <groupId>com.datastax.spark</groupId>
-            <artifactId>spark-cassandra-connector-java_2.10</artifactId>
-            <version>1.0.0-rc5</version>
+            <artifactId>spark-cassandra-connector-java_${spark.scala.version}</artifactId>
+            <version>1.5.2</version>
         </dependency>
         <dependency>
             <groupId>org.scalikejdbc</groupId>
@@ -339,12 +339,12 @@
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-streaming-flume_2.10</artifactId>
+            <artifactId>spark-streaming-flume_2.11</artifactId>
             <version>1.6.2</version>
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-streaming-flume-sink_2.10</artifactId>
+            <artifactId>spark-streaming-flume-sink_2.11</artifactId>
             <version>1.6.2</version>
         </dependency>
         <dependency>
@@ -399,6 +399,12 @@
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
             <version>3.14</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.elasticsearch</groupId>
+            <artifactId>elasticsearch-hadoop</artifactId>
+            <version>6.8.3</version>
         </dependency>
 
     </dependencies>
@@ -456,9 +462,7 @@
                 <jvmArgs>
                     <jvmArg>-Xms1024m</jvmArg>
                     <jvmArg>-Xmx1024m</jvmArg>
-                    <jvmArg>-XX:PermSize=${PermGen}</jvmArg>
-                    <jvmArg>-XX:MaxPermSize=${MaxPermGen}</jvmArg>
-                    <jvmArg>-XX:ReservedCodeCacheSize=${CodeCacheSize}</jvmArg>
+
                 </jvmArgs>
                 <javacArgs>
                     <javacArg>-source</javacArg>

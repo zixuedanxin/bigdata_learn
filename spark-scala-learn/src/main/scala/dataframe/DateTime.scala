@@ -61,14 +61,10 @@ object DateTime {
                       add_months($"dt", 6)).show()
 
     println("Date truncation")
-    tdf.select($"dt", trunc($"dt", "YYYY"), trunc($"dt", "YY"),
+    tdf.select($"dt", trunc($"dt", "yyyy"), trunc($"dt", "YY"),
                       trunc($"dt", "MM")).show()
 
     println("Date formatting")
-
-
-
-
 
 
     tdf.select($"dt", date_format($"dt", "MMM dd, YYYY")).show()

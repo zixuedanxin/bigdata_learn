@@ -42,7 +42,7 @@ object GroupingAndAggregation {
 
     println("*** basic form of aggregation")
     customerDF.groupBy("state").agg("discount" -> "max").show()
-
+    // customerDF.groupBy("state")
     // you can turn of grouping columns using the SQL context's
     // configuration properties
 

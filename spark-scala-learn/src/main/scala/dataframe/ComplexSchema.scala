@@ -32,20 +32,20 @@ object ComplexSchema {
 
     val schema1 = StructType(
       Seq(
-        StructField("id", IntegerType, true),
+        StructField("id", IntegerType, nullable = true),
         StructField("s1", StructType(
           Seq(
-            StructField("x", StringType, true),
-            StructField("y", StringType, true)
+            StructField("x", StringType, nullable = true),
+            StructField("y", StringType, nullable = true)
           )
-        ), true),
-        StructField("d", DoubleType, true),
+        ), nullable = true),
+        StructField("d", DoubleType, nullable = true),
         StructField("s2", StructType(
           Seq(
-            StructField("u", IntegerType, true),
-            StructField("v", IntegerType, true)
+            StructField("u", IntegerType, nullable = true),
+            StructField("v", IntegerType, nullable = true)
           )
-        ), true)
+        ), nullable = true)
       )
     )
 
@@ -86,16 +86,16 @@ object ComplexSchema {
     //
     val schema2 = StructType(
       Seq(
-        StructField("id", IntegerType, true),
+        StructField("id", IntegerType, nullable = true),
         StructField("s1", StructType(
           Seq(
-            StructField("x", StringType, true),
-            StructField("y", StringType, true)
+            StructField("x", StringType, nullable = true),
+            StructField("y", StringType, nullable = true)
           )
-        ), true)
+        ), nullable = true)
       )
     )
-      .add(StructField("d", DoubleType, true))
+      .add(StructField("d", DoubleType, nullable = true))
       .add("a", ArrayType(IntegerType))
 
     val df2 = spark.createDataFrame(rows2Rdd, schema2)
@@ -134,8 +134,8 @@ object ComplexSchema {
 
     val schema3 = StructType(
       Seq(
-        StructField("id", IntegerType, true),
-        StructField("d", DoubleType, true),
+        StructField("id", IntegerType, nullable = true),
+        StructField("d", DoubleType, nullable = true),
         StructField("m", MapType(StringType, IntegerType))
       )
     )

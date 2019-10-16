@@ -9,6 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Iterator;
 import java.lang.Iterable;
+
+import com.datastax.spark.connector.japi.rdd.CassandraTableScanJavaRDD;
+import com.datastax.spark.connector.japi.CassandraRow;
 import scala.Tuple2;
 
 import org.apache.commons.lang.StringUtils;
@@ -20,8 +23,9 @@ import org.apache.spark.api.java.function.DoubleFunction;
 import org.apache.spark.api.java.function.FlatMapFunction;
 import org.apache.spark.api.java.function.Function;
 
-import com.datastax.spark.connector.CassandraRow;
-import static com.datastax.spark.connector.CassandraJavaUtil.javaFunctions;
+// import com.datastax.spark.connector.CassandraRow;
+// import static com.datastax.spark.connector.CassandraJavaUtil.javaFunctions;
+import static com.datastax.spark.connector.japi.CassandraJavaUtil.javaFunctions;
 
 public class BasicQueryCassandra {
   public static void main(String[] args) throws Exception {
@@ -37,7 +41,7 @@ public class BasicQueryCassandra {
       sparkMaster, "basicquerycassandra", conf);
     // entire table as an RDD
     // assumes your table test was created as CREATE TABLE test.kv(key text PRIMARY KEY, value int);
-    JavaRDD<CassandraRow> data = javaFunctions(sc).cassandraTable("test" , "kv");
+    CassandraTableScanJavaRDD<com.datastax.spark.connector.japi.CassandraRow> data = javaFunctions(sc).cassandraTable("test" , "kv");
     // print some basic stats
     System.out.println(data.mapToDouble(new DoubleFunction<CassandraRow>() {
         public double call(CassandraRow row) {
@@ -47,7 +51,7 @@ public class BasicQueryCassandra {
     ArrayList<KeyValue> input = new ArrayList<KeyValue>();
     input.add(KeyValue.newInstance("mostmagic", 3));
     JavaRDD<KeyValue> kvRDD = sc.parallelize(input);
-    javaFunctions(kvRDD, KeyValue.class).saveToCassandra("test", "kv");
+    // javaFunctions(kvRDD, KeyValue.class).saveToCassandra("test", "kv");
 	}
   public static class KeyValue implements Serializable {
     private String key;

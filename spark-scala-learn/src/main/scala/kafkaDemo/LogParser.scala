@@ -2,7 +2,7 @@ package kafkaDemo
 
 import org.apache.spark.storage.StorageLevel
 import org.apache.spark.streaming.{Seconds, StreamingContext}
-import streaming.Utilities.{apacheLogPattern, setupLogging}
+import streamings.Utilities.{apacheLogPattern, setupLogging}
 
 /** Maintains top URL's visited over a 5 minute window, from a stream
  *  of Apache access logs on port 9999.

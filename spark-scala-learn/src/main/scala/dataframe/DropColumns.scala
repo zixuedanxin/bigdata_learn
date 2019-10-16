@@ -32,7 +32,7 @@ object DropColumns {
     customerDF.show()
 
     // remove a couple of columns
-    val fewerCols = customerDF.drop("sales").drop("discount")
+    val fewerCols = customerDF.drop("sales").drop("discount","name")
 
     println("*** Now with fewer columns")
 

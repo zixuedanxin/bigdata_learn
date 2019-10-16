@@ -41,12 +41,12 @@ object Select {
 
     println("*** use as() on Column to rename")
 
-    customerDF.select(customerDF("id").as("Customer ID"),
-                      customerDF("discount").as("Total Discount")).show()
+    customerDF.select(customerDF("id").as("Customer ID"),col("name").as("st_nm"),
+                      column("discount").as("Total Discount")).show()
 
     println("*** $ as shorthand to obtain Column")
 
-    customerDF.select($"id".as("Customer ID"), $"discount".as("Total Discount")).show()
+    customerDF.select($"id".as("Customer ID"),($"discount"*1.2).as("Total Discount")).show()
 
     println("*** use DSL to manipulate values")
 
@@ -66,13 +66,13 @@ object Select {
     println("*** use array() to combine multiple results into a single array column")
 
     customerDF.select($"id", array($"name", $"state", lit("hello")).as("Stuff")).show()
-
+     // json_tuple()
     println("*** use rand() to add random numbers between 0.0 and 1.0 inclusive ")
 
     customerDF.select($"id", rand().as("r")).show()
     customerDF.select(col("*"),
           udf{
-            (e:Int) =>
+            e:Int =>
                     if(e >3) {
                          1
                        } else {

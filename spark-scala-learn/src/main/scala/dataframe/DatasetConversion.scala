@@ -48,7 +48,12 @@ object DatasetConversion {
       customerDF.select("sales", "state").filter($"state".equalTo("CA"))
 
     smallerDF.show()
+    smallerDF.explain(true)
+    val smallerDF2 =
+      customerDF.filter($"state".equalTo("CA")).select("sales", "state")
 
+    // smallerDF2.show()
+    smallerDF2.explain(true)
     // Convert it to a Dataset by specifying the type of the rows -- use a case
     // class because we have one and it's most convenient to work with. Notice
     // you have to choose a case class that matches the remaining columns.

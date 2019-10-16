@@ -18,12 +18,12 @@ object Range {
         .getOrCreate()
     spark.sparkContext.setLogLevel("WARN")
     println("*** dense range with default partitioning")
-    val df1 = spark.range(10, 14)
+    val df1 = spark.range(10, 140,2,10)
     df1.show()
-    println("# Partitions = " + df1.rdd.partitions.length)
+    println("# Partitions = " + df1.rdd.partitions.length,df1.rdd.partitions.size)
 
     println("\n*** stepped range")
-    val df2 = spark.range(10, 14, 2)
+    val df2 = spark.range(10, 20, 2)
     df2.show()
     println(df2.rdd.partitions.size)
 
