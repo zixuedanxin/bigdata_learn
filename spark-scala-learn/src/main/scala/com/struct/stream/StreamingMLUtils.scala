@@ -1,10 +1,10 @@
+// package com.struct.stream
 package org.apache.spark.mllib
-
-import scala.language.implicitConversions
-
-import org.apache.spark.ml.linalg.{SparseVector, DenseVector, Vector}
+import org.apache.spark.ml.linalg.{DenseVector, SparseVector, Vector}
 import org.apache.spark.mllib.linalg.{Vector => OldVector, Vectors => OldVectors}
 import org.apache.spark.mllib.util.MLUtils
+
+import scala.language.implicitConversions
 
 object StreamingMLUtils {
   implicit def mlToMllibVector(v: Vector): OldVector = v match {

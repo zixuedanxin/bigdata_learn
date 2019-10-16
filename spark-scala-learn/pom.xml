@@ -11,12 +11,14 @@
         <java.version>1.8</java.version>
         <spark.version>2.4.3</spark.version>
         <kafka.version>1.1.1</kafka.version>
+        <delta.version>0.1.0</delta.version>
         <!--<hadoop.version>3.1.1</hadoop.version>-->
         <hadoop.version>2.7.7</hadoop.version>
         <spark.scala.version>2.11</spark.scala.version>
         <kafka.scala.version>2.11</kafka.scala.version>
         <hbase.version>1.2.0</hbase.version>
         <scala.version>${kafka.scala.version}.12</scala.version>
+        <binlog.version>0.18.1</binlog.version>
         <confluent.version>4.1.0</confluent.version>
         <PermGen>64m</PermGen>
         <MaxPermGen>512m</MaxPermGen>
@@ -131,7 +133,16 @@
             <artifactId>jedis</artifactId>
             <version>2.10.2</version>
         </dependency>
-
+        <dependency>
+            <groupId>tech.mlsql</groupId>
+            <artifactId>common-utils_${spark.scala.version}</artifactId>
+            <version>0.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.zalando</groupId>
+            <artifactId>spark-json-schema_${spark.scala.version}</artifactId>
+            <version>0.6.1</version>
+        </dependency>
 
    <!--     <dependency>
             <groupId>org.apache.spark</groupId>
@@ -375,6 +386,11 @@
             <artifactId>json4s-native_${spark.scala.version}</artifactId>
             <version>3.5.3</version>
         </dependency>
+        <dependency>
+            <groupId>io.delta</groupId>
+            <artifactId>delta-core_${spark.scala.version}</artifactId>
+            <version>${delta.version}</version>
+        </dependency>
 
         <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.json4s/json4s-jackson &ndash;&gt;-->
         <!--<dependency>-->
@@ -394,7 +410,16 @@
             <artifactId>poi-ooxml</artifactId>
             <version>3.14</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.shyiko</groupId>
+            <artifactId>mysql-binlog-connector-java</artifactId>
+            <version>${binlog.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>

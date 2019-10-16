@@ -1,6 +1,4 @@
-package com.highperformancespark.examples.structuredstreaming
-
-
+package com.struct.stream
 
 import org.apache.spark.SparkException
 import org.apache.spark.ml.classification.ProbabilisticClassificationModel
@@ -16,7 +14,6 @@ import org.apache.spark.rdd.RDD
 import org.apache.spark.sql._
 import org.apache.spark.ml.param._
 import org.apache.spark.BLAS
-
 trait StreamingNaiveBayesParams extends Params {
   /**
    * The smoothing parameter.

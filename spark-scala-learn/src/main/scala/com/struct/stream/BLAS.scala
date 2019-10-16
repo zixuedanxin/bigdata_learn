@@ -1,6 +1,6 @@
 package org.apache.spark
-
-import org.apache.spark.ml.linalg.{BLAS => SparkBLAS}
+// 这个package 不能修会报错
+import org.apache.spark.ml.linalg.{BLAS => SparkBLAS, _}
 import org.apache.spark.ml.linalg._
 
 object BLAS {

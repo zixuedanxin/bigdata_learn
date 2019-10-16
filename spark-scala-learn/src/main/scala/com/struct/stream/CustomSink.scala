@@ -1,12 +1,12 @@
 /**
  * A simple custom sink to allow us to train our models on micro-batches of data.
  */
-package com.highperformancespark.examples.structuredstreaming
+package com.struct.stream
 
-import org.apache.spark.sql.streaming.OutputMode
 import org.apache.spark.sql._
-import org.apache.spark.sql.sources.{DataSourceRegister, StreamSinkProvider}
 import org.apache.spark.sql.execution.streaming.Sink
+import org.apache.spark.sql.sources.StreamSinkProvider
+import org.apache.spark.sql.streaming.OutputMode
 
 
 //tag::foreachDatasetSink[]

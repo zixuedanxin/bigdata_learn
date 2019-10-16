@@ -1,11 +1,10 @@
-package com.highperformancespark.examples.structuredstreaming
-
-import org.apache.spark.sql._
-import org.apache.spark.sql.functions._
-import org.apache.spark.sql.streaming._
+package com.struct.stream
 
 import org.apache.spark.ml.feature._
 import org.apache.spark.ml.linalg.{Vector => SparkVector}
+import org.apache.spark.sql._
+import org.apache.spark.sql.functions._
+import org.apache.spark.sql.streaming._
 
 case class LabelCount(label: Double, count: Long)
 case class LabeledToken(label: Double, value: (Double, Int))

@@ -1,4 +1,4 @@
-package com.highperformancespark.examples.structuredstreaming
+package com.struct.stream
 
 import org.apache.spark.ml.{Model, Estimator}
 import org.apache.spark.ml.feature.LabeledPoint

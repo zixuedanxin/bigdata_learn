@@ -1,4 +1,4 @@
-package imook
+package ingestion
 
 /**
   * 每天课程访问次数的实体类

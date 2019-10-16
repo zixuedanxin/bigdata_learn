@@ -1,4 +1,4 @@
-package imook
+package ingestion
 
 import org.apache.spark.sql.{SaveMode, SparkSession}
 

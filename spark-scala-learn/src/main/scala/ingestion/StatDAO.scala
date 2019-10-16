@@ -1,4 +1,4 @@
-package imook
+package ingestion
 
 import java.sql.{Connection, PreparedStatement}
 

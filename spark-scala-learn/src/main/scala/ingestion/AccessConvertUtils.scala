@@ -1,6 +1,6 @@
-package imook
+package ingestion
 
-import org.apache.spark.sql.{Row, types}
+import org.apache.spark.sql.Row
 import org.apache.spark.sql.types.{LongType, StringType, StructField, StructType}
 
 

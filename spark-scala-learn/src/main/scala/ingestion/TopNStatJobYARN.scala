@@ -1,4 +1,4 @@
-package imook
+package ingestion
 
 import org.apache.spark.sql.expressions.Window
 import org.apache.spark.sql.functions._
