@@ -10,6 +10,7 @@ object Ex1_SimpleRDD {
     // put some data in an RDD
     val numbers = 1 to 10
     val numbersRDD = sc.parallelize(numbers, 4)
+    numbersRDD.checkpoint()
     println("Print each element of the original RDD")
     numbersRDD.foreach(println)
 
