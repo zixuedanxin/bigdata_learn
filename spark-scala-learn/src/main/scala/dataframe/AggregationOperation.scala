@@ -164,3 +164,13 @@ object AggregationOperation extends App {
   pivoted.show()
   pivoted.where("date > '2010-11-5'").select("date", "`Australia_sum(Quantity)`").show(4)
 }
+
+/*
+import org.apache.spark.sql.expressions.Window
+import org.apache.spark.sql.functions._
+ //scala实现row_number() over(partition by  , order by  )
+ val w = Window.partitionBy($"prediction").orderBy($"count".desc)
+ val dfTop3= dataDF.withColumn("rn", row_number().over(w)).where($"rn" <= 3).drop("rn")
+ http://spark.apache.org/docs/2.4.4/api/scala/index.html#org.apache.spark.sql.expressions.Window
+
+ */

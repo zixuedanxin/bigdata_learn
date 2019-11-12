@@ -37,13 +37,13 @@ object ComplexType {
 
     println("*** Example 1: nested case classes")
 
-    val segments = Seq(
+    val segments: Seq[Segment] = Seq(
       Segment(Point(1.0, 2.0), Point(3.0, 4.0)),
       Segment(Point(8.0, 2.0), Point(3.0, 14.0)),
       Segment(Point(11.0, 2.0), Point(3.0, 24.0)))
     val segmentsDS = segments.toDS()
 
-    segmentsDS.printSchema();
+    segmentsDS.printSchema()
 
     // You can query using the field names of the case class as
     // as column names, ane we you descend down nested case classes

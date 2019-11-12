@@ -112,9 +112,10 @@ object RddExamples extends App {
   val charRdd = distinctChars.map(c => (c, Random.nextDouble()))
   val charRdd2 = distinctChars.map(c => (c, Random.nextDouble()))
   val charRdd3 = distinctChars.map(c => (c, Random.nextDouble()))
-
+  println("charRdd2",charRdd.collect())
+  println("charRdd2",charRdd.collect())
   charRdd.cogroup(charRdd2, charRdd3).take(5).foreach(println)
-
+  println("cogroup",charRdd.collect())
   /*
   Inner Join
    */

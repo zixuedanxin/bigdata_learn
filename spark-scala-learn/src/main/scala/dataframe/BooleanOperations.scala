@@ -47,3 +47,4 @@ object BooleanOperations extends App {
   //avoiding null
   df.where(col("Description").eqNullSafe("Hello")).show(5)
 }
+

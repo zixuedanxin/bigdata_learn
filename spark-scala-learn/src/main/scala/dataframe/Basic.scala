@@ -7,7 +7,7 @@ import org.apache.spark.sql.SparkSession
 // DataFrame operations. The DataFrame can instead be created more directly from
 // the standard building blocks -- an RDD[Row] and a schema -- see the example
 // FromRowsAndSchema.scala to see how to do that.
-//
+//https://blog.csdn.net/qq_25948717/article/details/83114400
 object Basic {
   case class Cust(id: Integer, name: String, sales: Double, discount: Double, state: String)
 
