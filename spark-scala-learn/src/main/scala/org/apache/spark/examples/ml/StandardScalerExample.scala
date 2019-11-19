@@ -34,7 +34,7 @@ object StandardScalerExample {
     val dataFrame = spark.read.format("libsvm").load("data/mllib/sample_libsvm_data.txt")
 
     val scaler = new StandardScaler()
-      .setInputCol("features")
+      .setInputCol("sparkml/features")
       .setOutputCol("scaledFeatures")
       .setWithStd(true)
       .setWithMean(false)

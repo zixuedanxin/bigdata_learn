@@ -217,14 +217,14 @@ object LDAExample {
     val countVectorizer = new CountVectorizer()
       .setVocabSize(vocabSize)
       .setInputCol("tokens")
-      .setOutputCol("features")
+      .setOutputCol("sparkml/features")
 
     val pipeline = new Pipeline()
       .setStages(Array(tokenizer, stopWordsRemover, countVectorizer))
 
     val model = pipeline.fit(df)
     val documents = model.transform(df)
-      .select("features")
+      .select("sparkml/features")
       .rdd
       .map { case Row(features: MLVector) => Vectors.fromML(features) }
       .zipWithIndex()

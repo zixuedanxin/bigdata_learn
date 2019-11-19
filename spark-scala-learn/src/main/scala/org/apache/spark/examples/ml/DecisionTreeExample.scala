@@ -189,7 +189,7 @@ object DecisionTreeExample {
 
     val numTraining = training.count()
     val numTest = test.count()
-    val numFeatures = training.select("features").first().getAs[Vector](0).size
+    val numFeatures = training.select("sparkml/features").first().getAs[Vector](0).size
     println("Loaded data:")
     println(s"  numTraining = $numTraining, numTest = $numTest")
     println(s"  numFeatures = $numFeatures")
@@ -215,8 +215,8 @@ object DecisionTreeExample {
     // Set up Pipeline.
     val stages = new mutable.ArrayBuffer[PipelineStage]()
     // (1) For classification, re-index classes.
-    val labelColName = if (algo == "classification") "indexedLabel" else "label"
-    if (algo == "classification") {
+    val labelColName = if (algo == "nlp/classification") "indexedLabel" else "label"
+    if (algo == "nlp/classification") {
       val labelIndexer = new StringIndexer()
         .setInputCol("label")
         .setOutputCol(labelColName)
@@ -225,13 +225,13 @@ object DecisionTreeExample {
     // (2) Identify categorical features using VectorIndexer.
     //     Features with more than maxCategories values will be treated as continuous.
     val featuresIndexer = new VectorIndexer()
-      .setInputCol("features")
+      .setInputCol("sparkml/features")
       .setOutputCol("indexedFeatures")
       .setMaxCategories(10)
     stages += featuresIndexer
     // (3) Learn Decision Tree.
     val dt = algo match {
-      case "classification" =>
+      case "nlp/classification" =>
         new DecisionTreeClassifier()
           .setFeaturesCol("indexedFeatures")
           .setLabelCol(labelColName)
@@ -264,7 +264,7 @@ object DecisionTreeExample {
 
     // Get the trained Decision Tree from the fitted PipelineModel.
     algo match {
-      case "classification" =>
+      case "nlp/classification" =>
         val treeModel = pipelineModel.stages.last.asInstanceOf[DecisionTreeClassificationModel]
         if (treeModel.numNodes < 20) {
           println(treeModel.toDebugString) // Print full model.
@@ -283,7 +283,7 @@ object DecisionTreeExample {
 
     // Evaluate model on training, test data.
     algo match {
-      case "classification" =>
+      case "nlp/classification" =>
         println("Training data results:")
         evaluateClassificationModel(pipelineModel, training, labelColName)
         println("Test data results:")

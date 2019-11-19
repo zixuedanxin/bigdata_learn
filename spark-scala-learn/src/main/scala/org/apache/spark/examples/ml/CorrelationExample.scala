@@ -49,11 +49,11 @@ object CorrelationExample {
       Vectors.sparse(4, Seq((0, 9.0), (3, 1.0)))
     )
 
-    val df = data.map(Tuple1.apply).toDF("features")
-    val Row(coeff1: Matrix) = Correlation.corr(df, "features").head
+    val df = data.map(Tuple1.apply).toDF("sparkml/features")
+    val Row(coeff1: Matrix) = Correlation.corr(df, "sparkml/features").head
     println("Pearson correlation matrix:\n" + coeff1.toString)
 
-    val Row(coeff2: Matrix) = Correlation.corr(df, "features", "spearman").head
+    val Row(coeff2: Matrix) = Correlation.corr(df, "sparkml/features", "spearman").head
     println("Spearman correlation matrix:\n" + coeff2.toString)
     // $example off$
 

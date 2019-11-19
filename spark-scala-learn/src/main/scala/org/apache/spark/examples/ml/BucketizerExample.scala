@@ -34,10 +34,10 @@ object BucketizerExample {
     val splits = Array(Double.NegativeInfinity, -0.5, 0.0, 0.5, Double.PositiveInfinity)
 
     val data = Array(-999.9, -0.5, -0.3, 0.0, 0.2, 999.9)
-    val dataFrame = spark.createDataFrame(data.map(Tuple1.apply)).toDF("features")
+    val dataFrame = spark.createDataFrame(data.map(Tuple1.apply)).toDF("sparkml/features")
 
     val bucketizer = new Bucketizer()
-      .setInputCol("features")
+      .setInputCol("sparkml/features")
       .setOutputCol("bucketedFeatures")
       .setSplits(splits)
 

@@ -45,7 +45,7 @@ object DecisionTreeClassificationExample {
       .fit(data)
     // Automatically identify categorical features, and index them.
     val featureIndexer = new VectorIndexer()
-      .setInputCol("features")
+      .setInputCol("sparkml/features")
       .setOutputCol("indexedFeatures")
       .setMaxCategories(4) // features with > 4 distinct values are treated as continuous.
       .fit(data)
@@ -75,7 +75,7 @@ object DecisionTreeClassificationExample {
     val predictions = model.transform(testData)
 
     // Select example rows to display.
-    predictions.select("predictedLabel", "label", "features").show(5)
+    predictions.select("predictedLabel", "label", "sparkml/features").show(5)
 
     // Select (prediction, true label) and compute test error.
     val evaluator = new MulticlassClassificationEvaluator()

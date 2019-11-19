@@ -34,7 +34,7 @@ object VectorIndexerExample {
     val data = spark.read.format("libsvm").load("data/mllib/sample_libsvm_data.txt")
 
     val indexer = new VectorIndexer()
-      .setInputCol("features")
+      .setInputCol("sparkml/features")
       .setOutputCol("indexed")
       .setMaxCategories(10)
 

@@ -40,7 +40,7 @@ object TFIDFChinese {
     val hashingTF = new HashingTF()
       .setInputCol("words").setOutputCol("rawFeatures").setNumFeatures(200000)
     val documents = hashingTF.transform(df)
-    val idf = new org.apache.spark.ml.feature.IDF().setInputCol("rawFeatures").setOutputCol("features")
+    val idf = new org.apache.spark.ml.feature.IDF().setInputCol("rawFeatures").setOutputCol("sparkml/features")
     val idfModel = idf.fit(documents)
     val idfData = idfModel.transform(documents)
     var wordMap = df.select("words").rdd.flatMap {
@@ -51,7 +51,7 @@ object TFIDFChinese {
         }
       }
     }.collect().toMap
-    val keyWords = idfData.select("features").rdd.map {
+    val keyWords = idfData.select("sparkml/features").rdd.map {
       x =>
         {
           val v = x.getAs[org.apache.spark.ml.linalg.SparseVector](0) //idf结果以稀疏矩阵保存

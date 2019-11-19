@@ -118,7 +118,7 @@ object LogisticRegressionExample {
 
     // Load training and test data and cache it.
     val (training: DataFrame, test: DataFrame) = DecisionTreeExample.loadDatasets(params.input,
-      params.dataFormat, params.testInput, "classification", params.fracTest)
+      params.dataFormat, params.testInput, "nlp/classification", params.fracTest)
 
     // Set up Pipeline.
     val stages = new mutable.ArrayBuffer[PipelineStage]()
@@ -129,7 +129,7 @@ object LogisticRegressionExample {
     stages += labelIndexer
 
     val lor = new LogisticRegression()
-      .setFeaturesCol("features")
+      .setFeaturesCol("sparkml/features")
       .setLabelCol("indexedLabel")
       .setRegParam(params.regParam)
       .setElasticNetParam(params.elasticNetParam)

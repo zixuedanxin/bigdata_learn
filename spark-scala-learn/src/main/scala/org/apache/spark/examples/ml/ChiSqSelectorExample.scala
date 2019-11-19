@@ -39,11 +39,11 @@ object ChiSqSelectorExample {
       (9, Vectors.dense(1.0, 0.0, 15.0, 0.1), 0.0)
     )
 
-    val df = spark.createDataset(data).toDF("id", "features", "clicked")
+    val df = spark.createDataset(data).toDF("id", "sparkml/features", "clicked")
 
     val selector = new ChiSqSelector()
       .setNumTopFeatures(1)
-      .setFeaturesCol("features")
+      .setFeaturesCol("sparkml/features")
       .setLabelCol("clicked")
       .setOutputCol("selectedFeatures")
 

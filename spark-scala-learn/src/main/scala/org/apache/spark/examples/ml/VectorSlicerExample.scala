@@ -48,7 +48,7 @@ object VectorSlicerExample {
 
     val dataset = spark.createDataFrame(data, StructType(Array(attrGroup.toStructField())))
 
-    val slicer = new VectorSlicer().setInputCol("userFeatures").setOutputCol("features")
+    val slicer = new VectorSlicer().setInputCol("userFeatures").setOutputCol("sparkml/features")
 
     slicer.setIndices(Array(1)).setNames(Array("f3"))
     // or slicer.setIndices(Array(1, 2)), or slicer.setNames(Array("f2", "f3"))

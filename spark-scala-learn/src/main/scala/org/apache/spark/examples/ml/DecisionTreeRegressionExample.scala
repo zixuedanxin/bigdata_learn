@@ -41,7 +41,7 @@ object DecisionTreeRegressionExample {
     // Automatically identify categorical features, and index them.
     // Here, we treat features with > 4 distinct values as continuous.
     val featureIndexer = new VectorIndexer()
-      .setInputCol("features")
+      .setInputCol("sparkml/features")
       .setOutputCol("indexedFeatures")
       .setMaxCategories(4)
       .fit(data)
@@ -65,7 +65,7 @@ object DecisionTreeRegressionExample {
     val predictions = model.transform(testData)
 
     // Select example rows to display.
-    predictions.select("prediction", "label", "features").show(5)
+    predictions.select("prediction", "label", "sparkml/features").show(5)
 
     // Select (prediction, true label) and compute test error.
     val evaluator = new RegressionEvaluator()

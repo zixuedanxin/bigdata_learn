@@ -37,10 +37,10 @@ object DCTExample {
       Vectors.dense(-1.0, 2.0, 4.0, -7.0),
       Vectors.dense(14.0, -2.0, -5.0, 1.0))
 
-    val df = spark.createDataFrame(data.map(Tuple1.apply)).toDF("features")
+    val df = spark.createDataFrame(data.map(Tuple1.apply)).toDF("sparkml/features")
 
     val dct = new DCT()
-      .setInputCol("features")
+      .setInputCol("sparkml/features")
       .setOutputCol("featuresDCT")
       .setInverse(false)
 

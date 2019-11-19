@@ -78,7 +78,7 @@ object DataFrameExample {
     labelSummary.show()
 
     // Convert features column to an RDD of vectors.
-    val features = df.select("features").rdd.map { case Row(v: Vector) => v }
+    val features = df.select("sparkml/features").rdd.map { case Row(v: Vector) => v }
     val featureSummary = features.aggregate(new MultivariateOnlineSummarizer())(
       (summary, feat) => summary.add(Vectors.fromML(feat)),
       (sum1, sum2) => sum1.merge(sum2))

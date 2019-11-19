@@ -49,19 +49,19 @@ import org.apache.spark.sql.{DataFrame, SparkSession}
 object GBTExample {
 
   case class Params(
-      input: String = null,
-      testInput: String = "",
-      dataFormat: String = "libsvm",
-      algo: String = "classification",
-      maxDepth: Int = 5,
-      maxBins: Int = 32,
-      minInstancesPerNode: Int = 1,
-      minInfoGain: Double = 0.0,
-      maxIter: Int = 10,
-      fracTest: Double = 0.2,
-      cacheNodeIds: Boolean = false,
-      checkpointDir: Option[String] = None,
-      checkpointInterval: Int = 10) extends AbstractParams[Params]
+                     input: String = null,
+                     testInput: String = "",
+                     dataFormat: String = "libsvm",
+                     algo: String = "nlp/classification",
+                     maxDepth: Int = 5,
+                     maxBins: Int = 32,
+                     minInstancesPerNode: Int = 1,
+                     minInfoGain: Double = 0.0,
+                     maxIter: Int = 10,
+                     fracTest: Double = 0.2,
+                     cacheNodeIds: Boolean = false,
+                     checkpointDir: Option[String] = None,
+                     checkpointInterval: Int = 10) extends AbstractParams[Params]
 
   def main(args: Array[String]) {
     val defaultParams = Params()
@@ -152,8 +152,8 @@ object GBTExample {
     // Set up Pipeline
     val stages = new mutable.ArrayBuffer[PipelineStage]()
     // (1) For classification, re-index classes.
-    val labelColName = if (algo == "classification") "indexedLabel" else "label"
-    if (algo == "classification") {
+    val labelColName = if (algo == "nlp/classification") "indexedLabel" else "label"
+    if (algo == "nlp/classification") {
       val labelIndexer = new StringIndexer()
         .setInputCol("label")
         .setOutputCol(labelColName)
@@ -162,13 +162,13 @@ object GBTExample {
     // (2) Identify categorical features using VectorIndexer.
     //     Features with more than maxCategories values will be treated as continuous.
     val featuresIndexer = new VectorIndexer()
-      .setInputCol("features")
+      .setInputCol("sparkml/features")
       .setOutputCol("indexedFeatures")
       .setMaxCategories(10)
     stages += featuresIndexer
     // (3) Learn GBT.
     val dt = algo match {
-      case "classification" =>
+      case "nlp/classification" =>
         new GBTClassifier()
           .setFeaturesCol("indexedFeatures")
           .setLabelCol(labelColName)
@@ -203,7 +203,7 @@ object GBTExample {
 
     // Get the trained GBT from the fitted PipelineModel.
     algo match {
-      case "classification" =>
+      case "nlp/classification" =>
         val rfModel = pipelineModel.stages.last.asInstanceOf[GBTClassificationModel]
         if (rfModel.totalNumNodes < 30) {
           println(rfModel.toDebugString) // Print full model.
@@ -222,7 +222,7 @@ object GBTExample {
 
     // Evaluate model on training, test data.
     algo match {
-      case "classification" =>
+      case "nlp/classification" =>
         println("Training data results:")
         DecisionTreeExample.evaluateClassificationModel(pipelineModel, training, labelColName)
         println("Test data results:")

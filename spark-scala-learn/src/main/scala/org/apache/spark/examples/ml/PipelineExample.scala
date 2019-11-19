@@ -51,7 +51,7 @@ object PipelineExample {
     val hashingTF = new HashingTF()
       .setNumFeatures(1000)
       .setInputCol(tokenizer.getOutputCol)
-      .setOutputCol("features")
+      .setOutputCol("sparkml/features")
     val lr = new LogisticRegression()
       .setMaxIter(10)
       .setRegParam(0.001)

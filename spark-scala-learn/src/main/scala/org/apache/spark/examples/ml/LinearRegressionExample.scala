@@ -113,7 +113,7 @@ object LinearRegressionExample {
       params.dataFormat, params.testInput, "regression", params.fracTest)
 
     val lir = new LinearRegression()
-      .setFeaturesCol("features")
+      .setFeaturesCol("sparkml/features")
       .setLabelCol("label")
       .setRegParam(params.regParam)
       .setElasticNetParam(params.elasticNetParam)

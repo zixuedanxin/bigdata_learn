@@ -69,7 +69,7 @@ object ModelSelectionViaCrossValidationExample {
       .setOutputCol("words")
     val hashingTF = new HashingTF()
       .setInputCol(tokenizer.getOutputCol)
-      .setOutputCol("features")
+      .setOutputCol("sparkml/features")
     val lr = new LogisticRegression()
       .setMaxIter(10)
     val pipeline = new Pipeline()

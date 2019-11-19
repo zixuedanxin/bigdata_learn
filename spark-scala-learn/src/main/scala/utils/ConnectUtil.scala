@@ -12,6 +12,7 @@ object ConnectUtil {
 
   //公平调度程序
   private lazy val sparkBuilder = SparkSession.builder().config("spark.scheduler.mode", "FAIR")
+    .config("spark.driver.allowMultipleContexts","true")
 
   /**
     * 获得SparkSession，已自动区分本机和集群
@@ -19,7 +20,7 @@ object ConnectUtil {
   lazy val spark: SparkSession = {
     val name = scala.sys.props.get("user.name").head
     println("用户名为：" + name + "========")
-    if (name.equals("llhr")) {
+    if (name.equals("xzh")) {
       println("匹配到本地spark=======")
       sparkBuilder.appName(NAME).master("local[*]").getOrCreate()
     } else {

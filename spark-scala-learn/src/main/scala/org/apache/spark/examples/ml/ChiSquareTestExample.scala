@@ -50,8 +50,8 @@ object ChiSquareTestExample {
       (1.0, Vectors.dense(3.5, 40.0))
     )
 
-    val df = data.toDF("label", "features")
-    val chi = ChiSquareTest.test(df, "features", "label").head
+    val df = data.toDF("label", "sparkml/features")
+    val chi = ChiSquareTest.test(df, "sparkml/features", "label").head
     println("pValues = " + chi.getAs[Vector](0))
     println("degreesOfFreedom = " + chi.getSeq[Int](1).mkString("[", ",", "]"))
     println("statistics = " + chi.getAs[Vector](2))

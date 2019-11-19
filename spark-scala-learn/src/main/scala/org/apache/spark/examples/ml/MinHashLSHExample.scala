@@ -43,19 +43,19 @@ object MinHashLSHExample {
       (0, Vectors.sparse(6, Seq((0, 1.0), (1, 1.0), (2, 1.0)))),
       (1, Vectors.sparse(6, Seq((2, 1.0), (3, 1.0), (4, 1.0)))),
       (2, Vectors.sparse(6, Seq((0, 1.0), (2, 1.0), (4, 1.0))))
-    )).toDF("id", "features")
+    )).toDF("id", "sparkml/features")
 
     val dfB = spark.createDataFrame(Seq(
       (3, Vectors.sparse(6, Seq((1, 1.0), (3, 1.0), (5, 1.0)))),
       (4, Vectors.sparse(6, Seq((2, 1.0), (3, 1.0), (5, 1.0)))),
       (5, Vectors.sparse(6, Seq((1, 1.0), (2, 1.0), (4, 1.0))))
-    )).toDF("id", "features")
+    )).toDF("id", "sparkml/features")
 
     val key = Vectors.sparse(6, Seq((1, 1.0), (3, 1.0)))
 
     val mh = new MinHashLSH()
       .setNumHashTables(5)
-      .setInputCol("features")
+      .setInputCol("sparkml/features")
       .setOutputCol("hashes")
 
     val model = mh.fit(dfA)

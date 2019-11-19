@@ -37,10 +37,10 @@ object PolynomialExpansionExample {
       Vectors.dense(0.0, 0.0),
       Vectors.dense(3.0, -1.0)
     )
-    val df = spark.createDataFrame(data.map(Tuple1.apply)).toDF("features")
+    val df = spark.createDataFrame(data.map(Tuple1.apply)).toDF("sparkml/features")
 
     val polyExpansion = new PolynomialExpansion()
-      .setInputCol("features")
+      .setInputCol("sparkml/features")
       .setOutputCol("polyFeatures")
       .setDegree(3)
 

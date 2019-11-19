@@ -69,7 +69,7 @@ object DeveloperApiExample {
 
     // Make predictions on test data.
     val sumPredictions: Double = model.transform(test)
-      .select("features", "label", "prediction")
+      .select("sparkml/features", "label", "prediction")
       .collect()
       .map { case Row(features: Vector, label: Double, prediction: Double) =>
         prediction

@@ -39,11 +39,11 @@ object RFormulaExample {
     dataset.show(20)
     val formula = new RFormula()
       .setFormula("clicked ~ country + hour")
-      .setFeaturesCol("features")
+      .setFeaturesCol("sparkml/features")
       .setLabelCol("label")
 
     val output = formula.fit(dataset).transform(dataset)
-    output.select("features", "label").show()
+    output.select("sparkml/features", "label").show()
     // $example off$
 
     spark.stop()

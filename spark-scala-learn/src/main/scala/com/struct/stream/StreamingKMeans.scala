@@ -53,7 +53,7 @@ class StreamingKMeansModel(
 
   override def transform(dataset: Dataset[_]): DataFrame = {
     val predictUDF = udf((vector: Vector) => predict(vector))
-    dataset.withColumn("prediction", predictUDF(col("features")))
+    dataset.withColumn("prediction", predictUDF(col("sparkml/features")))
   }
 
   override def transformSchema(schema: StructType): StructType = {

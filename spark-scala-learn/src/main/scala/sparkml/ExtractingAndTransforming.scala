@@ -51,11 +51,11 @@ object ExtractingAndTransforming extends App {
     val featurizedData = hashingTF.transform(wordsData)
     // 或者，CountVectorizer也可用于获取术语频率向量
 
-    val idf = new IDF().setInputCol("rawFeatures").setOutputCol("features")
+    val idf = new IDF().setInputCol("rawFeatures").setOutputCol("sparkml/features")
     val idfModel = idf.fit(featurizedData)
 
     val rescaledData = idfModel.transform(featurizedData)
-    rescaledData.select("label", "features").show()
+    rescaledData.select("label", "sparkml/features").show()
   }
 
   /*
@@ -118,7 +118,7 @@ object ExtractingAndTransforming extends App {
     // 从语料库拟合CountVectorizerModel：it a CountVectorizerModel from the corpus
     val cvModel: CountVectorizerModel = new CountVectorizer()
         .setInputCol("words")
-        .setOutputCol("features")
+        .setOutputCol("sparkml/features")
         .setVocabSize(3)
         .setMinDF(2)
         .fit(df)
@@ -126,7 +126,7 @@ object ExtractingAndTransforming extends App {
     // 或者：使用先验词汇表定义CountVectorizerModel
     val cvm = new CountVectorizerModel(Array("a", "b", "c"))
         .setInputCol("words")
-        .setOutputCol("features")
+        .setOutputCol("sparkml/features")
 
     cvModel.transform(df).show(false)
   }
@@ -288,10 +288,10 @@ object ExtractingAndTransforming extends App {
       Vectors.dense(2.0, 0.0, 3.0, 4.0, 5.0),
       Vectors.dense(4.0, 0.0, 0.0, 6.0, 7.0)
     )
-    val df = spark.createDataFrame(data.map(Tuple1.apply)).toDF("features")
+    val df = spark.createDataFrame(data.map(Tuple1.apply)).toDF("sparkml/features")
 
     val pca = new PCA()
-        .setInputCol("features")
+        .setInputCol("sparkml/features")
         .setOutputCol("pcaFeatures")
         .setK(3)
         .fit(df)
@@ -314,10 +314,10 @@ object ExtractingAndTransforming extends App {
       Vectors.dense(0.0, 0.0),
       Vectors.dense(3.0, -1.0)
     )
-    val df = spark.createDataFrame(data.map(Tuple1.apply)).toDF("features")
+    val df = spark.createDataFrame(data.map(Tuple1.apply)).toDF("sparkml/features")
 
     val polyExpansion = new PolynomialExpansion()
-        .setInputCol("features")
+        .setInputCol("sparkml/features")
         .setOutputCol("polyFeatures")
         .setDegree(3)
 
@@ -342,10 +342,10 @@ object ExtractingAndTransforming extends App {
       Vectors.dense(-1.0, 2.0, 4.0, -7.0),
       Vectors.dense(14.0, -2.0, -5.0, 1.0))
 
-    val df = spark.createDataFrame(data.map(Tuple1.apply)).toDF("features")
+    val df = spark.createDataFrame(data.map(Tuple1.apply)).toDF("sparkml/features")
 
     val dct = new DCT()
-        .setInputCol("features")
+        .setInputCol("sparkml/features")
         .setOutputCol("featuresDCT")
         .setInverse(false)
 
@@ -467,7 +467,7 @@ object ExtractingAndTransforming extends App {
     val data = spark.read.format("libsvm").load("data/mllib/sample_libsvm_data.txt")
 
     val indexer = new VectorIndexer()
-        .setInputCol("features")
+        .setInputCol("sparkml/features")
         .setOutputCol("indexed")
         .setMaxCategories(10)
 
@@ -535,11 +535,11 @@ object ExtractingAndTransforming extends App {
       (0, Vectors.dense(1.0, 0.5, -1.0)),
       (1, Vectors.dense(2.0, 1.0, 1.0)),
       (2, Vectors.dense(4.0, 10.0, 2.0))
-    )).toDF("id", "features")
+    )).toDF("id", "sparkml/features")
 
     // Normalize each Vector using $L^1$ norm.
     val normalizer = new Normalizer()
-        .setInputCol("features")
+        .setInputCol("sparkml/features")
         .setOutputCol("normFeatures")
         .setP(1.0)
 
@@ -569,7 +569,7 @@ object ExtractingAndTransforming extends App {
     val dataFrame = spark.read.format("libsvm").load("data/mllib/sample_libsvm_data.txt")
 
     val scaler = new StandardScaler()
-        .setInputCol("features")
+        .setInputCol("sparkml/features")
         .setOutputCol("scaledFeatures")
         .setWithStd(true)
         .setWithMean(false)
@@ -601,10 +601,10 @@ object ExtractingAndTransforming extends App {
       (0, Vectors.dense(1.0, 0.1, -1.0)),
       (1, Vectors.dense(2.0, 1.1, 1.0)),
       (2, Vectors.dense(3.0, 10.1, 3.0))
-    )).toDF("id", "features")
+    )).toDF("id", "sparkml/features")
 
     val scaler = new MinMaxScaler()
-        .setInputCol("features")
+        .setInputCol("sparkml/features")
         .setOutputCol("scaledFeatures")
 
     // Compute summary statistics and generate MinMaxScalerModel
@@ -613,7 +613,7 @@ object ExtractingAndTransforming extends App {
     // rescale each feature to range [min, max].
     val scaledData = scalerModel.transform(dataFrame)
     println(s"Features scaled to range: [${scaler.getMin}, ${scaler.getMax}]")
-    scaledData.select("features", "scaledFeatures").show()
+    scaledData.select("sparkml/features", "scaledFeatures").show()
   }
 
   /*
@@ -631,10 +631,10 @@ object ExtractingAndTransforming extends App {
       (0, Vectors.dense(1.0, 0.1, -8.0)),
       (1, Vectors.dense(2.0, 1.0, -4.0)),
       (2, Vectors.dense(4.0, 10.0, 8.0))
-    )).toDF("id", "features")
+    )).toDF("id", "sparkml/features")
 
     val scaler = new MaxAbsScaler()
-        .setInputCol("features")
+        .setInputCol("sparkml/features")
         .setOutputCol("scaledFeatures")
 
     // Compute summary statistics and generate MaxAbsScalerModel
@@ -642,7 +642,7 @@ object ExtractingAndTransforming extends App {
 
     // rescale each feature to range [-1, 1]
     val scaledData = scalerModel.transform(dataFrame)
-    scaledData.select("features", "scaledFeatures").show()
+    scaledData.select("sparkml/features", "scaledFeatures").show()
   }
 
   /*
@@ -661,10 +661,10 @@ object ExtractingAndTransforming extends App {
     val splits = Array(Double.NegativeInfinity, -0.5, 0.0, 0.5, Double.PositiveInfinity)
 
     val data = Array(-999.9, -0.5, -0.3, 0.0, 0.2, 999.9)
-    val dataFrame = spark.createDataFrame(data.map(Tuple1.apply)).toDF("features")
+    val dataFrame = spark.createDataFrame(data.map(Tuple1.apply)).toDF("sparkml/features")
 
     val bucketizer = new Bucketizer()
-        .setInputCol("features")
+        .setInputCol("sparkml/features")
         .setOutputCol("bucketedFeatures")
         .setSplits(splits)
 
@@ -761,11 +761,11 @@ object ExtractingAndTransforming extends App {
 
     val assembler = new VectorAssembler()
         .setInputCols(Array("hour", "mobile", "userFeatures"))
-        .setOutputCol("features")
+        .setOutputCol("sparkml/features")
 
     val output = assembler.transform(dataset)
     println("Assembled columns 'hour', 'mobile', 'userFeatures' to vector column 'features'")
-    output.select("features", "clicked").show(false)
+    output.select("sparkml/features", "clicked").show(false)
   }
 
   /*
@@ -905,7 +905,7 @@ object ExtractingAndTransforming extends App {
 
     val dataset = spark.createDataFrame(data, StructType(Array(attrGroup.toStructField())))
 
-    val slicer = new VectorSlicer().setInputCol("userFeatures").setOutputCol("features")
+    val slicer = new VectorSlicer().setInputCol("userFeatures").setOutputCol("sparkml/features")
 
     slicer.setIndices(Array(1)).setNames(Array("f3"))
     // or slicer.setIndices(Array(1, 2)), or slicer.setNames(Array("f2", "f3"))
@@ -930,11 +930,11 @@ object ExtractingAndTransforming extends App {
 
     val formula = new RFormula()
         .setFormula("clicked ~ country + hour")
-        .setFeaturesCol("features")
+        .setFeaturesCol("sparkml/features")
         .setLabelCol("label")
 
     val output = formula.fit(dataset).transform(dataset)
-    output.select("features", "label").show()
+    output.select("sparkml/features", "label").show()
   }
 
   /*
@@ -953,11 +953,11 @@ object ExtractingAndTransforming extends App {
       (9, Vectors.dense(1.0, 0.0, 15.0, 0.1), 0.0)
     )
 
-    val df = spark.createDataset(data).toDF("id", "features", "clicked")
+    val df = spark.createDataset(data).toDF("id", "sparkml/features", "clicked")
 
     val selector = new ChiSqSelector()
         .setNumTopFeatures(1)
-        .setFeaturesCol("features")
+        .setFeaturesCol("sparkml/features")
         .setLabelCol("clicked")
         .setOutputCol("selectedFeatures")
 
@@ -993,21 +993,21 @@ object ExtractingAndTransforming extends App {
       (1, Vectors.dense(1.0, -1.0)),
       (2, Vectors.dense(-1.0, -1.0)),
       (3, Vectors.dense(-1.0, 1.0))
-    )).toDF("id", "features")
+    )).toDF("id", "sparkml/features")
 
     val dfB = spark.createDataFrame(Seq(
       (4, Vectors.dense(1.0, 0.0)),
       (5, Vectors.dense(-1.0, 0.0)),
       (6, Vectors.dense(0.0, 1.0)),
       (7, Vectors.dense(0.0, -1.0))
-    )).toDF("id", "features")
+    )).toDF("id", "sparkml/features")
 
     val key = Vectors.dense(1.0, 0.0)
 
     val brp = new BucketedRandomProjectionLSH()
         .setBucketLength(2.0)
         .setNumHashTables(3)
-        .setInputCol("features")
+        .setInputCol("sparkml/features")
         .setOutputCol("hashes")
 
     val model = brp.fit(dfA)
@@ -1047,19 +1047,19 @@ object ExtractingAndTransforming extends App {
       (0, Vectors.sparse(6, Seq((0, 1.0), (1, 1.0), (2, 1.0)))),
       (1, Vectors.sparse(6, Seq((2, 1.0), (3, 1.0), (4, 1.0)))),
       (2, Vectors.sparse(6, Seq((0, 1.0), (2, 1.0), (4, 1.0))))
-    )).toDF("id", "features")
+    )).toDF("id", "sparkml/features")
 
     val dfB = spark.createDataFrame(Seq(
       (3, Vectors.sparse(6, Seq((1, 1.0), (3, 1.0), (5, 1.0)))),
       (4, Vectors.sparse(6, Seq((2, 1.0), (3, 1.0), (5, 1.0)))),
       (5, Vectors.sparse(6, Seq((1, 1.0), (2, 1.0), (4, 1.0))))
-    )).toDF("id", "features")
+    )).toDF("id", "sparkml/features")
 
     val key = Vectors.sparse(6, Seq((1, 1.0), (3, 1.0)))
 
     val mh = new MinHashLSH()
         .setNumHashTables(5)
-        .setInputCol("features")
+        .setInputCol("sparkml/features")
         .setOutputCol("hashes")
 
     val model = mh.fit(dfA)

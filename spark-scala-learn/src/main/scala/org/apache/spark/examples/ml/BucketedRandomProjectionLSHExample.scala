@@ -44,21 +44,21 @@ object BucketedRandomProjectionLSHExample {
       (1, Vectors.dense(1.0, -1.0)),
       (2, Vectors.dense(-1.0, -1.0)),
       (3, Vectors.dense(-1.0, 1.0))
-    )).toDF("id", "features")
+    )).toDF("id", "sparkml/features")
 
     val dfB = spark.createDataFrame(Seq(
       (4, Vectors.dense(1.0, 0.0)),
       (5, Vectors.dense(-1.0, 0.0)),
       (6, Vectors.dense(0.0, 1.0)),
       (7, Vectors.dense(0.0, -1.0))
-    )).toDF("id", "features")
+    )).toDF("id", "sparkml/features")
 
     val key = Vectors.dense(1.0, 0.0)
 
     val brp = new BucketedRandomProjectionLSH()
       .setBucketLength(2.0)
       .setNumHashTables(3)
-      .setInputCol("features")
+      .setInputCol("sparkml/features")
       .setOutputCol("hashes")
 
     val model = brp.fit(dfA)

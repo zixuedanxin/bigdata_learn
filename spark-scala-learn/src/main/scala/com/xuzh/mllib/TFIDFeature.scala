@@ -51,7 +51,7 @@ object TFIDFeature {
     // 通过CountVectorizer也可以获得词频向量
     val idf = new IDF()
       .setInputCol(hashingTF.getOutputCol)
-      .setOutputCol("features")
+      .setOutputCol("sparkml/features")
 
     val wordsData = tokenizer.transform(sentenceData)
     val featurizedData = hashingTF.transform(wordsData)
@@ -59,7 +59,7 @@ object TFIDFeature {
 
     // 3. 文档的向量化表示
     val rescaledData = idfModel.transform(featurizedData)
-    rescaledData.select("label", "features").show(false)
+    rescaledData.select("label", "sparkml/features").show(false)
 
 
   }

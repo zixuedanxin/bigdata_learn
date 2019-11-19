@@ -39,7 +39,7 @@ object CountVectorizerExample {
     // fit a CountVectorizerModel from the corpus
     val cvModel: CountVectorizerModel = new CountVectorizer()
       .setInputCol("words")
-      .setOutputCol("features")
+      .setOutputCol("sparkml/features")
       .setVocabSize(3)
       .setMinDF(2)
       .fit(df)
@@ -47,7 +47,7 @@ object CountVectorizerExample {
     // alternatively, define CountVectorizerModel with a-priori vocabulary
     val cvm = new CountVectorizerModel(Array("a", "b", "c"))
       .setInputCol("words")
-      .setOutputCol("features")
+      .setOutputCol("sparkml/features")
 
     cvModel.transform(df).show(false)
     // $example off$

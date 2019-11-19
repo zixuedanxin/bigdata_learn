@@ -38,11 +38,11 @@ object VectorAssemblerExample {
 
     val assembler = new VectorAssembler()
       .setInputCols(Array("hour", "mobile", "userFeatures"))
-      .setOutputCol("features")
+      .setOutputCol("sparkml/features")
 
     val output = assembler.transform(dataset)
     println("Assembled columns 'hour', 'mobile', 'userFeatures' to vector column 'features'")
-    output.select("features", "clicked").show(false)
+    output.select("sparkml/features", "clicked").show(false)
     // $example off$
 
     spark.stop()

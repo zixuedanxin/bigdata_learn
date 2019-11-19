@@ -57,7 +57,7 @@ object MLlibPipeline {
     val hashingTF = new HashingTF() // Maps email words to vectors of 100 features.
       .setNumFeatures(100)
       .setInputCol(tokenizer.getOutputCol)
-      .setOutputCol("features")
+      .setOutputCol("sparkml/features")
     val lr = new LogisticRegression() // LogisticRegression uses inputCol "features" by default.
     val pipeline = new Pipeline()
       .setStages(Array(tokenizer, hashingTF, lr))
