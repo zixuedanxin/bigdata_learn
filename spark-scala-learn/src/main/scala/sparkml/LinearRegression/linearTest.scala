@@ -1,8 +1,7 @@
-package sparkml
+package sparkml.LinearRegression
 
-import org.apache.spark.ml.regression.{LinearRegression, LinearRegressionModel}
-import org.apache.spark.ml.linalg.{Vector, Vectors}
-import org.apache.spark.sql._
+import org.apache.spark.ml.linalg.Vectors
+import org.apache.spark.ml.regression.LinearRegression
 import org.apache.spark.sql.SparkSession
 
 /**
@@ -21,7 +20,6 @@ object linearTest {
       .getOrCreate() // 有就获取无则创建
 
     spark.sparkContext.setCheckpointDir("/tmp/sparkmlTest") //设置文件读取、存储的目录，HDFS最佳
-    import spark.implicits._
 
     //1 训练样本准备
     val training =  spark.createDataFrame(Seq(
@@ -134,21 +132,3 @@ object linearTest {
   }
 
 }
-/*在new一个LogisticRegression时，可以对其参数进行设置，这里大概跟大家说一下：
-
-setMaxIter:设置最大迭代次数(默认100)，具体迭代过程可能会在不足最大迭代次数时停止(参照下一条)
-setTol:设置容错(默认1E-6)，每次迭代会计算一个误差值，误差值会随着迭代次数的增加逐渐减小，如果误差值小于设置的容错值，则停止迭代优化
-setRegParam:设置正则化项系数(默认0.0)，正则化项主要用于防止过拟合现象，因此，如果你的数据集比较小，特征维数又比较多时，易出现过拟合，此时可以考虑增大正则化项系数
-setElasticNetParam:正则化范式比(默认0.0)，正则化一般有两种范式：L1(Lasso)和L2(Ridge)。L1一般用于特征的稀疏化，L2一般用于防止过拟合。
-这里的参数即设置L1范式的占比，默认0.0即只使用L2范式
-setLabelCol:设置标签列(默认读取“label”列)
-setFeaturesCol:设置特征列(默认读取“features”列)
-还有一个参数是setWeightCol，即设置各特征的权重，默认值是将每个特征权重设置为1.0，这里我们使用默认值就好了，
-如果对特征有特殊要求，可考虑重新设置对应的权重（如将标题作为一项特征，并且标题重要性更高，可将标题这一特征的权重设置大一点）
-
-注意：由于我们的数据稀疏性本来就很高了(2000维的向量只有少数维度有值)，因此切记不要把setElasticNetParam设置得过大！！
-因为setElasticNetParam越大表示L1正则所占比例越高，对向量稀疏化效果越好，而我们的向量本来就很稀疏了，
-再稀疏化特征基本都为0了，得到的分类效果跟随机分类没什么区别(不信的话可以把这个值设置大一点，
-然后把后面说到的预测结果的probability打印出来，可以看到在各类别上的概率差别不大)
-
-*/

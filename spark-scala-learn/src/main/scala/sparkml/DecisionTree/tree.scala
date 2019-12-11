@@ -1,12 +1,9 @@
-package sparkml
+package sparkml.DecisionTree
 
-
-import org.apache.spark.ml.feature._
-import org.apache.spark.ml.classification.RandomForestClassifier
-import org.apache.spark.ml.classification.{ DecisionTreeClassifier, DecisionTreeClassificationModel }
-import org.apache.spark.ml.classification.GBTClassifier
-import org.apache.spark.ml.evaluation.{ MulticlassClassificationEvaluator, BinaryClassificationEvaluator }
-import org.apache.spark.ml.{ Pipeline, PipelineModel }
+import org.apache.spark.ml.Pipeline
+import org.apache.spark.ml.classification.{DecisionTreeClassificationModel, DecisionTreeClassifier, GBTClassifier, RandomForestClassifier}
+import org.apache.spark.ml.evaluation.{BinaryClassificationEvaluator, MulticlassClassificationEvaluator}
+import org.apache.spark.ml.feature.{IndexToString, StringIndexer, VectorIndexer}
 import org.apache.spark.sql.SparkSession
 
 object tree {
@@ -22,7 +19,6 @@ object tree {
       .getOrCreate() // 有就获取无则创建
 
     spark.sparkContext.setCheckpointDir("/tmp/BigData_AI/sparkmlTest") //设置文件读取、存储的目录，HDFS最佳
-    import spark.implicits._
 
     //1 训练样本准备
     val data = spark.read.format("libsvm").load("data/mllib/sample_libsvm_data.txt")

@@ -3,7 +3,7 @@ package sparkml.rdd
 import org.apache.spark.mllib.linalg.Vectors
 import org.apache.spark.mllib.stat.Statistics
 import org.apache.spark.{SparkConf, SparkContext}
-
+import org.apache.spark.ml.stat.Summarizer
 
 object testSummary {
   def main(args: Array[String]): Unit = {
@@ -11,7 +11,7 @@ object testSummary {
       .setMaster("local")
       .setAppName("testIndexedRowMatrix")
     val sc = new SparkContext(conf)
-    val rdd = sc.textFile("a.txt")
+    val rdd = sc.textFile("data/ml/aa.txt")
       .map(_.split(" ")
         .map(_.toDouble))
       .map(line => Vectors.dense(line))

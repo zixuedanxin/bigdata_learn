@@ -60,6 +60,7 @@ object HBaseReadRowWriteStats {
     def convertToPutStats(row: SensorStatsRow): (ImmutableBytesWritable, Put) = {
       val p = new Put(Bytes.toBytes(row.rowkey))
       // add columns with data values to put
+
       p.add(cfStatsBytes, Bytes.toBytes("hzmax"), Bytes.toBytes(row.maxhz))
       p.add(cfStatsBytes, Bytes.toBytes("hzmin"), Bytes.toBytes(row.minhz))
       p.add(cfStatsBytes, Bytes.toBytes("hzavg"), Bytes.toBytes(row.avghz))

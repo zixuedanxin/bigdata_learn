@@ -17,7 +17,7 @@ object SparkMllibSVD{
   val sc = new SparkContext(conf)
 
   def main(args: Array[String]) {
-    val data = sc.textFile("./src/SparkMllibOtheralgorithm/aaa.txt")
+    val data = sc.textFile("./src/SparkMllibOtheralgorithm/aa.txt")
       .map(_.split(" ").map(_.toDouble))
       .map(line => Vectors.dense(line))
 
