@@ -51,9 +51,11 @@ object PageView extends Serializable {
  */
 // scalastyle:on
 object soket_data {
-  val pages = Map("foo.com" -> .7,
+  val pages = Map("foo.com" -> .2,
                   "baidu.com" -> .2,
-                  "qq.com" -> .1)
+                  "qq.com" -> .2,
+                  "java"->0.1,
+                  "python"->0.3)
   val httpStatus = Map(200 -> .95,
                        404 -> .05)
   val userZipCode = Map(10001 -> .5,
@@ -87,8 +89,8 @@ object soket_data {
 //     // System.exit(1)
 //    }
     val port =3000// args(0).toInt
-    val viewsPerSecond =0.5 //args(1).toFloat
-    val sleepDelayMs = 10000//(1000.0 / viewsPerSecond).toInt 10000表示10秒
+    // val viewsPerSecond =10.0// 0.5 //args(1).toFloat
+    val sleepDelayMs = 30000//(1000.0 / viewsPerSecond).toInt 10000表示10秒
     val listener = new ServerSocket(port)
     println("Listening on port: " + port)
 

@@ -1,15 +1,4 @@
-
-*.log
-*.class
-target/
-*/target/*
-artifacts/
-.idea/
-.idea/*
-spark-scala-maven-2.4.0/.idea/
-metastore_db/
-spark-warehouse/
-spark-scala-learn/target/*
+# Folders
 .idea/
 spark-warehouse/
 target/

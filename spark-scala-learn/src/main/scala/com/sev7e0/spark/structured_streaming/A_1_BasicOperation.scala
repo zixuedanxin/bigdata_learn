@@ -45,3 +45,36 @@ object A_1_BasicOperation {
     println(dataFrame.isStreaming)
   }
 }
+
+/*
+https://blog.csdn.net/lovebyz/article/details/75045514
+  val streamingInputDF =
+    spark
+      .readStream // DataStreamReader
+      .format("eventhubs") // DataStreamReader
+      .options(eventHubsConf.toMap) // DataStreamReader
+      .load() // DataFrame
+
+  // split lines by whitespaces and explode the array as rows of 'word'
+  val df = streamingInputDF.select($"body".cast("string"))
+    .withColumn("_tmp", split($"body", ";"))
+    .select(
+      $"_tmp".getItem(0).as("name"),
+      $"_tmp".getItem(1).as("ptime")
+    ).drop("_tmp")
+    .withColumn("posttime", to_timestamp($"ptime", "yyyyMMdd HH:mm:ss"))
+    .drop("ptime")
+    .withWatermark("posttime", "15 minutes")
+    .groupBy(
+      window($"posttime", "5 minutes", "5 minutes"),
+      $"name"
+    )
+    .count()
+    .writeStream
+    .outputMode("update")
+    .format("console")
+    .start()
+
+  df.awaitTermination()
+
+ */
