@@ -13,11 +13,11 @@ object BreezeBooleanFunction {
     val b: DenseVector[Boolean] = DenseVector(false, true, true)
 
     // 与
-    val vector1: DenseVector[Boolean] = a :& b
+    val vector1: DenseVector[Boolean] = a &:& b
     println(vector1)    // DenseVector(false, false, true)
 
     // 或
-    val vector2: DenseVector[Boolean] = a :| b
+    val vector2: DenseVector[Boolean] = a |:| b
     println(vector2)    // DenseVector(true, true, true)
 
     // 非

@@ -58,10 +58,10 @@ object CourseClickCountDAO {
     list.append(CourseClickCount("20171111_8",8))
     list.append(CourseClickCount("20171111_9",9))
     list.append(CourseClickCount("20171111_1",100))
+    val a =List()
+    // save(list)
 
-    save(list)
-
-    println(count("20171111_8") + " : " + count("20171111_9")+ " : " + count("20171111_1"))
+   // println(count("20171111_8") + " : " + count("20171111_9")+ " : " + count("20171111_1"))
   }
 
 }
